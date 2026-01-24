@@ -1,0 +1,28 @@
+/**
+ * Constants and Configuration
+ */
+
+export const TAILWIND_COLORS = {
+  PRIMARY: "#2563eb",
+  GOLD: "#f59e0b",
+  BACKGROUND: "#f8fafc",
+  FOREGROUND: "#0f172a",
+} as const;
+
+export const API_CONFIG = {
+  TALLY_FORM_ID: "wgxDQB",
+  SCROLL_THRESHOLD: 800,
+  ANIMATION_DELAYS: {
+    SHORT: "0.1s",
+    MEDIUM: "0.2s",
+    LONG: "0.3s",
+  },
+} as const;
+
+export const CONTENT = {
+  COMPANY_NAME: "Elitale Softwares Private Limited",
+  YEAR: "2026",
+  BETA_SPOTS_REMAINING: 427,
+  WAITLIST_COUNT: 1247,
+  TEAM_SIZE: 3,
+} as const;

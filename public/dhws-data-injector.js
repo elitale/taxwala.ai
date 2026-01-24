@@ -82,7 +82,7 @@
 ]
 
   // Map to track per-class indices for unique component IDs
-  const classIndexMap = new Map();
+  // const classIndexMap = new Map();
 
   /**
    * Sanitizes attribute values to prevent XSS
