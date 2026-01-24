@@ -1,0 +1,29 @@
+---
+import "../styles/global.css";
+const {
+  title = "TaxWala.ai - AI-Powered Tax Automation | Private Beta",
+  description = "Join the invite-only beta. AI-powered tax automation for Indian businesses. Zero fees. Zero hassle.",
+} = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" is:inline async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ftaxwalala2643back.builtwithrocket.new&_be=https%3A%2F%2Fappanalytics.rocket.new&_v=0.1.15"></script>
+    <script type="module" is:inline defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+  </head>
+  <body class="bg-background text-foreground antialiased">
+    <slot />
+    <slot name="scripts" />
+  </body>
+</html>
