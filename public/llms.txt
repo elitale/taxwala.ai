@@ -1,0 +1,167 @@
+# TaxWala.ai - AI-Powered Tax Automation for Indian Businesses
+
+> Making tax filing effortless for Indian businesses and freelancers through AI-powered automation. Join our invite-only beta to get lifetime free access.
+
+## What is TaxWala.ai?
+
+TaxWala.ai is an AI-powered tax automation platform designed specifically for Indian businesses, freelancers, and entrepreneurs. We're solving the biggest pain point in running a business in India: tax filing.
+
+Our mission is to eliminate the hours of manual work, expensive CPA fees, and stress that comes with tax compliance. With TaxWala.ai, you connect your bank account, upload receipts with a photo, and let AI handle everything else.
+
+## The Problem We're Solving
+
+### Time Drain
+Business owners in India spend **25+ hours every month** on tax paperwork, receipts, and filing. That's time taken away from growing your business, serving customers, or spending with family.
+
+### Expensive Fees
+Hiring a Chartered Accountant (CPA) costs **₹50,000+ annually**. For small businesses and freelancers, this is a significant expense that cuts into already thin profit margins.
+
+### Stress and Missed Deadlines
+Tax regulations are complex and constantly changing. Missing deadlines leads to penalties, notices, and sleepless nights. The fear of getting something wrong is constant.
+
+### Manual Data Entry
+Every transaction needs to be categorized. Every receipt needs to be matched. Every invoice needs to be logged. It's tedious, error-prone, and soul-crushing work.
+
+## How TaxWala.ai Helps
+
+### 3-Step Process
+
+**1. Connect**
+Link your bank account in 30 seconds. Upload receipts with a photo. Sync your billing tools. Everything happens automatically in the background.
+
+**2. Relax**
+Our AI categorizes transactions, matches receipts to expenses, and processes everything while you sleep. No manual data entry. No spreadsheets. No headaches.
+
+**3. Done**
+Download your tax filing in one click. Review, approve, and submit. Your taxes are done in minutes instead of hours.
+
+### What You Get
+
+- **Zero Manual Work**: AI handles categorization, matching, and calculations automatically
+- **Always Compliant**: Stay up-to-date with Indian tax regulations automatically
+- **Bank-Level Security**: Your data is encrypted and never leaves India
+- **Real-Time Processing**: See your tax status updated live as transactions happen
+- **Lifetime Free Access**: Beta users get TaxWala.ai completely free forever
+
+## Who Should Use TaxWala.ai?
+
+### E-Commerce Business Owners
+If you run an online store with hundreds of transactions monthly, TaxWala.ai automatically categorizes sales, expenses, and calculates GST. Perfect for Shopify, WooCommerce, or marketplace sellers who are drowning in transaction data.
+
+**Before TaxWala.ai**: 25 hours/month reconciling transactions, matching receipts, preparing GST returns
+**After TaxWala.ai**: 2 hours/month reviewing and approving automated filings
+
+### Freelancers and Consultants
+For independent professionals juggling multiple clients and projects, TaxWala.ai tracks income across projects, categorizes business expenses, and handles TDS calculations automatically.
+
+**Before TaxWala.ai**: Shoebox full of receipts, spreadsheets everywhere, panic during tax season
+**After TaxWala.ai**: Snap photos of receipts, everything organized automatically, stress-free filing
+
+### Startup Founders
+Early-stage startups need to focus on product and growth, not tax paperwork. TaxWala.ai gives founders their time back while ensuring they stay compliant from day one.
+
+**Before TaxWala.ai**: Paying ₹50k+ to CPA, still spending hours gathering documents
+**After TaxWala.ai**: Zero fees, zero manual work, more time to build the business
+
+### Small Business Owners
+Restaurants, retail stores, service businesses with regular expenses and multiple revenue streams. TaxWala.ai handles complex scenarios like inventory, multiple GST rates, and cash transactions.
+
+**Before TaxWala.ai**: Paper receipts everywhere, Excel chaos, errors in filing
+**After TaxWala.ai**: Digital receipts, automatic categorization, error-free submissions
+
+### Digital Agencies
+Agencies managing multiple client projects need to track expenses per client, calculate project profitability, and handle complex billing. TaxWala.ai does this automatically.
+
+**Before TaxWala.ai**: Manual time tracking, spreadsheet hell, delayed billing
+**After TaxWala.ai**: Automatic expense allocation, instant reports, faster payments
+
+## Why Join the Beta Now?
+
+### Lifetime Free Access
+Beta users get TaxWala.ai completely free forever. No hidden fees. No credit card required. No "introductory period" that expires. Free means free.
+
+Once we launch publicly, this will be a paid product. But early supporters who believe in us get rewarded with lifetime access at zero cost.
+
+### Shape the Product
+Your feedback directly influences what we build. Need a specific feature? Want integration with your accounting software? As a beta user, you have direct access to our founders and your requests get priority.
+
+We're building this for you. Help us make it perfect for your needs.
+
+### Priority Support
+Get help within hours, not days. Skip the support queue. Chat directly with our team. We're committed to making beta users successful because your success is our success.
+
+### First to Launch
+Get access weeks before the public launch. Start automating your tax work immediately. Be ahead of your competition while they're still stuck in spreadsheets.
+
+### Limited Spots Available
+Only **500 beta invites** available. **427 spots remaining** as of today. Once we're full, new users join the public waitlist and won't get lifetime free access.
+
+Early access closes in **14 days**.
+
+## Real Impact: User Testimonials
+
+**Arjun Mehta, E-commerce Founder**
+"I was spending 25 hours every month on tax paperwork. TaxWala.ai cut that to 2 hours. This is a game-changer for my business. I can finally focus on growing sales instead of organizing receipts."
+
+**Rohan Singh, Startup Founder**
+"Filing taxes used to be my biggest nightmare. Now it's completely automated. I focus on building my startup while TaxWala handles the rest. Best tool I've discovered this year."
+
+**Karan Patel, Freelance Developer**
+"As a freelancer, I had zero time for tax paperwork. TaxWala.ai handles everything. I just upload receipts and it's done. Saved me ₹45,000 in CPA fees this year."
+
+## Trust and Security
+
+### Built by Experts
+TaxWala.ai is powered by **Elitale Softwares Private Limited**, a registered Indian company. Our team combines expertise in AI, finance, and Indian tax regulations to deliver a product you can trust.
+
+### Bank-Level Security
+- 256-bit encryption for all data
+- ISO 27001 compliant infrastructure
+- Your data never leaves India
+- Regular security audits
+
+### Proven Track Record
+**1,247 businesses** already on our waitlist. Join companies that trust us with their financial data.
+
+## Frequently Asked Questions
+
+**Is TaxWala.ai really free for beta users?**
+Yes, 100% free forever. No trials, no limits, no hidden fees. If you join the beta, you'll never pay for TaxWala.ai.
+
+**How does the AI work?**
+Our AI reads your bank statements, categorizes transactions based on merchant names and amounts, matches receipts to expenses using OCR, and applies current Indian tax rules automatically.
+
+**Is my data secure?**
+Absolutely. We use bank-level 256-bit encryption, ISO 27001 compliant infrastructure, and your data never leaves India. We take security seriously.
+
+**When will the full version launch?**
+We're launching to the public in approximately 8-12 weeks. Beta users get early access starting now.
+
+**What if I need help?**
+Beta users get priority support with direct access to our founders. We respond within hours, not days.
+
+**Can I cancel anytime?**
+There's nothing to cancel for beta users – you're not paying anything. If you ever want to stop using TaxWala.ai, just stop logging in.
+
+## Join the Beta
+
+Ready to eliminate tax stress from your business? Join **1,247 businesses** already waiting for access.
+
+**Limited Time Offer:**
+- ✅ Lifetime Free Access
+- ✅ Priority Support
+- ✅ Shape the Product
+- ✅ First to Launch
+- ⏰ 427 Spots Remaining
+- ⏰ Closes in 14 Days
+
+**Company**: Elitale Softwares Private Limited  
+**Status**: Private Beta (Invite Only)  
+**Target Market**: Indian businesses, freelancers, startups, e-commerce sellers  
+**Launch Year**: 2026
+
+---
+
+*For technical documentation, implementation details, and developer resources, see [llm-full.txt](/llm-full.txt)*
+
+Last updated: January 24, 2026
