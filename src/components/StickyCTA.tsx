@@ -4,6 +4,7 @@
  */
 
 import React from "react";
+import { ArrowRightIcon } from "./icons";
 
 interface StickyCTAProps {
   isVisible: boolean;
@@ -21,9 +22,7 @@ export const StickyCTA: React.FC<StickyCTAProps> = ({ isVisible }) => {
         data-tally-emoji-animation="wave"
       >
         <span>Join Waitlist</span>
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-        </svg>
+        <ArrowRightIcon />
       </button>
     </div>
   );

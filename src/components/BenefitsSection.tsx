@@ -5,6 +5,14 @@
 
 import React from "react";
 import type { BenefitItem } from "../types";
+import {
+  StarIcon,
+  SupportIcon,
+  LightBulbIcon,
+  RocketIcon,
+  GiftIcon,
+  ClockIcon,
+} from "./icons";
 
 export const BenefitsSection: React.FC = () => {
   const benefits: BenefitItem[] = [
@@ -90,66 +98,28 @@ interface BenefitCardProps {
   delay: string;
 }
 
-const BenefitCard: React.FC<BenefitCardProps> = ({ benefit, delay }) => (
-  <div
-    className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow reveal-on-scroll"
-    style={{ animationDelay: delay }}
-  >
-    <div className={`w-12 h-12 ${benefit.iconBackground} rounded-xl flex items-center justify-center mb-6`}>
-      <svg className={`w-6 h-6 ${benefit.iconColor}`} fill="currentColor" viewBox="0 0 20 20">
-        <BenefitIcon title={benefit.title} />
-      </svg>
-    </div>
-    <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
-    <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
-  </div>
-);
-
-interface BenefitIconProps {
-  title: string;
-}
-
-const BenefitIcon: React.FC<BenefitIconProps> = ({ title }) => {
-  const icons: { [key: string]: React.ReactNode } = {
-    "Lifetime Free Access": (
-      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-    ),
-    "Priority Support": (
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
-      />
-    ),
-    "Shape the Product": (
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-      />
-    ),
-    "First to Launch": (
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-    ),
-    "Referral Rewards": (
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
-      />
-    ),
-    "Limited Spots": (
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-      />
-    ),
+const BenefitCard: React.FC<BenefitCardProps> = ({ benefit, delay }) => {
+  const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } = {
+    "Lifetime Free Access": StarIcon,
+    "Priority Support": SupportIcon,
+    "Shape the Product": LightBulbIcon,
+    "First to Launch": RocketIcon,
+    "Referral Rewards": GiftIcon,
+    "Limited Spots": ClockIcon,
   };
 
-  return <>{icons[title] || null}</>;
+  const IconComponent = iconMap[benefit.title] || StarIcon;
+
+  return (
+    <div
+      className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow reveal-on-scroll"
+      style={{ animationDelay: delay }}
+    >
+      <div className={`w-12 h-12 ${benefit.iconBackground} rounded-xl flex items-center justify-center mb-6`}>
+        <IconComponent className={`w-6 h-6 ${benefit.iconColor}`} />
+      </div>
+      <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
+      <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+    </div>
+  );
 };

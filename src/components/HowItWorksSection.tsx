@@ -4,6 +4,7 @@
  */
 
 import React from "react";
+import { RocketIcon, SmileIcon, CheckIcon } from "./icons";
 
 export const HowItWorksSection: React.FC = () => {
   const steps = [
@@ -15,7 +16,7 @@ export const HowItWorksSection: React.FC = () => {
       iconBg: "bg-primary/10",
       iconColor: "text-primary",
       delay: "0.1s",
-      icon: "M13 10V3L4 14h7v7l9-11h-7z",
+      IconComponent: RocketIcon,
     },
     {
       number: 2,
@@ -25,7 +26,7 @@ export const HowItWorksSection: React.FC = () => {
       iconBg: "bg-purple-100",
       iconColor: "text-purple-600",
       delay: "0.2s",
-      icon: "M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
+      IconComponent: SmileIcon,
     },
     {
       number: 3,
@@ -34,7 +35,7 @@ export const HowItWorksSection: React.FC = () => {
       iconBg: "bg-green-100",
       iconColor: "text-green-600",
       delay: "0.3s",
-      icon: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+      IconComponent: CheckIcon,
     },
   ];
 
@@ -56,19 +57,22 @@ export const HowItWorksSection: React.FC = () => {
 
         {/* Steps Grid */}
         <div className="grid md:grid-cols-3 gap-12 mb-16">
-          {steps.map((step) => (
-            <div key={step.number} className="reveal-on-scroll" style={{ animationDelay: step.delay }}>
-              <div className="mb-6">
-                <div className={`w-16 h-16 ${step.iconBg} rounded-2xl flex items-center justify-center mb-4`}>
-                  <svg className={`w-8 h-8 ${step.iconColor}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={step.icon} />
-                  </svg>
+          {steps.map((step) => {
+            const { IconComponent } = step;
+            return (
+              <div key={step.number} className="reveal-on-scroll" style={{ animationDelay: step.delay }}>
+                <div className="mb-6">
+                  <div className={`w-16 h-16 ${step.iconBg} rounded-2xl flex items-center justify-center mb-4`}>
+                    <IconComponent className={`w-8 h-8 ${step.iconColor}`} />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-3">
+                    {step.number}. {step.title}
+                  </h3>
+                  <p className="text-gray-600 text-lg leading-relaxed">{step.description}</p>
                 </div>
-                <h3 className="text-2xl font-bold mb-3">{step.number}. {step.title}</h3>
-                <p className="text-gray-600 text-lg leading-relaxed">{step.description}</p>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* CTA */}
