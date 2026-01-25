@@ -2,6 +2,9 @@
  * Constants and Configuration
  */
 
+export const TALLY_FORM_ID = 'vGPERD';
+export const TALLY_FORM_URL = 'https://tally.so/r/vGPERD';
+
 export const TAILWIND_COLORS = {
   PRIMARY: "#2563eb",
   GOLD: "#f59e0b",
