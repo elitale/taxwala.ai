@@ -4,7 +4,8 @@
  */
 
 import React from "react";
-import { CheckmarkCircleIcon, TwitterIcon, LinkedInIcon } from "./icons";
+import { TwitterIcon, LinkedInIcon } from "./icons";
+import { Logo } from "./Logo";
 
 export const Footer: React.FC = () => {
   return (
@@ -14,9 +15,7 @@ export const Footer: React.FC = () => {
           {/* Logo & Copyright */}
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-purple-600 rounded-lg flex items-center justify-center">
-                <CheckmarkCircleIcon className="w-5 h-5 text-white" />
-              </div>
+              <Logo className="w-8 h-8" />
               <span className="font-bold">TaxWala.ai</span>
             </div>
             <span className="text-sm text-gray-600">© 2026 Elitale Softwares Pvt Ltd</span>

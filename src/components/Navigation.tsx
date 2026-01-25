@@ -5,7 +5,8 @@
 
 import React, { useState } from "react";
 import type { NavLink } from "../types/index";
-import { CheckmarkCircleIcon, MenuIcon, CloseIcon } from "./icons";
+import { MenuIcon, CloseIcon } from "./icons";
+import { Logo } from "./Logo";
 import { TALLY_FORM_URL } from "../constants/config";
 
 interface NavigationProps {
@@ -23,9 +24,7 @@ export const Navigation: React.FC<NavigationProps> = ({ navLinks }) => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-purple-600 rounded-lg flex items-center justify-center">
-              <CheckmarkCircleIcon className="w-6 h-6 text-white" />
-            </div>
+            <Logo className="w-10 h-10" />
             <span className="text-xl font-bold tracking-tight">TaxWala.ai</span>
           </div>
 

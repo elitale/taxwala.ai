@@ -2,6 +2,7 @@
  * Index file for exporting all components
  */
 
+export { Logo } from "./Logo";
 export { Navigation } from "./Navigation";
 export { HeroSection } from "./HeroSection";
 export { VideoModal } from "./VideoModal";
