@@ -6,9 +6,10 @@ import TaxwalaPage from "../components/TaxwalaPage";
 const title = "TaxWala.ai - AI-Powered Tax Automation | Private Beta";
 const description =
   "Join the invite-only beta. AI-powered tax automation for Indian businesses. Zero fees. Zero hassle.";
+const image = "/banner.png";
 ---
 
-<BaseLayout {title} {description}>
+<BaseLayout {title} {description} {image}>
   <TaxwalaPage client:load />
   <Fragment slot="scripts">
     <script is:inline src="https://tally.so/widgets/embed.js"></script>
