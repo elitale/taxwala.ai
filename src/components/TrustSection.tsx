@@ -6,7 +6,7 @@
 import React from "react";
 import type { Testimonial } from "../types/index";
 import { CheckCircleIcon, StarIcon } from "./icons";
-import { TALLY_FORM_ID } from "../constants/config";
+import { TALLY_FORM_URL } from "../constants/config";
 
 export const TrustSection: React.FC = () => {
   const testimonials: Testimonial[] = [
@@ -155,9 +155,7 @@ const UrgencySection: React.FC = () => (
     <p className="text-gray-600 mb-6">Slots are filling fast. Join now to secure your lifetime free access.</p>
     <button
       className="cta-button bg-gray-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-black transition-all shadow-lg"
-      data-tally-open={TALLY_FORM_ID}
-      data-tally-emoji-text="🚀"
-      data-tally-emoji-animation="wave"
+      onClick={() => window.location.href = TALLY_FORM_URL}
     >
       Be part of the story
     </button>

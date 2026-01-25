@@ -5,7 +5,7 @@
 
 import React from "react";
 import { RocketIcon, SmileIcon, CheckIcon } from "./icons";
-import { TALLY_FORM_ID } from "../constants/config";
+import { TALLY_FORM_URL } from "../constants/config";
 
 export const HowItWorksSection: React.FC = () => {
   const steps = [
@@ -81,9 +81,7 @@ export const HowItWorksSection: React.FC = () => {
           <p className="text-gray-600 mb-6 text-lg">Watch the video to see it in action</p>
           <button
             className="cta-button bg-gray-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-black transition-all shadow-lg"
-            data-tally-open={TALLY_FORM_ID}
-            data-tally-emoji-text="🚀"
-            data-tally-emoji-animation="wave"
+            onClick={() => window.location.href = TALLY_FORM_URL}
           >
             Get Early Access
           </button>

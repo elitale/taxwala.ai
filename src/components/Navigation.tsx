@@ -6,7 +6,7 @@
 import React, { useState } from "react";
 import type { NavLink } from "../types/index";
 import { CheckmarkCircleIcon, MenuIcon, CloseIcon } from "./icons";
-import { TALLY_FORM_ID } from "../constants/config";
+import { TALLY_FORM_URL } from "../constants/config";
 
 interface NavigationProps {
   navLinks?: NavLink[];
@@ -83,9 +83,7 @@ const NavigationCTA: React.FC<NavigationCTAProps> = ({ fullWidth = false }) => (
     className={`cta-button bg-primary text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-700 transition-all shadow-sm ${
       fullWidth ? "w-full" : ""
     }`}
-    data-tally-open={TALLY_FORM_ID}
-    data-tally-emoji-text="🚀"
-    data-tally-emoji-animation="wave"
+    onClick={() => window.location.href = TALLY_FORM_URL}
   >
     Join Waitlist
   </button>

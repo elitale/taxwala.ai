@@ -14,7 +14,7 @@ import {
   StarIcon,
   LockIcon,
 } from "./icons";
-import { TALLY_FORM_ID } from "../constants/config";
+import { TALLY_FORM_URL } from "../constants/config";
 
 interface HeroSectionProps {
   isModalOpen: boolean;
@@ -69,9 +69,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="flex justify-center mt-12 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             <button
               className="cta-button bg-primary text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl hover:scale-105"
-              data-tally-open={TALLY_FORM_ID}
-              data-tally-emoji-text="🚀"
-              data-tally-emoji-animation="wave"
+              onClick={() => window.location.href = TALLY_FORM_URL}
             >
               Request Early Access →
             </button>
