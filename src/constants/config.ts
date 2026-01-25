@@ -13,7 +13,6 @@ export const TAILWIND_COLORS = {
 } as const;
 
 export const API_CONFIG = {
-  TALLY_FORM_ID: "wgxDQB",
   SCROLL_THRESHOLD: 800,
   ANIMATION_DELAYS: {
     SHORT: "0.1s",

@@ -6,6 +6,7 @@
 import React, { useState } from "react";
 import type { FAQItem } from "../types/index";
 import { ChevronDownIcon } from "./icons";
+import { TALLY_FORM_ID } from "../constants/config";
 
 export const FAQSection: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -68,7 +69,7 @@ export const FAQSection: React.FC = () => {
           <p className="text-gray-600 mb-6 text-lg">Still have questions?</p>
           <button
             className="cta-button bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-all shadow-lg"
-            data-tally-open="wgxDQB"
+            data-tally-open={TALLY_FORM_ID}
             data-tally-emoji-text="🚀"
             data-tally-emoji-animation="wave"
           >

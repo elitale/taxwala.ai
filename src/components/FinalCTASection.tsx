@@ -5,6 +5,7 @@
 
 import React from "react";
 import { ClockIcon, CalendarIcon } from "./icons";
+import { TALLY_FORM_ID } from "../constants/config";
 
 export const FinalCTASection: React.FC = () => {
   return (
@@ -45,7 +46,7 @@ export const FinalCTASection: React.FC = () => {
         <button
           className="cta-button bg-white text-primary px-12 py-5 rounded-full text-xl font-bold hover:bg-gray-100 transition-all shadow-2xl hover:shadow-3xl hover:scale-105 reveal-on-scroll"
           style={{ animationDelay: "0.3s" }}
-          data-tally-open="wgxDQB"
+          data-tally-open={TALLY_FORM_ID}
           data-tally-emoji-text="🚀"
           data-tally-emoji-animation="wave"
         >
