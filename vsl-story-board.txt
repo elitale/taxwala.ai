@@ -1,0 +1,125 @@
+Scene 1 — Hook
+- Goal: Grab attention; target Indian business owners.
+- Visual: Dharmendra on screen, direct-to-camera; subtle animated text: "Are your filings 100% correct?"; darkened background of receipts/bank statements.
+- Voiceover: As script: introduces himself; asks if GST, TDS, ITR are correct or just hoping.
+- On-screen text: "GST • TDS • ITR — 100% correct?"
+
+Scene 2 — Pain & Overwhelm
+- Goal: Build empathy and tension.
+- Visual: Split-screen of daytime business operations vs. late-night laptop work; piles of papers/WhatsApp receipts overlay.
+- Voiceover: Nights and weekends in tax work; mismatched Excel sheets; recurring filings.
+- On-screen text: "GST monthly • ITR yearly • 26AS • TDS • Advance tax"
+
+Scene 3 — Fear of Mistakes
+- Goal: Highlight emotional cost.
+- Visual: Close-up of notification icons and tax notices ghosted in background; Dharmendra worried.
+- Voiceover: Constant fear: did I miss something? what if notice comes? what if CA or I made a mistake?
+- On-screen text: "What if I missed something?"
+
+Scene 4 — Tried Options (Failed)
+- Goal: Show existing solutions fall short.
+- Visual: Montage of accountant calls (slow replies), generic US software UI (doesn’t fit), messy Excel.
+- Voiceover: Hired accountants—slow, follow-ups; software built for US; Excel made worse.
+- On-screen text: "Accountants ≠ fast • US tools ≠ India • Excel chaos"
+
+Scene 5 — Insight
+- Goal: Reframe problem.
+- Visual: Dharmendra whiteboarding; crossing out spreadsheets; highlighting "manual work".
+- Voiceover: Problem isn’t effort; it’s manual work. Need automation done right for India.
+- On-screen text: "Automation > Manual spreadsheets"
+
+Scene 6 — Birth of TaxWala.ai
+- Goal: Introduce solution origin.
+- Visual: Logo reveal; quick UI glimpses.
+- Voiceover: Built TaxWala.ai for himself; AI-powered tax filing for Indian businesses.
+- On-screen text: "TaxWala.ai — AI tax filing for India"
+
+Scene 7 — Outcome Snapshot
+- Goal: Promise speed.
+- Visual: Timer dropping from hours to under 5 minutes; clean dashboard.
+- Voiceover: Filing now takes less than 5 minutes.
+- On-screen text: "<5 minutes"
+
+Scene 8 — Step 1: Connect Data
+- Goal: Show simplicity.
+- Visual: Flow showing bank connection and statement upload.
+- Voiceover: Connect bank or upload statements.
+- On-screen text: "Step 1 — Connect bank / upload statements"
+
+Scene 9 — Step 2: Receipts/POS
+- Goal: Cover GST flow.
+- Visual: Drag-drop receipts; POS integration "Coming soon" tag.
+- Voiceover: Upload sales/expense receipts; POS connect coming.
+- On-screen text: "Step 2 — Add receipts (POS soon)"
+
+Scene 10 — No Forms Needed
+- Goal: Remove friction.
+- Visual: Forms disappearing; checkmark animation.
+- Voiceover: No forms, no manual calculations.
+- On-screen text: "No forms. No manual math."
+
+Scene 11 — AI Agents at Work
+- Goal: Establish capability.
+- Visual: Animated data pipeline categorizing transactions; GST/TDS/Advance/ITR chips lighting up.
+- Voiceover: AI reads every transaction, categorizes income/expenses, calculates GST, TDS, advance tax, ITR.
+- On-screen text: "AI categorizes & computes"
+
+Scene 12 — TDS Example
+- Goal: Build trust with specificity.
+- Visual: Invoice of ₹1,25,000; decision branch showing TDS handling.
+- Voiceover: Example of client payment ₹1,25,000—system knows TDS rules and treats correctly.
+- On-screen text: "₹1,25,000 → TDS handled"
+
+Scene 13 — Human Review Layer
+- Goal: De-risk AI.
+- Visual: CA stamp overlay; dual-layer AI + CA graphic.
+- Voiceover: Every filing reviewed/approved by in-house CAs; speed of AI, safety of human expertise.
+- On-screen text: "AI speed + CA accuracy"
+
+Scene 14 — Control & Security
+- Goal: Address trust.
+- Visual: Lock/encryption icon; user approving a filing.
+- Voiceover: Nothing filed without accuracy and review; data encrypted; you stay in control.
+- On-screen text: "Encrypted • Your approval required"
+
+Scene 15 — Confidence Guarantee
+- Goal: Risk reversal.
+- Visual: Guarantee badge with three bullets.
+- Voiceover: Nothing filed without approval; every return reviewed by CA; notice support at no extra cost.
+- On-screen text: "Approval-first • CA-reviewed • Notice support free"
+
+Scene 16 — Life After TaxWala
+- Goal: Paint end benefit.
+- Visual: Calendar with deadlines checked off; Dharmendra relaxing; productivity shots.
+- Voiceover: No stress before deadlines; no chasing CA; no second-guessing; regain 20+ hours/month.
+- On-screen text: "+20 hours/month back"
+
+Scene 17 — Origin to Invitation
+- Goal: Transition to offer.
+- Visual: Dharmendra sharing product with others; small group of business owners.
+- Voiceover: Built for himself, now opening to others.
+- On-screen text: "Opening access"
+
+Scene 18 — Beta Offer
+- Goal: Scarcity + value.
+- Visual: Counter showing 500 spots; "Lifetime free" badge.
+- Voiceover: Beta access for 500 businesses; join during beta = lifetime free; no card, no fees.
+- On-screen text: "500 spots • Lifetime free • No card"
+
+Scene 19 — Social Proof & Urgency
+- Goal: Reinforce demand.
+- Visual: Waitlist meter at 1,200+; spots filling animation.
+- Voiceover: 1,200+ waiting; after 500, others go to public waitlist; pricing changes at 2026 launch; beta users stay free.
+- On-screen text: "1,200+ waiting • Prices change 2026"
+
+Scene 20 — CTA
+- Goal: Clear next step.
+- Visual: Big CTA button "Join TaxWala.ai beta"; email field; 30-minute progress bar.
+- Voiceover: Click button, enter email, join beta waitlist; be done in 30 minutes.
+- On-screen text: "Join beta now →"
+
+Scene 21 — Close
+- Goal: Restate why and invite.
+- Visual: Dharmendra direct-to-camera; calm background.
+- Voiceover: Built it because he needed it; if you’re tired of tax stress, you’ll need it too; join the beta today.
+- On-screen text: "Join the beta today"

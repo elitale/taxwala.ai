@@ -1,10 +1,3 @@
-# TaxWala.ai – Alternate High-Converting VSL Script  
-*Founder-led | Indian SMB-focused | Beta Waitlist Goal*  
-
----
-
-## HOOK (First 10 Seconds)
-
 Hi, I’m Dharmendra Soni.
 
 And if you’re a business owner in India, let me ask you something.
@@ -14,9 +7,6 @@ are you **100% sure** your GST, TDS, and ITR filings are correct?
 
 Or are you *hoping* nothing goes wrong this year?
 
----
-
-## RELATABLE PAIN
 
 A few months ago, that was me.
 
@@ -39,9 +29,6 @@ It was the **constant fear**.
 “What if a notice comes?”  
 “What if my CA made a mistake… or I did?”
 
----
-
-## FAILED SOLUTIONS
 
 I tried everything.
 
@@ -60,9 +47,6 @@ Honestly… that just made things worse.
 So even after spending money and time,  
 I still wasn’t confident.
 
----
-
-## TURNING POINT
 
 That’s when I realized something.
 
@@ -74,9 +58,6 @@ They need automation — done correctly.
 
 So I decided to build something for myself.
 
----
-
-## INTRODUCING THE SOLUTION
 
 That’s how **TaxWala.ai** was born.
 
@@ -87,9 +68,6 @@ Today, my tax filing doesn’t take hours.
 
 It takes **less than 5 minutes**.
 
----
-
-## HOW IT WORKS (SIMPLE & BELIEVABLE)
 
 Here’s how it works.
 
@@ -106,9 +84,6 @@ That’s it.
 No forms.  
 No manual calculations.
 
----
-
-## AI + HUMAN TRUST STACK
 
 After that, our AI agents take over.
 
@@ -131,9 +106,6 @@ with the **safety of human expertise**.
 Nothing is filed without accuracy.  
 Nothing is submitted without review.
 
----
-
-## OBJECTION HANDLING
 
 You might be wondering:
 
@@ -148,9 +120,6 @@ Your data is encrypted.
 Your filings are accurate.  
 And you always stay in control.
 
----
-
-## OUR GUARANTEE (RISK REVERSAL)
 
 To make this completely risk-free for you,  
 here’s our **TaxWala Confidence Guarantee**:
@@ -164,9 +133,6 @@ You stay in control.
 You stay compliant.  
 You’re never alone.
 
----
-
-## BENEFITS (EMOTIONAL PAYOFF)
 
 After that?
 
@@ -181,9 +147,6 @@ You get back **20+ hours every month**.
 Time you can use to grow your business…  
 or simply switch off and breathe.
 
----
-
-## BETA OFFER (SCARCITY + VALUE)
 
 I built this for myself.
 
@@ -205,9 +168,6 @@ Free — forever.
 You’ll also get direct access to me  
 to share feedback and help shape the product.
 
----
-
-## URGENCY + SOCIAL PROOF
 
 We already have **over 1,200 businesses** waiting to join.
 
@@ -219,9 +179,6 @@ pricing will change.
 
 Beta users stay free.
 
----
-
-## CALL TO ACTION
 
 Here’s what to do next.
 
@@ -233,9 +190,6 @@ In the next 30 minutes,
 you could be done with tax work  
 that usually takes hours.
 
----
-
-## CLOSING (FOUNDER-LED)
 
 I built TaxWala.ai because I needed it.
 
