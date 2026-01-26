@@ -9,7 +9,7 @@ import { TALLY_FORM_URL } from "../constants/config";
 
 export const FinalCTASection: React.FC = () => {
   return (
-    <section className="py-32 px-6 text-white relative overflow-hidden" style={{ background: 'linear-gradient(to bottom right, #0066FF, #9333ea)' }}>
+    <section className="py-32 px-6 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl" />

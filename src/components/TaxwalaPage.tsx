@@ -13,6 +13,7 @@ import {
   TrustSection,
   FAQSection,
   TeamSection,
+  GuaranteeSection,
   FinalCTASection,
   StickyCTA,
   Footer,
@@ -69,6 +70,9 @@ const TaxwalaPage: React.FC = () => {
 
         {/* Team Section */}
         <TeamSection />
+
+        {/* Guarantee Section */}
+        <GuaranteeSection />
 
         {/* Final CTA Section */}
         <FinalCTASection />

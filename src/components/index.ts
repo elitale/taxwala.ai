@@ -12,6 +12,7 @@ export { BenefitsSection } from "./BenefitsSection";
 export { TrustSection } from "./TrustSection";
 export { FAQSection } from "./FAQSection";
 export { TeamSection } from "./TeamSection";
+export { GuaranteeSection } from "./GuaranteeSection";
 export { FinalCTASection } from "./FinalCTASection";
 export { StickyCTA } from "./StickyCTA";
 export { Footer } from "./Footer";

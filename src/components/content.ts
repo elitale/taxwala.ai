@@ -109,6 +109,33 @@ export const testimonials = [
   },
 ];
 
+export const guaranteeBadges = [
+  {
+    title: "CA Reviewed Filings",
+    description: "Every filing reviewed by qualified Chartered Accountants",
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+  },
+  {
+    title: "Full User Approval Before Filing",
+    description: "Nothing submitted without your explicit approval",
+    iconBg: "bg-green-100",
+    iconColor: "text-green-600",
+  },
+  {
+    title: "Tax Notice Assistance Included",
+    description: "Our team helps you respond to any tax notices at no extra cost",
+    iconBg: "bg-purple-100",
+    iconColor: "text-purple-600",
+  },
+  {
+    title: "Free Beta — No Credit Card",
+    description: "Beta users get lifetime free access with zero fees",
+    iconBg: "bg-gray-100",
+    iconColor: "text-gray-700",
+  },
+];
+
 export const team = [
   {
     name: "Aarav Kumar",

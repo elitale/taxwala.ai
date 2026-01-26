@@ -83,6 +83,7 @@ export const Component: React.FC<ComponentProps> = ({ title, count }) => {
 │   │   ├── TrustSection.tsx        # Testimonials
 │   │   ├── FAQSection.tsx          # FAQ accordion
 │   │   ├── TeamSection.tsx         # Team profiles
+│   │   ├── GuaranteeSection.tsx    # Trust guarantee badges
 │   │   ├── FinalCTASection.tsx     # Final CTA
 │   │   ├── StickyCTA.tsx           # Floating button
 │   │   ├── Footer.tsx              # Site footer
@@ -648,6 +649,24 @@ export interface TeamMember {
   image: string;      // Image URL (Unsplash or local)
   badgeColor: string; // Tailwind class for badge (e.g., "bg-primary")
 }
+```
+
+#### GuaranteeItem
+```typescript
+export interface GuaranteeItem {
+  title: string;           // Guarantee badge headline
+  description: string;     // Trust message description
+  iconBackground: string;  // Tailwind class for icon bg (e.g., "bg-blue-100")
+  iconColor: string;       // Tailwind class for icon color (e.g., "text-blue-600")
+}
+
+// Usage:
+const guaranteeBadge: GuaranteeItem = {
+  title: "CA Reviewed Filings",
+  description: "Every filing reviewed by qualified Chartered Accountants",
+  iconBackground: "bg-blue-100",
+  iconColor: "text-blue-600",
+};
 ```
 
 #### Testimonial
@@ -1439,6 +1458,20 @@ When updating agent.md, consider if other docs need updates:
 ---
 
 ## Changelog
+
+### [1.2.0] - 2026-01-26
+#### Added
+- GuaranteeSection component with 4 trust badges (CA Reviewed, User Approval, Tax Notice, Free Beta)
+- guaranteeBadges array in content.ts with badge data (title, description, iconBg, iconColor)
+- GuaranteeItem interface documentation for guarantee badge structure
+- Component positioned between TeamSection and FinalCTASection to reduce signup hesitation
+- Mobile-first responsive grid (2x2 on mobile, 4-column on desktop)
+- Staggered reveal animations (0.1s delay per badge)
+- Trust color scheme (blue/green/purple/gray) with matching icon containers
+
+#### Changed
+- Updated component count and directory layout to include GuaranteeSection
+- Enhanced conversion funnel with pre-CTA trust signals
 
 ### [1.1.0] - 2026-01-24
 #### Added

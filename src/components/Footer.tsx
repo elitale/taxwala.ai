@@ -18,18 +18,18 @@ export const Footer: React.FC = () => {
               <Logo className="w-8 h-8" />
               <span className="font-bold">TaxWala.ai</span>
             </div>
-            <span className="text-sm text-gray-600">© 2026 Elitale Softwares Pvt Ltd</span>
+            <span className="text-sm text-gray-600">© {(new Date()).getFullYear()} Elitale Softwares Pvt Ltd</span>
           </div>
 
           {/* Navigation Links */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
-            <FooterLink href="#" label="About" />
-            <FooterLink href="#" label="Contact" />
-            <FooterLink href="#" label="Privacy" />
-            <FooterLink href="#" label="Terms" />
+            <FooterLink href="https://elitale.com/about" label="About" />
+            <FooterLink href="https://elitale.com/contact" label="Contact" />
+            <FooterLink href="https://elitale.com/privacy" label="Privacy" />
+            <FooterLink href="https://elitale.com/terms" label="Terms" />
             <div className="flex items-center gap-4">
-              <SocialLink href="#" icon="twitter" />
-              <SocialLink href="#" icon="linkedin" />
+              {/* <SocialLink href="#" icon="twitter" /> */}
+              {/* <SocialLink href="#" icon="linkedin" /> */}
             </div>
           </div>
 
@@ -50,7 +50,7 @@ interface FooterLinkProps {
 }
 
 const FooterLink: React.FC<FooterLinkProps> = ({ href, label }) => (
-  <a href={href} className="text-gray-600 hover:text-gray-900 transition-colors">
+  <a href={href} target="_blank" className="text-gray-600 hover:text-gray-900 transition-colors">
     {label}
   </a>
 );
@@ -67,7 +67,7 @@ const SocialLink: React.FC<SocialLinkProps> = ({ href, icon }) => {
   };
 
   return (
-    <a href={href} className="text-gray-600 hover:text-gray-900 transition-colors" aria-label={`Link to ${icon}`}>
+    <a href={href} target="_blank" className="text-gray-600 hover:text-gray-900 transition-colors" aria-label={`Link to ${icon}`}>
       {icons[icon]}
     </a>
   );
