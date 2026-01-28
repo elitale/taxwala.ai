@@ -1,302 +1,40 @@
-# Details
-
-Perfect. Step 2 is the “brain” of your SaaS.
-
-Step 1 collects documents.
-Step 2 converts them into:
-	•	taxable income
-	•	tax liability
-	•	refund/payable
-	•	regime recommendation
-	•	ready-to-file numbers
-
-Let’s break Step 2 into clear phases (like a tax calculation pipeline).
-
-⸻
-
-Step 2: Calculate Tax (Multi-Phase Plan)
-
-Think of Step 2 as:
-
-Structured Data → Tax Engine → Final Payable/Refund
-
-⸻
-
-Phase 1: Normalize & Validate Input Data
-
-What happens first?
-
-Before calculation, clean everything.
-
-Inputs from Step 1:
-	•	Salary numbers (Form 16)
-	•	Interest (bank statement)
-	•	Gains (broker report)
-	•	Deductions (80C proofs)
-	•	AIS + 26AS data
-
-Actions:
-	•	Convert all values into standard fields
-	•	Remove duplicates (same income from multiple docs)
-	•	Validate missing required items
-
-Output:
-Clean income + deduction dataset
-
-⸻
-
-Phase 2: Income Categorization (IT Act Buckets)
-
-Now classify income under the 5 legal heads:
-	1.	Income from Salary
-	2.	Income from House Property
-	3.	Profits from Business/Profession
-	4.	Capital Gains
-	5.	Income from Other Sources
-
-Why this comes early:
-ITR forms + tax rules depend on correct head.
-
-Output:
-Income grouped properly
-
-⸻
-
-Phase 3: Compute Gross Total Income (GTI)
-
-Now sum up:
-
-Salary Income
-	•	House Property Income
-	•	Business Income
-	•	Capital Gains
-	•	Other Income
-= Gross Total Income
-
-This is the starting point for taxation.
-
-Output:
-Gross Total Income
-
-⸻
-
-Phase 4: Apply Exemptions (Before Deductions)
-
-Some income parts are exempt before deductions:
-
-Examples:
-	•	HRA exemption
-	•	LTA exemption
-	•	Agricultural income (partial)
-	•	Allowances under Form 16
-
-So calculation order is:
-
-Income → Exemptions → Net Income
-
-Output:
-Net Income after exemptions
-
-⸻
-
-Phase 5: Apply Standard Deduction & Salary Adjustments
-
-For salaried users:
-	•	Standard deduction ₹50,000
-	•	Professional tax (if applicable)
-
-This is automatic.
-
-Output:
-Adjusted salary income
-
-⸻
-
-Phase 6: Deduction Engine (Chapter VI-A)
-
-Now apply deductions:
-	•	80C (₹1.5L cap)
-	•	80D (health insurance)
-	•	80E (education loan)
-	•	80G (donations)
-	•	80CCD (NPS extra)
-
-Rule engine checks:
-	•	Eligibility
-	•	Limits
-	•	Proof uploaded
-
-Output:
-Total deductions applied
-
-⸻
-
-Phase 7: Taxable Income Calculation
-
-Now compute:
-
-Taxable Income = Net Income – Deductions
-
-Round off as per rules.
-
-Output:
-Final taxable income
-
-⸻
-
-Phase 8: Regime Comparison (Old vs New)
-
-Your SaaS should always compute both:
-
-Old Regime
-	•	Allows deductions
-	•	Higher slabs
-
-New Regime
-	•	Lower slabs
-	•	No major deductions
-
-System compares:
-
-Tax under Old
-vs
-Tax under New
-
-Then recommends:
-
-“Save ₹X by choosing New Regime”
-
-Output:
-Best regime suggestion
-
-⸻
-
-Phase 9: Slab Tax Computation
-
-Now apply slab rates:
-	•	0% up to threshold
-	•	Progressive slabs
-	•	Special rates for:
-	•	LTCG
-	•	STCG
-	•	Crypto (30%)
-
-Output:
-Base tax amount
-
-⸻
-
-Phase 10: Add Surcharge + Cess
-
-Add:
-	•	Surcharge (high income cases)
-	•	Health & Education cess (4%)
-
-Output:
-Total tax liability
-
-⸻
-
-Phase 11: Subtract Taxes Already Paid (Credits)
-
-Now adjust:
-	•	TDS (salary + bank)
-	•	Advance tax paid
-	•	Self assessment tax
-	•	TCS credits
-
-From Form 26AS
-
-Output:
-Net tax payable or refund
-
-⸻
-
-Phase 12: Refund or Payment Decision
-
-Final result:
-
-If tax paid > liability → Refund
-If liability > tax paid → Pay remaining tax
-
-System generates:
-	•	Refund estimate
-OR
-	•	Challan amount to pay
-
-Output:
-Final payable/refund
-
-⸻
-
-Phase 13: Compliance & Error Checks
-
-Before Step 3 filing:
-	•	AIS mismatch unresolved?
-	•	Missing TDS credit?
-	•	Wrong regime selected?
-	•	Deduction proofs missing?
-
-Show warnings:
-
-“Interest income in AIS not included”
-
-Output:
-Return ready for filing
-
-⸻
-
-Step 2 Final Output (For Step 3)
-
-At the end, SaaS produces:
-	•	Selected regime
-	•	Total income
-	•	Total deductions
-	•	Taxable income
-	•	Tax liability
-	•	TDS credits
-	•	Refund/payable
-	•	ITR-ready structured JSON fields
-
-⸻
-
-Step 2 Pipeline Summary
-	1.	Clean data
-	2.	Categorize income
-	3.	Compute GTI
-	4.	Apply exemptions
-	5.	Apply salary deductions
-	6.	Apply 80C/80D/etc
-	7.	Compute taxable income
-	8.	Compare regimes
-	9.	Slab tax calculation
-	10.	Add cess/surcharge
-	11.	Adjust TDS credits
-	12.	Refund/payable result
-	13.	Compliance validation
-
-⸻
-
-MVP Version (Salaried First)
-
-For TaxWala.ai MVP, Step 2 can be:
-	•	Salary from Form 16
-	•	Interest from AIS
-	•	80C + 80D
-	•	Old vs New comparison
-	•	Refund/payable output
-
-That covers 80% users.
-
-⸻
-
-If you want, I can now create:
-	1.	Mermaid flow diagram for Step 2
-	2.	Database calculation fields schema
-	3.	Rule engine pseudocode
-	4.	Exact tax slab + regime tables for FY 2025-26
-
-Just say “draw step 2 mermaid” or “give schema”.
+Step 2 is the tax engine. It turns structured inputs from Step 1 into a ready-to-file, regime-optimized return.
+
+What this doc covers
+- Purpose: deterministic tax computation that is explainable and auditable.
+- Audience: backend/infra for rules engine, frontend for review UI, QA for validation.
+- Outcome: taxable income, liability/refund, best-regime recommendation, and ITR-ready dataset.
+
+Success criteria
+- Inputs are normalized and deduped (salary, interest, gains, deductions, AIS/26AS).
+- Income is classified into the five heads before any math; downstream rules depend on it.
+- Old vs New regimes are both computed; recommendation is data-backed and overridable.
+- Credits from 26AS are applied before emitting payable/refund.
+- Compliance checks run; Step 3 receives a “return-ready” payload or blocking errors.
+
+Pipeline (build these phases as functions/jobs)
+1) Normalize and validate inputs: clean values, unify units, drop duplicates, block if required fields missing.
+2) Categorize income (5 heads): salary, house property, business/profession, capital gains, other sources.
+3) Compute Gross Total Income: sum of heads post-categorization.
+4) Apply exemptions: HRA, LTA, specific allowances, partial agri income; order is income → exemptions → net.
+5) Salary adjustments: standard deduction (50k) and professional tax where applicable.
+6) Deduction engine (VI-A): 80C/80D/80E/80G/80CCD with caps, eligibility, and proof checks.
+7) Taxable income: net income minus deductions; round per rules.
+8) Regime comparison: compute old vs new, record both numbers, propose savings delta, allow user override with reason.
+9) Slab and special-rate tax: progressive slabs plus LTCG/STCG/crypto special rates.
+10) Cess and surcharge: add surcharge where applicable; add 4% cess.
+11) Credit adjustment: subtract TDS/TCS, advance, and self-assessment tax from 26AS.
+12) Final review: emit payable/refund, surface AIS mismatches or missing proofs as blockers/warnings.
+
+Data contract to Step 3
+- Selected regime + both regime computations.
+- Income by head, total deductions, taxable income.
+- Tax liability pre/post credits; refund/payable value; challan info if payable.
+- Validation flags: mismatches, missing proofs, unresolved AIS items.
+
+MVP scope (salaried-first)
+- Inputs: Form 16 salary, AIS interest, 80C and 80D only.
+- Outputs: old vs new comparison, payable/refund, minimal mismatch warnings.
 
 # Flow diagram
 

@@ -1,212 +1,34 @@
-# Details
-
-Perfect. Step 4 is the real SaaS business.
-
-Most tax platforms stop after filing.
-
-Your SaaS wins if you own Step 4:
-	•	retention
-	•	subscription
-	•	trust
-	•	recurring revenue
-	•	compliance support
-
-Step 4 is basically:
-
-Post-Filing Relationship + Lifetime Tax Account
-
-Let’s break it down into clear phases.
-
-⸻
-
-Step 4: Post Filing Relationship (Multi-Phase Plan)
-
-Think of Step 4 as:
-
-Filed Return → Tracking → Support → Next Year Auto-Filing → Long-Term Customer
-
-⸻
-
-Phase 1: Filing Status Tracking (Immediately After Filing)
-
-Once ITR is filed + verified, user cares about:
-	•	Is it accepted?
-	•	Is refund coming?
-
-Your SaaS should show dashboard:
-	•	Filed ✔
-	•	Verified ✔
-	•	Processing ⏳
-
-Data points:
-	•	Acknowledgement number
-	•	Filing date
-	•	Current status
-
-⸻
-
-Phase 2: Refund Tracking & Updates
-
-If refund expected:
-	•	Refund amount
-	•	Refund initiation date
-	•	Bank credit status
-
-Notifications:
-	•	“Refund of ₹12,450 initiated”
-	•	“Refund credited successfully”
-
-This builds trust.
-
-⸻
-
-Phase 3: Notice & Compliance Monitoring (Biggest Value)
-
-Users fear one thing:
-
-Income Tax Notice.
-
-Your SaaS should provide:
-	•	Notice detection
-	•	Notice explanation
-	•	Response assistance
-
-Examples:
-	•	AIS mismatch notice
-	•	Defective return notice
-	•	Scrutiny notice
-
-This is premium retention feature.
-
-⸻
-
-Phase 4: Document Vault (Lifetime Storage)
-
-Store all user tax documents securely:
-	•	Form 16
-	•	AIS
-	•	Filed JSON
-	•	ITR-V PDF
-	•	Deduction proofs
-
-Next year benefit:
-No re-upload.
-
-This becomes their “Tax Locker”.
-
-⸻
-
-Phase 5: Next Year Auto-Fill & Continuity
-
-When next FY starts:
-
-System pre-fills:
-	•	Employer details
-	•	Past deductions
-	•	Carry-forward losses
-	•	Bank accounts
-
-User feels:
-“Tax filing becomes 5 minutes next year”
-
-This drives renewal.
-
-⸻
-
-Phase 6: Proactive Tax Planning (Year-Round Engagement)
-
-Instead of once-a-year filing:
-
-Your SaaS gives quarterly insights:
-	•	“Invest ₹25k in ELSS to save ₹7k tax”
-	•	“Advance tax due date approaching”
-	•	“High interest income detected”
-
-This turns filing into ongoing subscription.
-
-⸻
-
-Phase 7: Renewal & Subscription Layer
-
-At the end of filing season:
-
-Offer:
-	•	Basic: DIY filing
-	•	Pro: CA review
-	•	Premium: Notice protection + ERI filing
-
-Renewal triggers:
-	•	“Your next filing is due in June”
-	•	“Continue plan for auto-filing”
-
-⸻
-
-Phase 8: Support + CA Relationship (Hybrid Model)
-
-Since you have CA partners:
-
-Step 4 includes:
-	•	Chat support
-	•	CA consultation add-on
-	•	Document review service
-
-This is where monetization grows.
-
-⸻
-
-Phase 9: Insights Dashboard (User Tax Health)
-
-Show user:
-	•	Total income trend
-	•	Tax paid trend
-	•	Refund history
-	•	Compliance score
-
-Makes platform sticky.
-
-⸻
-
-Phase 10: Re-engagement Loop
-
-Your SaaS should bring user back with:
-	•	ITR due date reminders
-	•	Investment deadline alerts
-	•	Notice monitoring
-	•	Auto-filled next year return
-
-End result:
-User never leaves.
-
-⸻
-
-Step 4 Summary Pipeline
-	1.	Filing status tracking
-	2.	Refund tracking
-	3.	Notice monitoring & support
-	4.	Secure document vault
-	5.	Next-year auto-fill
-	6.	Year-round tax planning
-	7.	Subscription renewal
-	8.	CA support layer
-	9.	Tax insights dashboard
-	10.	Re-engagement loop
-
-⸻
-
-SaaS MVP Step 4 (Start Simple)
-
-For TaxWala.ai MVP, do just:
-
-✅ Store ITR-V + JSON
-✅ Refund tracker
-✅ Next-year auto-fill
-✅ Notice alert email
-
-That alone creates retention.
-
-⸻
-
-If you want, I can now draw the Step 4 Mermaid flow diagram as well.
+Step 4 is the retention engine. Own the post-filing relationship so users return automatically next year.
+
+What this doc covers
+- Purpose: post-filing lifecycle—tracking, notices, storage, renewals, and proactive planning.
+- Audience: product for retention design, backend for notices/storage, frontend for dashboard/alerts, QA for status flows.
+- Outcome: engaged, retained user with next-year auto-fill ready and ongoing subscription value.
+
+Success criteria
+- Filing/refund status is visible and accurate right after Step 3; acknowledgement data is present.
+- Notice monitoring and guidance exist; users know what to do next with help/CA escalation.
+- Documents are stored securely and reusable next year; uploads are not requested twice.
+- Next-year draft is prefilled; renewal prompts fire before filing season.
+- Users receive proactive tax nudges (planning and due-date alerts), not just afterthought emails.
+
+Phase plan
+1) Status tracking: show Filed/Verified/Processing with ack number, filing date, and current portal status.
+2) Refund tracking: expected amount, initiation date, credited status; send notifications on changes.
+3) Notice monitoring: poll/ingest IT portal notices; classify (mismatch, defective, scrutiny); offer guidance and CA handoff.
+4) Document vault: store Form 16, AIS, proofs, filed JSON, ITR-V; ensure secure access and download.
+5) Next-year continuity: carry forward profile, banks, deductions, carry-forward losses; prefill draft when new FY opens.
+6) Proactive planning: quarterly insights, advance-tax reminders, income-change alerts with actionable suggestions.
+7) Subscription and renewal: plans (Basic/Pro/Premium), renewal nudges ahead of season, upsell notice protection and CA review.
+8) Support layer: in-app chat/tickets; CA consultation add-ons; track resolution to drive trust.
+
+Data contract from Step 3
+- Filing status, verification status, acknowledgement number/date, refund expectation.
+- Artefacts: filed JSON, ITR-V PDF, proofs, carry-forward loss metadata, regime chosen.
+- Submission mode (self/ERI) and payment/refund indicators.
+
+MVP scope
+- Store ITR-V + JSON, refund tracker, next-year prefill, notice alert email. Add dashboards and CA workflows later.
 
 # Flowdiagram
 
