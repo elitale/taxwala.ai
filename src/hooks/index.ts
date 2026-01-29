@@ -4,6 +4,12 @@
 
 import { useEffect, useState } from "react";
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 export const useScrollDetection = (threshold: number = 800) => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
@@ -89,4 +95,134 @@ export const useSmoothScroll = () => {
     anchors.forEach((a) => a.addEventListener("click", handler as EventListener));
     return () => anchors.forEach((a) => a.removeEventListener("click", handler as EventListener));
   }, []);
+};
+
+/**
+ * Google Tag Manager Tracking Hook
+ * Provides tracking methods for user interactions
+ * 
+ * IMPORTANT: window.gtag must be available (loaded from GTM script in BaseLayout.astro)
+ */
+export const useGTMTracking = () => {
+  const trackMetaEvent = (event: string, payload?: Record<string, unknown>) => {
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("trackCustom", event, payload || {});
+    }
+  };
+
+  // Track button clicks
+  const trackButtonClick = (buttonName: string, section?: string) => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "button_click", {
+        button_name: buttonName,
+        section_name: section || "general",
+        timestamp: new Date().toISOString(),
+      });
+    }
+
+    trackMetaEvent("button_click", {
+      button_name: buttonName,
+      section_name: section || "general",
+    });
+  };
+
+  // Track form submissions
+  const trackFormSubmit = (formName: string, additionalData?: Record<string, any>) => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "form_submit", {
+        form_name: formName,
+        ...additionalData,
+        timestamp: new Date().toISOString(),
+      });
+    }
+
+    trackMetaEvent("form_submit", {
+      form_name: formName,
+      ...(additionalData || {}),
+    });
+  };
+
+  // Track section views
+  const trackSectionView = (sectionName: string) => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "section_view", {
+        section_name: sectionName,
+        timestamp: new Date().toISOString(),
+      });
+    }
+
+    trackMetaEvent("section_view", {
+      section_name: sectionName,
+    });
+  };
+
+  // Track video plays
+  const trackVideoPlay = (videoId: string, videoTitle: string) => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "video_play", {
+        video_id: videoId,
+        video_title: videoTitle,
+        timestamp: new Date().toISOString(),
+      });
+    }
+
+    trackMetaEvent("video_play", {
+      video_id: videoId,
+      video_title: videoTitle,
+    });
+  };
+
+  // Track modal opens
+  const trackModalOpen = (modalName: string) => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "modal_open", {
+        modal_name: modalName,
+        timestamp: new Date().toISOString(),
+      });
+    }
+
+    trackMetaEvent("modal_open", {
+      modal_name: modalName,
+    });
+  };
+
+  // Track modal closes
+  const trackModalClose = (modalName: string) => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "modal_close", {
+        modal_name: modalName,
+        timestamp: new Date().toISOString(),
+      });
+    }
+
+    trackMetaEvent("modal_close", {
+      modal_name: modalName,
+    });
+  };
+
+  // Track external link clicks
+  const trackExternalLink = (url: string, linkText?: string) => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "external_link_click", {
+        link_url: url,
+        link_text: linkText || "unnamed",
+        timestamp: new Date().toISOString(),
+      });
+    }
+
+    trackMetaEvent("external_link_click", {
+      link_url: url,
+      link_text: linkText || "unnamed",
+    });
+  };
+
+  return {
+    trackButtonClick,
+    trackFormSubmit,
+    trackSectionView,
+    trackVideoPlay,
+    trackModalOpen,
+    trackModalClose,
+    trackExternalLink,
+  };
 };

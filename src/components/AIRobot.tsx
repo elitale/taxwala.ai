@@ -91,6 +91,10 @@ export const AIRobot: React.FC = () => {
     };
   }, [robotSize]);
 
+  if(!animationData){
+    return (<></>)
+  }
+
   return (
     <div 
       className="fixed z-50 pointer-events-none will-change-transform"

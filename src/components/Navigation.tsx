@@ -8,6 +8,7 @@ import type { NavLink } from "../types/index";
 import { MenuIcon, CloseIcon } from "./icons";
 import { Logo } from "./Logo";
 import { TALLY_FORM_URL } from "../constants/config";
+import { useGTMTracking } from "../hooks";
 
 interface NavigationProps {
   navLinks?: NavLink[];
@@ -15,8 +16,13 @@ interface NavigationProps {
 
 export const Navigation: React.FC<NavigationProps> = ({ navLinks }) => {
   const [isMobileOpen, setIsMobileOpen] = useState<boolean>(false);
+  const { trackButtonClick } = useGTMTracking();
 
   const handleMobileMenuClose = () => setIsMobileOpen(false);
+
+  const handleNavClick = (label: string) => {
+    trackButtonClick(label, 'navigation');
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
@@ -34,6 +40,7 @@ export const Navigation: React.FC<NavigationProps> = ({ navLinks }) => {
               <a
                 key={link.href}
                 href={link.href}
+                onClick={() => handleNavClick(link.label)}
                 className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
               >
                 {link.label}
@@ -59,7 +66,10 @@ export const Navigation: React.FC<NavigationProps> = ({ navLinks }) => {
               <a
                 key={link.href}
                 href={link.href}
-                onClick={handleMobileMenuClose}
+                onClick={() => {
+                  handleNavClick(link.label);
+                  handleMobileMenuClose();
+                }}
                 className="block text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
               >
                 {link.label}
@@ -77,13 +87,22 @@ interface NavigationCTAProps {
   fullWidth?: boolean;
 }
 
-const NavigationCTA: React.FC<NavigationCTAProps> = ({ fullWidth = false }) => (
-  <button
-    className={`cta-button bg-primary text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-700 transition-all shadow-sm ${
-      fullWidth ? "w-full" : ""
-    }`}
-    onClick={() => window.location.href = TALLY_FORM_URL}
-  >
-    Join Waitlist
-  </button>
-);
+const NavigationCTA: React.FC<NavigationCTAProps> = ({ fullWidth = false }) => {
+  const { trackButtonClick } = useGTMTracking();
+
+  const handleJoinWaitlist = () => {
+    trackButtonClick('Join Waitlist', 'navigation');
+    window.location.href = TALLY_FORM_URL;
+  };
+
+  return (
+    <button
+      className={`cta-button bg-primary text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-700 transition-all shadow-sm ${
+        fullWidth ? "w-full" : ""
+      }`}
+      onClick={handleJoinWaitlist}
+    >
+      Join Waitlist
+    </button>
+  );
+};

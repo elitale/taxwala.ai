@@ -39,7 +39,7 @@ export const ProblemSection: React.FC = () => {
               </div>
               <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 max-w-xs">
                 <p className="text-sm font-semibold text-gray-900">
-                  "I spent 3 weeks just organizing receipts for GST filing. Never again."
+                  "I spent 3 weeks just organizing receipts for ITR filing. Never again."
                 </p>
                 <p className="text-xs text-gray-600 mt-2">— Typical Business Owner</p>
               </div>

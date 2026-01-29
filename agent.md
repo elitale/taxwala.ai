@@ -564,6 +564,100 @@ export function useSmoothScroll(): void {
 useSmoothScroll();
 ```
 
+## useGTMTracking Hook
+
+### Purpose
+Centralized Google Tag Manager tracking interface for all user interactions. This hook provides methods to track button clicks, form submissions, section views, video plays, modal interactions, and external link clicks.
+
+### Import
+```typescript
+import { useGTMTracking } from '@/hooks';
+```
+
+### Methods
+
+#### trackButtonClick(buttonName: string, section?: string)
+Track CTA button clicks across the page.
+```typescript
+const { trackButtonClick } = useGTMTracking();
+
+// In button click handler
+const handleJoinWaitlist = () => {
+  trackButtonClick('Join Waitlist', 'hero');
+  // ... button action
+};
+```
+
+#### trackFormSubmit(formName: string, additionalData?: Record<string, any>)
+Track form submissions with optional metadata.
+```typescript
+const { trackFormSubmit } = useGTMTracking();
+
+const handleFormSubmit = (data: any) => {
+  trackFormSubmit('contact_form', { fields: Object.keys(data) });
+};
+```
+
+#### trackSectionView(sectionName: string)
+Track when sections come into view via ScrollTrigger or IntersectionObserver.
+```typescript
+const { trackSectionView } = useGTMTracking();
+trackSectionView('pricing');
+```
+
+#### trackVideoPlay(videoId: string, videoTitle: string)
+Track video play interactions.
+```typescript
+const { trackVideoPlay } = useGTMTracking();
+videoRef.addEventListener('play', () => trackVideoPlay('video123', 'TaxWala Demo'));
+```
+
+#### trackModalOpen(modalName: string) / trackModalClose(modalName: string)
+Track modal lifecycle events.
+```typescript
+const { trackModalOpen, trackModalClose } = useGTMTracking();
+
+const handleOpenModal = () => {
+  trackModalOpen('video_modal');
+  setIsOpen(true);
+};
+
+const handleCloseModal = () => {
+  trackModalClose('video_modal');
+  setIsOpen(false);
+};
+```
+
+#### trackExternalLink(url: string, linkText: string)
+Track external link clicks.
+```typescript
+const { trackExternalLink } = useGTMTracking();
+
+const handleExternalLink = (url: string, text: string) => {
+  trackExternalLink(url, text);
+  window.open(url, '_blank');
+};
+```
+
+### Event Structure
+All events automatically include:
+- `timestamp`: ISO 8601 timestamp of the event
+- `section_name`: Context of where the event occurred (default: 'general')
+- Event-specific metadata (buttonName, formName, videoId, etc.)
+
+### Critical Rules
+⚠️ **IMPORTANT: ALL BUTTONS AND INTERACTIVE ELEMENTS MUST USE THIS HOOK FOR ANALYTICS**
+- Use `useGTMTracking` on every possible page and section to capture user behavior across the entire website.
+- Every CTA button must call `trackButtonClick()` with section context
+- Form submissions must call `trackFormSubmit()`
+- Video interactions must call `trackVideoPlay()`
+- Modal interactions must call `trackModalOpen()` / `trackModalClose()`
+- External links must call `trackExternalLink()`
+- This is a mandatory requirement for all future interactive components
+
+### GTM Configuration
+GTM script is injected in `BaseLayout.astro` with placeholder ID `GTM-XXXXXXX`. Replace with actual Google Tag Manager ID when available.
+
 ## Type Definitions
 
 ### Interface vs Type

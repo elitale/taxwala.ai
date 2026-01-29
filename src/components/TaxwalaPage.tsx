@@ -7,10 +7,12 @@ import React from "react";
 import {
   Navigation,
   AIRobot,
+  PageFlipSection,
   HeroSection,
   ProblemSection,
   HowItWorksSection,
   BenefitsSection,
+  PricingSection,
   TrustSection,
   FAQSection,
   TeamSection,
@@ -33,6 +35,7 @@ const TaxwalaPage: React.FC = () => {
   const navLinks: NavLink[] = [
     { label: "How It Works", href: "#how-it-works" },
     { label: "Benefits", href: "#benefits" },
+    { label: "Pricing", href: "#pricing" },
     { label: "FAQ", href: "#faq" },
   ];
 
@@ -50,36 +53,59 @@ const TaxwalaPage: React.FC = () => {
       {/* Main Content */}
       <main>
         {/* Hero Section */}
-        <HeroSection
-          isModalOpen={isModalOpen}
-          onModalOpen={openModal}
-          onModalClose={closeModal}
-          videoId={videoId}
-        />
+        <PageFlipSection pageColor="#fefce8" delay={0}>
+          <HeroSection
+            isModalOpen={isModalOpen}
+            onModalOpen={openModal}
+            onModalClose={closeModal}
+            videoId={videoId}
+          />
+        </PageFlipSection>
 
         {/* Problem Statement Section */}
-        <ProblemSection />
+        <PageFlipSection pageColor="#fef3c7" delay={0.1}>
+          <ProblemSection />
+        </PageFlipSection>
 
         {/* How It Works Section */}
-        <HowItWorksSection />
+        <PageFlipSection pageColor="#fefce8" delay={0.2}>
+          <HowItWorksSection />
+        </PageFlipSection>
 
         {/* Benefits Section */}
-        <BenefitsSection />
+        <PageFlipSection pageColor="#fffbeb" delay={0.1}>
+          <BenefitsSection />
+        </PageFlipSection>
+
+        {/* Pricing Section */}
+        <PageFlipSection pageColor="#eff6ff" delay={0.15}>
+          <PricingSection />
+        </PageFlipSection>
 
         {/* Trust & Security Section */}
-        <TrustSection />
+        <PageFlipSection pageColor="#fef3c7" delay={0.15}>
+          <TrustSection />
+        </PageFlipSection>
 
         {/* FAQ Section */}
-        <FAQSection />
+        <PageFlipSection pageColor="#fefce8" delay={0.1}>
+          <FAQSection />
+        </PageFlipSection>
 
         {/* Team Section */}
-        <TeamSection />
+        <PageFlipSection pageColor="#fffbeb" delay={0.2}>
+          <TeamSection />
+        </PageFlipSection>
 
         {/* Guarantee Section */}
-        <GuaranteeSection />
+        <PageFlipSection pageColor="#fef3c7" delay={0.1}>
+          <GuaranteeSection />
+        </PageFlipSection>
 
         {/* Final CTA Section */}
-        <FinalCTASection />
+        <PageFlipSection pageColor="#fefce8" delay={0.15}>
+          <FinalCTASection />
+        </PageFlipSection>
 
         {/* Sticky CTA Button */}
         <StickyCTA isVisible={isStickyVisible} />

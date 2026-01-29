@@ -15,6 +15,7 @@ import {
   LockIcon,
 } from "./icons";
 import { TALLY_FORM_URL } from "../constants/config";
+import { useGTMTracking } from "../hooks";
 
 interface HeroSectionProps {
   isModalOpen: boolean;
@@ -29,6 +30,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   onModalClose,
   videoId,
 }) => {
+  const { trackButtonClick, trackVideoPlay } = useGTMTracking();
+
+  const handleJoinWaitlist = () => {
+    trackButtonClick('Request Early Access', 'hero');
+    window.location.href = TALLY_FORM_URL;
+  };
+
+  const handleVideoClick = () => {
+    trackVideoPlay(videoId, 'TaxWala Demo');
+    onModalOpen();
+  };
   return (
     <>
       <section className="pt-32 pb-20 px-6 relative overflow-hidden">
@@ -57,7 +69,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
 
           {/* Video Preview */}
-          <VideoPreview onVideoClick={onModalOpen} />
+          <VideoPreview onVideoClick={handleVideoClick} />
 
           {/* User Avatars & Social Proof */}
           <UserProof />
@@ -69,7 +81,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="flex justify-center mt-12 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             <button
               className="cta-button bg-primary text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl hover:scale-105"
-              onClick={() => window.location.href = TALLY_FORM_URL}
+              onClick={handleJoinWaitlist}
             >
               Request Early Access →
             </button>

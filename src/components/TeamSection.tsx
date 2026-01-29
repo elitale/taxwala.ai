@@ -35,7 +35,7 @@ export const TeamSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 px-6 bg-white">
+    <section className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 reveal-on-scroll">

@@ -44,7 +44,7 @@ export const FAQSection: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-24 px-6 bg-gray-50">
+    <section id="faq" className="py-24 px-6">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <div className="flex items-center gap-4 mb-12 reveal-on-scroll">

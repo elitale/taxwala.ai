@@ -5,11 +5,13 @@
 export { Logo } from "./Logo";
 export { Navigation } from "./Navigation";
 export { AIRobot } from "./AIRobot";
+export { PageFlipSection } from "./PageFlipSection";
 export { HeroSection } from "./HeroSection";
 export { VideoModal } from "./VideoModal";
 export { ProblemSection } from "./ProblemSection";
 export { HowItWorksSection } from "./HowItWorksSection";
 export { BenefitsSection } from "./BenefitsSection";
+export { PricingSection } from "./PricingSection";
 export { TrustSection } from "./TrustSection";
 export { FAQSection } from "./FAQSection";
 export { TeamSection } from "./TeamSection";

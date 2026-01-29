@@ -6,8 +6,15 @@
 import React from "react";
 import { ClockIcon, CalendarIcon } from "./icons";
 import { TALLY_FORM_URL } from "../constants/config";
+import { useGTMTracking } from "../hooks";
 
 export const FinalCTASection: React.FC = () => {
+  const { trackButtonClick } = useGTMTracking();
+
+  const handleSecureSpot = () => {
+    trackButtonClick('Secure Your Spot Now', 'final_cta');
+    window.location.href = TALLY_FORM_URL;
+  };
   return (
     <section className="py-32 px-6 relative overflow-hidden">
       {/* Background Pattern */}
@@ -46,7 +53,7 @@ export const FinalCTASection: React.FC = () => {
         <button
           className="cta-button bg-white text-primary px-12 py-5 rounded-full text-xl font-bold hover:bg-gray-100 transition-all shadow-2xl hover:shadow-3xl hover:scale-105 reveal-on-scroll"
           style={{ animationDelay: "0.3s" }}
-          onClick={() => window.location.href = TALLY_FORM_URL}
+          onClick={handleSecureSpot}
         >
           Secure Your Spot Now →
         </button>
