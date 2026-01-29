@@ -6,6 +6,7 @@
 import React from "react";
 import {
   Navigation,
+  AIRobot,
   HeroSection,
   ProblemSection,
   HowItWorksSection,
@@ -42,6 +43,9 @@ const TaxwalaPage: React.FC = () => {
     <>
       {/* Navigation */}
       <Navigation navLinks={navLinks} />
+
+      {/* AI Robot Assistant */}
+      <AIRobot />
 
       {/* Main Content */}
       <main>

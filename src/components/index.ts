@@ -4,6 +4,7 @@
 
 export { Logo } from "./Logo";
 export { Navigation } from "./Navigation";
+export { AIRobot } from "./AIRobot";
 export { HeroSection } from "./HeroSection";
 export { VideoModal } from "./VideoModal";
 export { ProblemSection } from "./ProblemSection";
