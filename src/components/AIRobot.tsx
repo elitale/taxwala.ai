@@ -7,6 +7,30 @@
 import React, { useState, useEffect } from "react";
 import Lottie from "lottie-react";
 
+// TypeScript declarations for Zoho SalesIQ
+declare global {
+  interface Window {
+    $zoho?: {
+      salesiq?: {
+        floatbutton: {
+          visible: (action: "show" | "hide") => void;
+        };
+        floatwindow: {
+          visible: (action: "show" | "hide") => void;
+        };
+        ready: (callback: () => void) => void;
+        bind?: {
+          event?: {
+            chatwindow?: {
+              close?: (callback: () => void) => void;
+            };
+          };
+        };
+      };
+    };
+  }
+}
+
 export const AIRobot: React.FC = () => {
   const [animationData, setAnimationData] = useState(null);
   const [robotPosition, setRobotPosition] = useState({ x: 0, y: 16 });
@@ -19,6 +43,58 @@ export const AIRobot: React.FC = () => {
       .then((data) => setAnimationData(data))
       .catch((error) => console.error("Error loading animation:", error));
   }, []);
+
+  // Hide Zoho chat widget by default on load and set up event listeners
+  useEffect(() => {
+    const setupZohoWidget = () => {
+      if (window.$zoho?.salesiq) {
+        // Hide widget by default
+        window.$zoho.salesiq.floatbutton.visible("hide");
+        window.$zoho.salesiq.floatwindow.visible("hide");
+        
+        // Set up close event listener using ready callback
+        window.$zoho.salesiq.ready(() => {
+          if (window.$zoho?.salesiq?.bind?.event?.chatwindow?.close) {
+            window.$zoho.salesiq.bind.event.chatwindow.close(() => {
+              if (window.$zoho?.salesiq) {
+                window.$zoho.salesiq.floatbutton.visible("hide");
+                window.$zoho.salesiq.floatwindow.visible("hide");
+              }
+            });
+          }
+        });
+        
+        return true;
+      }
+      return false;
+    };
+
+    // Try immediately
+    if (setupZohoWidget()) {
+      return;
+    }
+
+    // Retry until Zoho loads (with timeout)
+    let attempts = 0;
+    const maxAttempts = 50; // 5 seconds
+    const interval = setInterval(() => {
+      attempts++;
+      if (setupZohoWidget() || attempts >= maxAttempts) {
+        clearInterval(interval);
+      }
+    }, 100);
+
+    // Cleanup
+    return () => clearInterval(interval);
+  }, []);
+
+  // Handle robot click to open Zoho chat
+  const handleRobotClick = () => {
+    if (window.$zoho?.salesiq) {
+      window.$zoho.salesiq.floatbutton.visible("show");
+      window.$zoho.salesiq.floatwindow.visible("show");
+    }
+  };
 
   // Update robot size based on screen size
   useEffect(() => {
@@ -106,7 +182,19 @@ export const AIRobot: React.FC = () => {
       }}
     >
       {/* Robot Container with floating animation */}
-      <div className="relative animate-float">
+      <div 
+        className="relative animate-float pointer-events-auto cursor-pointer"
+        onClick={handleRobotClick}
+        role="button"
+        aria-label="Open chat support"
+        tabIndex={0}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            handleRobotClick();
+          }
+        }}
+      >
         {/* Glow effect */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-cyan-400/20 rounded-full blur-2xl animate-pulse"></div>
         

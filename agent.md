@@ -1543,15 +1543,39 @@ When updating agent.md, consider if other docs need updates:
 
 ---
 
-**Last Updated**: January 24, 2026  
+**Last Updated**: January 30, 2026  
 **Maintained By**: AI Agents working on TaxWala.ai  
-**Version**: 1.1.0
+**Version**: 1.3.0
 
 **Update Protocol**: This file MUST be updated with every code change. No exceptions.
 
 ---
 
 ## Changelog
+
+### [1.3.0] - 2026-01-30
+#### Added
+- Zoho SalesIQ chat widget integration with AIRobot component
+- Custom chat trigger functionality - robot click opens Zoho widget
+- Auto-hide on chat window close functionality
+- TypeScript declarations for Zoho SalesIQ API (window.$zoho.salesiq)
+- Event listener for chatwindow.close event to hide widget
+- Robot click handler with keyboard accessibility (Enter/Space keys)
+- Pointer-events-auto and cursor-pointer classes for clickable robot
+
+#### Changed
+- AIRobot component now controls Zoho chat widget visibility
+- Default Zoho chat button hidden by default
+- Robot acts as custom chat widget trigger with improved UX
+- Enhanced TypeScript types with optional chaining for Zoho API
+- Improved initialization with retry logic (50 attempts, 100ms interval)
+
+#### Technical Details
+- Zoho widget hidden on page load using floatbutton.visible("hide") and floatwindow.visible("hide")
+- Click handler shows widget using visible("show") method
+- Event binding uses window.$zoho.salesiq.ready() callback with chatwindow.close listener
+- All Zoho API calls protected with optional chaining (?.) for type safety
+- No type errors, fully TypeScript compliant
 
 ### [1.2.0] - 2026-01-26
 #### Added
