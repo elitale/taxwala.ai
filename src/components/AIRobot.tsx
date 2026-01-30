@@ -167,8 +167,8 @@ export const AIRobot: React.FC = () => {
     };
   }, [robotSize]);
 
-  if(!animationData){
-    return (<></>)
+  if (!animationData) {
+    return null;
   }
 
   return (

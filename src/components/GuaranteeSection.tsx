@@ -33,18 +33,30 @@ export const GuaranteeSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {guaranteeBadges.map((badge, index) => {
             const IconComponent = icons[index];
+            const isCABadge = index === 0; // First badge is "CA Reviewed Filings"
+            
             return (
               <div
                 key={index}
                 className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-lg transition-shadow reveal-on-scroll"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {/* Icon Container */}
-                <div
-                  className={`w-12 h-12 ${badge.iconBg} rounded-xl flex items-center justify-center mb-4`}
-                >
-                  <IconComponent className={`w-6 h-6 ${badge.iconColor}`} />
-                </div>
+                {/* Icon or Professional Logo */}
+                {isCABadge ? (
+                  <div className="w-16 h-16 mb-4 flex items-center justify-center">
+                    <img 
+                      src="/ca-logo.png" 
+                      alt="CA Institute of India"
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                ) : (
+                  <div
+                    className={`w-12 h-12 ${badge.iconBg} rounded-xl flex items-center justify-center mb-4`}
+                  >
+                    <IconComponent className={`w-6 h-6 ${badge.iconColor}`} />
+                  </div>
+                )}
 
                 {/* Badge Content */}
                 <h3 className="text-lg font-bold mb-2 leading-tight">
