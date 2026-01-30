@@ -47,26 +47,49 @@ export const AIRobot: React.FC = () => {
   // Hide Zoho chat widget by default on load and set up event listeners
   useEffect(() => {
     const setupZohoWidget = () => {
-      if (window.$zoho?.salesiq) {
-        // Hide widget by default
-        window.$zoho.salesiq.floatbutton.visible("hide");
-        window.$zoho.salesiq.floatwindow.visible("hide");
-        
-        // Set up close event listener using ready callback
-        window.$zoho.salesiq.ready(() => {
-          if (window.$zoho?.salesiq?.bind?.event?.chatwindow?.close) {
-            window.$zoho.salesiq.bind.event.chatwindow.close(() => {
-              if (window.$zoho?.salesiq) {
-                window.$zoho.salesiq.floatbutton.visible("hide");
-                window.$zoho.salesiq.floatwindow.visible("hide");
+      try {
+        // Check if Zoho widget is available
+        if (!window.$zoho?.salesiq) {
+          return false;
+        }
+
+        const zoho = window.$zoho.salesiq;
+
+        // Safely hide widget - check if methods exist before calling
+        if (zoho.floatbutton?.visible) {
+          zoho.floatbutton.visible("hide");
+        }
+        if (zoho.floatwindow?.visible) {
+          zoho.floatwindow.visible("hide");
+        }
+
+        // Set up close event listener safely
+        if (typeof zoho.ready === "function") {
+          zoho.ready(() => {
+            try {
+              if (window.$zoho?.salesiq?.bind?.event?.chatwindow?.close) {
+                window.$zoho.salesiq.bind.event.chatwindow.close(() => {
+                  if (window.$zoho?.salesiq) {
+                    if (window.$zoho.salesiq.floatbutton?.visible) {
+                      window.$zoho.salesiq.floatbutton.visible("hide");
+                    }
+                    if (window.$zoho.salesiq.floatwindow?.visible) {
+                      window.$zoho.salesiq.floatwindow.visible("hide");
+                    }
+                  }
+                });
               }
-            });
-          }
-        });
-        
+            } catch (e) {
+              console.debug("Zoho event binding failed:", e);
+            }
+          });
+        }
+
         return true;
+      } catch (error) {
+        console.debug("Zoho widget setup error:", error);
+        return false;
       }
-      return false;
     };
 
     // Try immediately
@@ -90,9 +113,17 @@ export const AIRobot: React.FC = () => {
 
   // Handle robot click to open Zoho chat
   const handleRobotClick = () => {
-    if (window.$zoho?.salesiq) {
-      window.$zoho.salesiq.floatbutton.visible("show");
-      window.$zoho.salesiq.floatwindow.visible("show");
+    try {
+      if (window.$zoho?.salesiq) {
+        if (window.$zoho.salesiq.floatbutton?.visible) {
+          window.$zoho.salesiq.floatbutton.visible("show");
+        }
+        if (window.$zoho.salesiq.floatwindow?.visible) {
+          window.$zoho.salesiq.floatwindow.visible("show");
+        }
+      }
+    } catch (error) {
+      console.debug("Robot click error:", error);
     }
   };
 

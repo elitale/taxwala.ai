@@ -67,6 +67,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               AI-powered tax automation for Indian businesses. Connect your bank, upload receipts, and let our AI
               handle the rest. <span className="font-semibold text-gray-900">Zero fees. Zero hassle.</span>
             </p>
+            {/* Salaried Focus Clarity */}
+            <p className="text-sm font-medium text-primary mt-6 bg-blue-50 py-3 px-6 rounded-full inline-block">
+              Built for salaried professionals with Form 16 income. Scaling to freelancers & businesses later.
+            </p>
           </div>
 
           {/* Video Preview */}

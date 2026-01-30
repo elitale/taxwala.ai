@@ -9,9 +9,13 @@ import {
   AIRobot,
   PageFlipSection,
   HeroSection,
+  VideoModal,
+  MoneyAuditSection,
   ProblemSection,
   HowItWorksSection,
   BenefitsSection,
+  FeatureComparison,
+  PostFilingLifecycle,
   PricingSection,
   TrustSection,
   FAQSection,
@@ -62,6 +66,20 @@ const TaxwalaPage: React.FC = () => {
           />
         </PageFlipSection>
 
+        {/* Money Audit Section (Value Exchange) */}
+        <MoneyAuditSection />
+
+        {/* Benefits Section */}
+        <PageFlipSection pageColor="#fffbeb" delay={0.1}>
+          <BenefitsSection />
+        </PageFlipSection>
+
+        {/* Feature Comparison Section */}
+        <FeatureComparison />
+
+        {/* Post-Filing Lifecycle Section */}
+        <PostFilingLifecycle />
+
         {/* Problem Statement Section */}
         <PageFlipSection pageColor="#fef3c7" delay={0.1}>
           <ProblemSection />
@@ -70,11 +88,6 @@ const TaxwalaPage: React.FC = () => {
         {/* How It Works Section */}
         <PageFlipSection pageColor="#fefce8" delay={0.2}>
           <HowItWorksSection />
-        </PageFlipSection>
-
-        {/* Benefits Section */}
-        <PageFlipSection pageColor="#fffbeb" delay={0.1}>
-          <BenefitsSection />
         </PageFlipSection>
 
         {/* Pricing Section */}

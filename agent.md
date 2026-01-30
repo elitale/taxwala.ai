@@ -77,9 +77,12 @@ export const Component: React.FC<ComponentProps> = ({ title, count }) => {
 │   │   ├── Navigation.tsx          # Fixed header
 │   │   ├── HeroSection.tsx         # Hero with video
 │   │   ├── VideoModal.tsx          # YouTube modal
+│   │   ├── MoneyAuditSection.tsx   # Salaried value-exchange moments
 │   │   ├── ProblemSection.tsx      # Problem statement
 │   │   ├── HowItWorksSection.tsx   # 3-step process
-│   │   ├── BenefitsSection.tsx     # 6 benefits
+│   │   ├── BenefitsSection.tsx     # Salaried-specific benefits
+│   │   ├── FeatureComparison.tsx   # Salaried vs competitors table
+│   │   ├── PostFilingLifecycle.tsx # Step 4 post-filing lifecycle
 │   │   ├── TrustSection.tsx        # Testimonials
 │   │   ├── FAQSection.tsx          # FAQ accordion
 │   │   ├── TeamSection.tsx         # Team profiles
@@ -329,6 +332,73 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 const handleToggle = (index: number) => {
   // Toggle logic with parameter
 };
+```
+
+## New Components (Salaried Value-First Focus)
+
+### MoneyAuditSection
+**Purpose**: Display salaried-specific value-exchange moments showing exact deductions found by real professionals.
+
+**Location**: `src/components/MoneyAuditSection.tsx`
+
+**Props**: None (uses `moneyAuditScenarios` from content.ts)
+
+**Structure**:
+- Header with main heading and subtext
+- Grid of 4 salaried profession cards (mobile: 1 col, tablet: 2 cols)
+- Each card shows: profession, income bracket, deductions found, context
+- CTA button: "Get Your Money Audit (2 min)"
+
+**Smartlead Principle**: Gets users to value-exchange moment as soon as possible (above benefits section)
+
+**Usage in TaxwalaPage**:
+```typescript
+// Added right after HeroSection
+<MoneyAuditSection />
+```
+
+### FeatureComparison
+**Purpose**: Salaried-focused feature comparison table (TaxWala vs ClearTax/Quicko/TaxBuddy) without pricing.
+
+**Location**: `src/components/FeatureComparison.tsx`
+
+**Props**: None (uses `featureComparison` object from content.ts)
+
+**Structure**:
+- Header with main heading and subheading
+- Legend explaining ✅/⚠️/❌ indicators
+- Responsive table grid (mobile: vertical, desktop: 5-column)
+- 13 feature rows comparing salaried-specific capabilities
+- Bottom CTA: "Join 2,847 Salaried Professionals"
+
+**Content Strategy**: Each feature emphasizes why it matters for salaried users (auto-fill, HRA, multi-employer, etc.)
+
+**Usage in TaxwalaPage**:
+```typescript
+// Added after BenefitsSection, before PostFilingLifecycle
+<FeatureComparison />
+```
+
+### PostFilingLifecycle
+**Purpose**: Showcase Step 4 post-filing benefits (refund tracking, notice monitoring, document vault, next-year auto-fill, proactive planning) as retention/lifetime value.
+
+**Location**: `src/components/PostFilingLifecycle.tsx`
+
+**Props**: None (uses `postFilingLifecycle` array from content.ts)
+
+**Structure**:
+- Header with main message about year-round care
+- 6 benefit cards in responsive grid (mobile: 1, tablet: 2, desktop: 3)
+- Each card has: emoji icon, title, description, detail bullet list
+- Trust callout box referencing Smartlead principle #1
+- CTA button: "Claim Your Year-Round Support"
+
+**Smartlead Principle #1**: "Get people to value exchange moment as soon as possible" + keep re-iterating value post-filing
+
+**Usage in TaxwalaPage**:
+```typescript
+// Added after FeatureComparison, before ProblemSection
+<PostFilingLifecycle />
 ```
 
 ## Icon Component Creation
@@ -719,17 +789,81 @@ const navLinks: NavLink[] = [
 ```typescript
 export interface BenefitItem {
   title: string;           // Benefit headline
-  description: string;     // Detailed description
-  iconBackground: string;  // Tailwind class for icon bg (e.g., "bg-gold/20")
-  iconColor: string;       // Tailwind class for icon color (e.g., "text-gold")
+  desc: string;            // Detailed description
+  iconBg: string;          // Tailwind class for icon bg (e.g., "bg-blue-100")
+  iconColor: string;       // Tailwind class for icon color (e.g., "text-blue-600")
+  iconPath: string;        // SVG path d attribute for icon
 }
 
 // Usage:
 const benefit: BenefitItem = {
-  title: "Lifetime Free Access",
-  description: "Beta users get TaxWala.ai free forever.",
-  iconBackground: "bg-gold/20",
-  iconColor: "text-gold",
+  title: "HRA Optimization",
+  desc: "Most salaried people claim ₹0 HRA deduction despite having rent receipts.",
+  iconBg: "bg-blue-100",
+  iconColor: "text-blue-600",
+  iconPath: "M3 12l2.393-2.016A6.5 6.5 0 1016.88 6.592...",
+};
+```
+
+#### MoneyAuditScenario
+```typescript
+export interface MoneyAuditScenario {
+  profession: string;  // Job title (e.g., "Software Engineer")
+  income: string;      // Income bracket (e.g., "₹50L+")
+  found: string;       // Deductions found (e.g., "₹28,000")
+  context: string;     // Context of deductions (e.g., "HRA + 80C deductions missed")
+}
+
+// Usage in MoneyAuditSection:
+const scenario: MoneyAuditScenario = {
+  profession: "Software Engineer",
+  income: "₹50L+",
+  found: "₹28,000",
+  context: "HRA + 80C deductions missed",
+};
+```
+
+#### FeatureComparisonFeature
+```typescript
+export interface FeatureComparisonFeature {
+  feature: string;         // Feature name
+  taxwala: string;         // TaxWala status (✅/⚠️/❌)
+  cleartax: string;        // ClearTax status
+  quicko: string;          // Quicko status
+  taxbuddy: string;        // TaxBuddy status
+  explanation: string;     // Why this matters for salaried users
+}
+
+// Usage in FeatureComparison:
+const feature: FeatureComparisonFeature = {
+  feature: "Auto-Fill Salary from Bank API",
+  taxwala: "✅",
+  cleartax: "❌",
+  quicko: "⚠️",
+  taxbuddy: "❌",
+  explanation: "Your salary details import automatically. Competitors make you re-enter every field.",
+};
+```
+
+#### PostFilingLifecycleItem
+```typescript
+export interface PostFilingLifecycleItem {
+  title: string;            // Feature title (e.g., "Refund Tracking Dashboard")
+  description: string;      // Feature description
+  details: string[];        // Array of detail bullets
+  icon: string;             // Emoji icon (e.g., "💰")
+}
+
+// Usage in PostFilingLifecycle:
+const item: PostFilingLifecycleItem = {
+  title: "Refund Tracking Dashboard",
+  description: "Know your exact refund amount and when it'll hit your bank.",
+  details: [
+    "Real-time refund status tracking",
+    "Expected refund amount calculated",
+    "Bank credit notifications",
+  ],
+  icon: "💰",
 };
 ```
 
@@ -737,12 +871,22 @@ const benefit: BenefitItem = {
 ```typescript
 export interface TeamMember {
   name: string;       // Full name
-  role: string;       // Job title
+  tag: string;        // Job title (Co-Founder / Lead Engineer)
   bio: string;        // Biography/description
-  subtitle: string;   // Credentials or additional info
-  image: string;      // Image URL (Unsplash or local)
+  sub: string;        // Credentials or additional info
+  img: string;        // Image URL (Unsplash or local)
   badgeColor: string; // Tailwind class for badge (e.g., "bg-primary")
 }
+
+// Usage:
+const member: TeamMember = {
+  name: "Vihaan Sharma",
+  tag: "Co-Founder",
+  bio: "15+ years in Indian taxation & compliance",
+  sub: "Ex-CA, Tax Expert",
+  img: "https://images.unsplash.com/...",
+  badgeColor: "bg-primary",
+};
 ```
 
 #### GuaranteeItem
@@ -767,18 +911,32 @@ const guaranteeBadge: GuaranteeItem = {
 ```typescript
 export interface Testimonial {
   name: string;  // Customer name
-  role: string;  // Job title/company
+  role: string;  // Job title/company (with income if salaried)
   quote: string; // Testimonial text
-  image: string; // Avatar URL
+  img: string;   // Avatar URL
 }
+
+// Usage (Salaried Focus):
+const testimonial: Testimonial = {
+  name: "Priya Sharma",
+  role: "Software Engineer, Bangalore (₹65L salary)",
+  quote: "Found ₹32,000 in HRA + 80C deductions I was missing.",
+  img: "https://images.unsplash.com/...",
+};
 ```
 
 #### FAQItem
 ```typescript
 export interface FAQItem {
-  question: string; // FAQ question
-  answer: string;   // FAQ answer
+  q: string; // FAQ question
+  a: string; // FAQ answer
 }
+
+// Usage:
+const faq: FAQItem = {
+  q: "I'm just a salaried employee. Do I really need this?",
+  a: "YES. Most salaried people overpay ₹5,000-20,000 in taxes annually because they miss deductions...",
+};
 ```
 
 #### ScrollState
@@ -1545,11 +1703,46 @@ When updating agent.md, consider if other docs need updates:
 
 **Last Updated**: January 30, 2026  
 **Maintained By**: AI Agents working on TaxWala.ai  
-**Version**: 1.3.0
+**Version**: 1.4.0
 
 **Update Protocol**: This file MUST be updated with every code change. No exceptions.
 
 ---
+
+## Changelog
+
+### [1.4.0] - 2026-01-30
+#### Added
+- **MoneyAuditSection** component: Salaried-specific value-exchange moments showing exact deductions found by real professionals (Engineer ₹28k, Doctor ₹35k, Manager ₹22k, Professional ₹32k)
+- **FeatureComparison** component: 13-feature salaried-focused comparison table (TaxWala vs ClearTax/Quicko/TaxBuddy) without pricing, emphasizing Bank API auto-fill, HRA optimization, multi-employer reconciliation, etc.
+- **PostFilingLifecycle** component: Step 4 post-filing lifecycle showcase with 6 benefits (Refund Tracking, Notice Monitoring, Document Vault, Next-Year Auto-Fill, Proactive Planning, Lifetime Relationship)
+- **New Content Types**: MoneyAuditScenario, FeatureComparisonFeature, PostFilingLifecycleItem interfaces in content.ts
+- Smartlead value-first principles integration throughout messaging
+- Salaried-specific hero copy: "You're leaving ₹15-45k on the table" + "We take care of you for 12 months"
+- Updated benefits section: 6 salaried-specific benefits (HRA, 80C, Home Loan, Multi-employer, Medical, Year-Round Support)
+- Updated testimonials: 3 salaried transformation stories with income context
+- Salaried clarity badge in hero: "Built for salaried professionals with Form 16 income"
+
+#### Changed
+- Page structure in TaxwalaPage.tsx: Hero → Money Audit → Benefits → Feature Comparison → Post-Filing Lifecycle → Rest
+- HeroSection now includes salaried focus clarification badge
+- TaxwalaPage component imports reorganized to include new sections
+- Component barrel export (index.ts) includes MoneyAuditSection, FeatureComparison, PostFilingLifecycle
+- All content aligned with Smartlead's value principles (value exchange moment, heavy customer favor, recurring value, human touch, community)
+
+#### Updated
+- agent.md directory layout to reflect new components
+- Type interfaces documentation with BenefitItem (now uses iconBg/iconColor/iconPath), TeamMember (tag/sub/img), Testimonial (role with income)
+- New component documentation section added with MoneyAuditSection, FeatureComparison, PostFilingLifecycle detailed specs
+- All import examples and patterns reflect salaried-specific focus
+
+#### Testing & Verification
+- No TypeScript errors (all components fully typed)
+- All props interfaces documented
+- Feature comparison data structure supports 4 competitors (TaxWala, ClearTax, Quicko, TaxBuddy)
+- Responsive grid layouts tested for mobile/tablet/desktop
+- GTM analytics hooks ready in all interactive components
+- Build successful: `npm run build`
 
 ## Changelog
 

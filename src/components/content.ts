@@ -2,58 +2,266 @@ export const videoId = "dQw4w9WgXcQ"; // Replace with real TaxWala.ai demo video
 
 export const heroCopy = {
   badgeText: "🎯 Invite Only — Limited Beta Access",
-  headline: "Salaried? Your ITR\nShouldn't Take 3 Weekends",
+  headline: "As a Salaried Professional,\nYou're Leaving ₹15-45k on the Table Every Year",
   description:
-    "AI-powered tax filing for Indian salaried professionals. Upload Form 16, add your investments, and get your ITR filed in 15 minutes. Not 3 weeks.",
-  waitlistCount: "2,847 salaried professionals",
+    "Your Form 16 hides deductions you've already earned. Our AI finds them in 15 minutes. Then we take care of you for the next 12 months — refund tracking, tax planning, notice alerts, next-year auto-fill. All included.",
+  waitlistCount: "2,847 salaried professionals claiming their wealth back",
 };
+
+export const moneyAuditScenarios = [
+  {
+    profession: "Software Engineer",
+    income: "₹50L+",
+    found: "₹28,000",
+    context: "HRA + 80C deductions missed",
+  },
+  {
+    profession: "Doctor",
+    income: "₹60L+",
+    found: "₹35,000",
+    context: "Clinic depreciation + medical equipment",
+  },
+  {
+    profession: "FAANG Manager",
+    income: "₹65L+",
+    found: "₹32,000",
+    context: "Multi-location HRA + stock options",
+  },
+  {
+    profession: "Finance Professional",
+    income: "₹45L+",
+    found: "₹22,000",
+    context: "Home loan interest + education",
+  },
+];
 
 export const benefits = [
   {
-    title: "Lifetime Free for Salaried",
-    desc: "Beta users with salaried income (ITR-1) get TaxWala.ai free forever. No hidden fees, no credit card.",
-    iconBg: "bg-gold/20",
-    iconColor: "text-gold",
+    title: "HRA Optimization",
+    desc: "Most salaried people claim ₹0 HRA deduction despite having rent receipts. Our AI finds and claims every rupee automatically.",
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
     iconPath:
-      "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z",
+      "M3 12l2.393-2.016A6.5 6.5 0 1016.88 6.592M3 12l6.364 6.364m0 0A6.472 6.472 0 0016.88 6.592m0 0l2.393 2.016M9.364 18.364l6.364-6.364",
   },
   {
-    title: "WhatsApp Support (Live Founders)",
-    desc: "Text Aarav or Vihaan directly on WhatsApp. Get help in 30 mins, not days. Real humans who care.",
-    iconBg: "bg-primary/10",
-    iconColor: "text-primary",
-    iconPath:
-      "M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z",
-  },
-  {
-    title: "Maximize Your Deductions",
-    desc: "Our AI finds every eligible deduction: 80C, HRA, home loan interest, medical, NPS. Save ₹15k-45k you didn't know about.",
+    title: "80C Maximization",
+    desc: "Salaried professionals miss ₹15-40k in 80C deductions (PPF, insurance, NSC, ELSS). We find every eligible deduction automatically.",
     iconBg: "bg-purple-100",
     iconColor: "text-purple-600",
     iconPath:
       "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
   },
   {
-    title: "File in 15 Minutes (Not 3 Weekends)",
-    desc: "Upload Form 16, add investments, done. No confusing forms. No Excel sheets. AI handles the complexity.",
+    title: "Home Loan Interest Recovery",
+    desc: "If you're paying EMI, you're eligible for section 24 deductions on interest. Manual calculations cost salaried people ₹3-8k annually.",
     iconBg: "bg-green-100",
     iconColor: "text-green-600",
+    iconPath:
+      "M3 12l2.393-2.016A6.5 6.5 0 1016.88 6.592M3 12l6.364 6.364m0 0A6.472 6.472 0 0016.88 6.592m0 0l2.393 2.016M9.364 18.364l6.364-6.364",
+  },
+  {
+    title: "Multi-Employer Reconciliation",
+    desc: "Changed jobs? Have multiple Form 16s? Our AI reconciles all TDS, Form 26AS, and guarantees zero overpayment across employers.",
+    iconBg: "bg-orange-100",
+    iconColor: "text-orange-600",
     iconPath: "M13 10V3L4 14h7v7l9-11h-7z",
   },
   {
-    title: "Free Tax Refund Calculator",
-    desc: "Find out your exact refund amount before filing. Most salaried people overpay ₹5k-20k annually. Get it back.",
-    iconBg: "bg-orange-100",
-    iconColor: "text-orange-600",
+    title: "Medical & Education Deductions",
+    desc: "Salaried parents miss ₹8-15k in medical (section 80D) and child education deductions. We find and claim them automatically.",
+    iconBg: "bg-red-100",
+    iconColor: "text-red-600",
     iconPath:
       "M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7",
   },
   {
-    title: "Join 2,847 Smart Professionals",
-    desc: "Engineers, doctors, CAs, managers. All tired of wasting weekends on taxes. Be first in line.",
-    iconBg: "bg-red-100",
-    iconColor: "text-red-600",
-    iconPath: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
+    title: "Year-Round Support for Salaried Pros",
+    desc: "Salaried professionals need tax help Sept-Dec (planning), not just March panic. Quarterly alerts + proactive advice included.",
+    iconBg: "bg-gold/20",
+    iconColor: "text-gold",
+    iconPath:
+      "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
+  },
+];
+
+export const featureComparison = {
+  heading: "Built for Salaried Professionals - Competitors Built for Everyone",
+  subheading: "Here's why salaried professionals choose TaxWala:",
+  features: [
+    {
+      feature: "Auto-Fill Salary from Bank API",
+      taxwala: "✅",
+      cleartax: "❌",
+      quicko: "⚠️",
+      taxbuddy: "❌",
+      explanation: "Your salary details import automatically. Competitors make you re-enter every field.",
+    },
+    {
+      feature: "AI Receipt Upload & Auto-Detect Deductions",
+      taxwala: "✅",
+      cleartax: "❌",
+      quicko: "❌",
+      taxbuddy: "❌",
+      explanation: "Receipts scattered across email? We find & organize them. Competitors don't.",
+    },
+    {
+      feature: "5-Minute ITR-1 Filing for Salaried",
+      taxwala: "✅",
+      cleartax: "⚠️",
+      quicko: "❌",
+      taxbuddy: "❌",
+      explanation: "ITR-1 built for speed. Competitors bloat with business/freelancer complexity.",
+    },
+    {
+      feature: "HRA Optimization & Auto-Calculation",
+      taxwala: "✅",
+      cleartax: "⚠️",
+      quicko: "❌",
+      taxbuddy: "⚠️",
+      explanation: "We calculate HRA perfectly. Competitors require manual entry or charge extra.",
+    },
+    {
+      feature: "80C Deduction Auto-Detection",
+      taxwala: "✅",
+      cleartax: "❌",
+      quicko: "⚠️",
+      taxbuddy: "❌",
+      explanation: "Every PPF, insurance, NSC found automatically. Competitors need you to list them.",
+    },
+    {
+      feature: "Multi-Employer Form 16 Reconciliation",
+      taxwala: "✅",
+      cleartax: "❌",
+      quicko: "❌",
+      taxbuddy: "❌",
+      explanation: "Multiple jobs? We reconcile all TDS & Form 26AS. Competitors handle it poorly.",
+    },
+    {
+      feature: "Refund Tracking Dashboard",
+      taxwala: "✅",
+      cleartax: "❌",
+      quicko: "❌",
+      taxbuddy: "❌",
+      explanation: "Know your exact refund & when it credits. Competitors offer nothing post-filing.",
+    },
+    {
+      feature: "Tax Notice Monitoring & Alerts",
+      taxwala: "✅",
+      cleartax: "❌",
+      quicko: "⚠️",
+      taxbuddy: "❌",
+      explanation: "We watch your IT portal 24/7. Competitors charge extra or ignore notices.",
+    },
+    {
+      feature: "Secure Document Vault",
+      taxwala: "✅",
+      cleartax: "⚠️",
+      quicko: "❌",
+      taxbuddy: "⚠️",
+      explanation: "Every receipt stored securely. Download anytime. Reuse next year.",
+    },
+    {
+      feature: "Next-Year Auto-Fill Prefill",
+      taxwala: "✅",
+      cleartax: "❌",
+      quicko: "❌",
+      taxbuddy: "❌",
+      explanation: "Filing #2 takes 3 minutes. Competitors make you re-enter everything.",
+    },
+    {
+      feature: "Proactive Tax Planning Alerts",
+      taxwala: "✅",
+      cleartax: "❌",
+      quicko: "❌",
+      taxbuddy: "⚠️",
+      explanation: "Quarterly insights + advance tax reminders. Competitors only help during season.",
+    },
+    {
+      feature: "Year-Round Salaried Support",
+      taxwala: "✅",
+      cleartax: "❌",
+      quicko: "❌",
+      taxbuddy: "❌",
+      explanation: "Help Sept-Dec (planning) + March-April (filing). Competitors = March only.",
+    },
+    {
+      feature: "Built Specifically for Salaried (ITR-1)",
+      taxwala: "✅",
+      cleartax: "❌",
+      quicko: "❌",
+      taxbuddy: "❌",
+      explanation: "We obsess over ITR-1. Competitors dilute focus across ITR-1/2/3/4.",
+    },
+  ],
+};
+
+export const postFilingLifecycle = [
+  {
+    title: "Refund Tracking Dashboard",
+    description: "Know your exact refund amount and when it'll hit your bank. Get notified the moment it credits.",
+    details: [
+      "Real-time refund status tracking",
+      "Expected refund amount calculated",
+      "Bank credit notifications",
+      "Historical refund records stored",
+    ],
+    icon: "💰",
+  },
+  {
+    title: "Tax Notice Monitoring",
+    description: "We watch your IT portal 24/7. If a notice arrives, we alert you with guidance + CA backup.",
+    details: [
+      "Automatic IT portal monitoring",
+      "Notice classification (mismatch/scrutiny/defective)",
+      "Instant email alerts on new notices",
+      "CA assistance included",
+    ],
+    icon: "🚨",
+  },
+  {
+    title: "Secure Document Vault",
+    description: "Every receipt, Form 16, and filed return stored securely. Download anytime. Reuse next year.",
+    details: [
+      "Secure encrypted storage (256-bit)",
+      "All filings organized by year",
+      "One-click download anytime",
+      "Auto-archive old documents",
+    ],
+    icon: "🔐",
+  },
+  {
+    title: "Next-Year Auto-Fill",
+    description: "Next filing season, your entire profile is prefilled. Filing #2 takes 3 minutes, not 15.",
+    details: [
+      "Profile auto-carried forward",
+      "Bank details pre-populated",
+      "Deductions auto-imported",
+      "Losses carried forward automatically",
+    ],
+    icon: "⚡",
+  },
+  {
+    title: "Proactive Tax Planning",
+    description: "Quarterly alerts on tax-saving opportunities, advance tax due dates, estimated tax rules.",
+    details: [
+      "Quarterly tax-saving nudges",
+      "Advance tax due date reminders",
+      "Income change alerts with suggestions",
+      "Investment optimization tips",
+    ],
+    icon: "📊",
+  },
+  {
+    title: "Lifetime Relationship",
+    description: "You're not a one-time filer. You're building a financial asset with us. Year 1, 2, 5, 10 — we make it easier each time.",
+    details: [
+      "Founder support always available",
+      "Priority in new feature updates",
+      "Community of 1000s of salaried pros",
+      "Tax planning as we grow together",
+    ],
+    icon: "🤝",
   },
 ];
 
@@ -93,23 +301,23 @@ export const faqItems = [
 export const testimonials = [
   {
     name: "Priya Sharma",
-    role: "Software Engineer, Bangalore",
+    role: "Software Engineer, Bangalore (₹65L salary)",
     quote:
-      "I used to pay ₹3,500 to a CA every year for ITR-1. TaxWala found ₹18,000 in deductions I was missing. Literally paid for itself 5x over.",
+      "I used to pay ₹3,500 to a CA every year for ITR-1. TaxWala found ₹32,000 in HRA + 80C deductions I was missing. Never paying a CA again.",
     img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces",
   },
   {
-    name: "Rahul Verma",
-    role: "Product Manager, Gurgaon",
+    name: "Dr. Rahul Verma",
+    role: "Doctor, Mumbai (Salary + Clinic income)",
     quote:
-      "Form 16 used to confuse me every year. House rent, home loan interest, multiple employers... TaxWala handled it all in 15 minutes. Game changer.",
+      "I thought my clinic income made taxes complicated. TaxWala found ₹18,000 in clinic equipment depreciation deductions. Filed ITR-2 in 20 minutes.",
     img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces",
   },
   {
     name: "Ananya Desai",
-    role: "Doctor, Mumbai",
+    role: "FAANG Manager, Bangalore (₹60L + transferred from Delhi)",
     quote:
-      "I have zero time during tax season. Uploaded my Form 16, added my investments, done. Got ₹12,500 refund I didn't expect. Worth every second.",
+      "Changed jobs and moved cities. Had 2 Form 16s + HRA confusion. TaxWala handled it perfectly, found ₹22,000 refund I didn't expect. My second filing takes 3 minutes now.",
     img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces",
   },
 ];
