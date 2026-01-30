@@ -16,6 +16,7 @@ import {
 } from "./icons";
 import { TALLY_FORM_URL } from "../constants/config";
 import { useGTMTracking } from "../hooks";
+import { heroCopy } from "./content";
 
 interface HeroSectionProps {
   isModalOpen: boolean;
