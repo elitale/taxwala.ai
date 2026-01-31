@@ -75,10 +75,15 @@ const TaxwalaPage: React.FC = () => {
         </PageFlipSection>
 
         {/* Feature Comparison Section */}
+        <PageFlipSection pageColor="#fffbeb" delay={0.1}>
+
         <FeatureComparison />
+        </PageFlipSection>
 
         {/* Post-Filing Lifecycle Section */}
+        <PageFlipSection pageColor="#fffbeb" delay={0.1}>
         <PostFilingLifecycle />
+        </PageFlipSection>
 
         {/* Problem Statement Section */}
         <PageFlipSection pageColor="#fef3c7" delay={0.1}>

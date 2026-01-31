@@ -23,3 +23,5 @@ export { ChevronDownIcon } from "./ChevronDownIcon";
 export { SupportIcon } from "./SupportIcon";
 export { LightBulbIcon } from "./LightBulbIcon";
 export { GiftIcon } from "./GiftIcon";
+export { XCircleIcon } from "./XCircleIcon";
+export { ExclamationCircleIcon } from "./ExclamationCircleIcon";

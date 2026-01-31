@@ -31,7 +31,7 @@ const MoneyAuditItem: React.FC<MoneyAuditItemProps> = ({ profession, income, fou
 );
 
 export const MoneyAuditSection: React.FC = () => (
-  <section className="py-16 px-6 bg-gradient-to-b from-white to-gold/5">
+  <section className="py-16 px-6 bg-gradient-to-b from-blue-50 to-white">
     <div className="max-w-6xl mx-auto">
       {/* Header */}
       <div className="text-center mb-12">
