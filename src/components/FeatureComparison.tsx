@@ -35,7 +35,7 @@ const iconMap: { [key: string]: React.ReactNode } = {
   "AI Receipt Upload & Auto-Detect Deductions": <ReceiptIcon className="w-5 h-5 text-blue-600" />,
   "5-Minute ITR-1 Filing for Salaried": <ClockIcon className="w-5 h-5 text-blue-600" />,
   "HRA Optimization & Auto-Calculation": <LightBulbIcon className="w-5 h-5 text-blue-600" />,
-  "80C Deduction Auto-Detection": <StarIcon className="w-5 h-5 text-blue-600" />,
+  "80C Deduction Auto-Detection": <StarIcon fill="#2563eb" strokeWidth={0} className="w-5 h-5" />,
   "Multi-Employer Form 16 Reconciliation": <RocketIcon className="w-5 h-5 text-blue-600" />,
   "Refund Tracking Dashboard": <CalendarIcon className="w-5 h-5 text-blue-600" />,
   "Tax Notice Monitoring & Alerts": <SupportIcon className="w-5 h-5 text-blue-600" />,
@@ -43,7 +43,7 @@ const iconMap: { [key: string]: React.ReactNode } = {
   "Next-Year Auto-Fill Prefill": <RocketIcon className="w-5 h-5 text-blue-600" />,
   "Proactive Tax Planning Alerts": <LightBulbIcon className="w-5 h-5 text-blue-600" />,
   "Year-Round Salaried Support": <SupportIcon className="w-5 h-5 text-blue-600" />,
-  "Built Specifically for Salaried (ITR-1)": <StarIcon className="w-5 h-5 text-blue-600" />,
+  "Built Specifically for Salaried (ITR-1)": <StarIcon fill="#2563eb" strokeWidth={0} className="w-5 h-5" />,
 };
 
 const StatusIcon: React.FC<{ status: string }> = ({ status }) => {
@@ -154,7 +154,7 @@ export const FeatureComparison: React.FC = () => (
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4 py-8 px-4 md:px-6">
             <div className="md:col-span-1">
               <div className="flex items-center gap-2 text-white">
-                <StarIcon className="w-5 h-5" />
+                <StarIcon fill="white" strokeWidth={0} className="w-5 h-5" />
                 <span className="font-bold text-lg">Feature</span>
               </div>
             </div>

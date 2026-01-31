@@ -135,7 +135,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial, delay })
 const StarRating: React.FC = () => (
   <div className="flex gap-1">
     {[...Array(5)].map((_, idx) => (
-      <StarIcon key={idx} className="w-5 h-5 text-gold fill-gold" />
+      <StarIcon key={idx} fill="gold" strokeWidth={0} className="w-5 h-5" />
     ))}
   </div>
 );
