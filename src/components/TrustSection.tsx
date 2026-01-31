@@ -52,8 +52,8 @@ export const TrustSection: React.FC = () => {
         {/* Company Info Card */}
         <CompanyInfo />
 
-        {/* Testimonials */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        {/* Testimonials - Responsive Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16">
           {testimonials.map((testimonial, idx) => (
             <TestimonialCard key={testimonial.name} testimonial={testimonial} delay={`${(idx + 1) * 0.1}s`} />
           ))}
@@ -67,24 +67,24 @@ export const TrustSection: React.FC = () => {
 };
 
 const CompanyInfo: React.FC = () => (
-  <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl p-12 mb-16 reveal-on-scroll">
-    <div className="flex flex-col md:flex-row items-center gap-8">
-      <div className="flex-1">
+  <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl p-6 md:p-12 mb-12 md:mb-16 reveal-on-scroll">
+    <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
+      <div className="flex-1 w-full">
         <div className="flex items-center gap-3 mb-4">
-          <div className="w-12 h-12 bg-gradient-to-br from-primary to-purple-600 rounded-xl flex items-center justify-center">
-            <img src="/elitale-logo.png" />
+          <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-primary to-purple-600 rounded-xl flex items-center justify-center flex-shrink-0">
+            <img src="/elitale-logo.png" alt="Elitale Logo" />
           </div>
-          <div>
-            <p className="text-sm text-gray-600">Powered by</p>
-            <p className="text-xl font-bold">Elitale Softwares Private Limited</p>
+          <div className="min-w-0 flex-1">
+            <p className="text-xs md:text-sm text-gray-600">Powered by</p>
+            <p className="text-base md:text-xl font-bold truncate">Elitale Softwares Private Limited</p>
           </div>
         </div>
-        <p className="text-gray-600 leading-relaxed">
+        <p className="text-sm md:text-base text-gray-600 leading-relaxed">
           A registered Indian company building the future of tax automation. Our team combines expertise in AI,
           finance, and Indian tax regulations to deliver a product you can trust.
         </p>
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-3 md:gap-4 w-full md:w-auto">
         {["Bank-level 256-bit encryption", "ISO 27001 compliant infrastructure", "Your data never leaves India"].map(
           (feature) => (
             <SecurityFeature key={feature} feature={feature} />
@@ -100,9 +100,9 @@ interface SecurityFeatureProps {
 }
 
 const SecurityFeature: React.FC<SecurityFeatureProps> = ({ feature }) => (
-  <div className="flex items-center gap-3">
-    <CheckCircleIcon className="w-6 h-6 text-green-600" />
-    <span className="font-semibold">{feature}</span>
+  <div className="flex items-center gap-2 md:gap-3">
+    <CheckCircleIcon className="w-5 h-5 md:w-6 md:h-6 text-green-600 flex-shrink-0" />
+    <span className="text-sm md:text-base font-semibold">{feature}</span>
   </div>
 );
 
@@ -113,21 +113,26 @@ interface TestimonialCardProps {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial, delay }) => (
   <div
-    className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow reveal-on-scroll"
+    className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow reveal-on-scroll flex flex-col h-full"
     style={{ animationDelay: delay }}
   >
-    <div className="flex items-start gap-4 mb-4">
+    {/* Header with image and name */}
+    <div className="flex items-start gap-3 md:gap-4 mb-4">
       <img
         src={testimonial.image}
         alt={testimonial.name}
-        className="w-16 h-16 rounded-full object-cover shadow-md border-2 border-primary/20"
+        className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover shadow-md border-2 border-primary/20 flex-shrink-0"
       />
-      <div>
-        <p className="font-bold text-lg">{testimonial.name}</p>
-        <p className="text-sm text-gray-600">{testimonial.role}</p>
+      <div className="min-w-0 flex-1">
+        <p className="font-bold text-base md:text-lg truncate">{testimonial.name}</p>
+        <p className="text-xs md:text-sm text-gray-600 line-clamp-2">{testimonial.role}</p>
       </div>
     </div>
-    <p className="text-gray-700 leading-relaxed italic mb-4">"{testimonial.quote}"</p>
+    
+    {/* Quote - grows to fill space */}
+    <p className="text-sm md:text-base text-gray-700 leading-relaxed italic mb-4 flex-grow">"{testimonial.quote}"</p>
+    
+    {/* Stars at bottom */}
     <StarRating />
   </div>
 );
@@ -141,13 +146,13 @@ const StarRating: React.FC = () => (
 );
 
 const UrgencySection: React.FC = () => (
-  <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 text-center reveal-on-scroll">
-    <p className="text-2xl font-bold text-gray-900 mb-4">
-      <span className="text-green-600">Trusted by 12,847 professionals</span> across India
+  <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-6 md:p-8 text-center reveal-on-scroll">
+    <p className="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4">
+      <span className="text-green-600">Trusted by 1,247 professionals</span> across India
     </p>
-    <p className="text-gray-600 mb-6">Join thousands who've reclaimed their time and recovered ₹1L+ in deductions.</p>
+    <p className="text-sm md:text-base text-gray-600 mb-6 px-2">Join thousands who've reclaimed their time and recovered ₹1L+ in deductions.</p>
     <button
-      className="cta-button bg-gray-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-black transition-all shadow-lg"
+      className="cta-button bg-gray-900 text-white px-6 md:px-8 py-3 rounded-full font-semibold hover:bg-black transition-all shadow-lg text-sm md:text-base w-full sm:w-auto"
       onClick={() => {
         window.gtag?.("event", "button_click", {
           button_name: "Start Filing Now",
