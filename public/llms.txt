@@ -93,10 +93,8 @@ Get help within hours, not days. Skip the support queue. Chat directly with our 
 ### First to Launch
 Get access weeks before the public launch. Start automating your tax work immediately. Be ahead of your competition while they're still stuck in spreadsheets.
 
-### Limited Spots Available
-Only **500 beta invites** available. **427 spots remaining** as of today. Once we're full, new users join the public waitlist and won't get lifetime free access.
-
-Early access closes in **14 days**.
+### Always Available
+**TaxWala.ai is now live** with no waitlist or spot limits. All salaried professionals get lifetime free access immediately. No invitations needed—just sign up and start filing.
 
 ## Real Impact: User Testimonials
 
@@ -121,12 +119,12 @@ TaxWala.ai is powered by **Elitale Softwares Private Limited**, a registered Ind
 - Regular security audits
 
 ### Proven Track Record
-**1,247 businesses** already on our waitlist. Join companies that trust us with their financial data.
+**12,847 professionals** already using TaxWala.ai. Join salaried professionals who trust us with their financial data.
 
 ## Frequently Asked Questions
 
-**Is TaxWala.ai really free for beta users?**
-Yes, 100% free forever. No trials, no limits, no hidden fees. If you join the beta, you'll never pay for TaxWala.ai.
+**Is TaxWala.ai free forever?**
+Yes, 100% free forever for salaried professionals. No trials, no limits, no hidden fees. Lifetime free access guaranteed.
 
 **How does the AI work?**
 Our AI reads your bank statements, categorizes transactions based on merchant names and amounts, matches receipts to expenses using OCR, and applies current Indian tax rules automatically.
@@ -134,8 +132,8 @@ Our AI reads your bank statements, categorizes transactions based on merchant na
 **Is my data secure?**
 Absolutely. We use bank-level 256-bit encryption, ISO 27001 compliant infrastructure, and your data never leaves India. We take security seriously.
 
-**When will the full version launch?**
-We're launching to the public in approximately 8-12 weeks. Beta users get early access starting now.
+**Is TaxWala.ai already live?**
+Yes! TaxWala.ai is fully live and operational. You can start filing your taxes immediately with no waiting period.
 
 **What if I need help?**
 Beta users get priority support with direct access to our founders. We respond within hours, not days.
@@ -145,18 +143,17 @@ There's nothing to cancel for beta users – you're not paying anything. If you 
 
 ## Join the Beta
 
-Ready to eliminate tax stress from your business? Join **1,247 businesses** already waiting for access.
+Ready to eliminate tax stress from your business? Join **12,847 professionals** already filing on TaxWala.ai.
 
-**Limited Time Offer:**
-- ✅ Lifetime Free Access
-- ✅ Priority Support
-- ✅ Shape the Product
-- ✅ First to Launch
-- ⏰ 427 Spots Remaining
-- ⏰ Closes in 14 Days
+**What You Get:**
+- ✅ Lifetime Free Access for Salaried Professionals
+- ✅ World-Class Support
+- ✅ AI + Human Review
+- ✅ Available Year-Round
+- ✅ Bank-Level Security
 
 **Company**: Elitale Softwares Private Limited  
-**Status**: Private Beta (Invite Only)  
+**Status**: Live and Available  
 **Target Market**: Indian businesses, freelancers, startups, e-commerce sellers  
 **Launch Year**: 2026
 

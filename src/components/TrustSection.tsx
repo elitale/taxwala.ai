@@ -39,10 +39,10 @@ export const TrustSection: React.FC = () => {
         {/* Section Header */}
         <div className="flex items-center gap-4 mb-12 reveal-on-scroll">
           <div className="w-10 h-10 rounded-full border-2 border-gray-900 flex items-center justify-center">
-            <span className="text-sm font-bold">3</span>
+            <span className="text-sm font-bold">1</span>
           </div>
           <div className="h-px w-12 bg-gray-900" />
-          <span className="text-sm font-semibold uppercase tracking-wider">Trust & Security</span>
+          <span className="text-sm font-semibold uppercase tracking-wider">Social Proof & Trust</span>
         </div>
 
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16 max-w-4xl reveal-on-scroll">
@@ -141,16 +141,22 @@ const StarRating: React.FC = () => (
 );
 
 const UrgencySection: React.FC = () => (
-  <div className="bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl p-8 text-center reveal-on-scroll">
+  <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 text-center reveal-on-scroll">
     <p className="text-2xl font-bold text-gray-900 mb-4">
-      <span className="text-red-600">427 spots remaining</span> in private beta
+      <span className="text-green-600">Trusted by 12,847 professionals</span> across India
     </p>
-    <p className="text-gray-600 mb-6">Slots are filling fast. Join now to secure your lifetime free access.</p>
+    <p className="text-gray-600 mb-6">Join thousands who've reclaimed their time and recovered ₹1L+ in deductions.</p>
     <button
       className="cta-button bg-gray-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-black transition-all shadow-lg"
-      onClick={() => window.location.href = TALLY_FORM_URL}
+      onClick={() => {
+        window.gtag?.("event", "button_click", {
+          button_name: "Start Filing Now",
+          section: "trust_urgency"
+        });
+        window.location.href = TALLY_FORM_URL;
+      }}
     >
-      Be part of the story
+      Start Filing Now
     </button>
   </div>
 );

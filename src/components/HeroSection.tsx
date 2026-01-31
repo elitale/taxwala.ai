@@ -34,7 +34,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   const { trackButtonClick, trackVideoPlay } = useGTMTracking();
 
   const handleSignUp = () => {
-    trackButtonClick('Sign Up Today', 'hero');
+    trackButtonClick('Save Your Taxes Today', 'hero');
     window.location.href = TALLY_FORM_URL;
   };
 
@@ -88,7 +88,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               className="cta-button bg-primary text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl hover:scale-105"
               onClick={handleSignUp}
             >
-              Sign Up Today →
+              Save Your Taxes Today →
             </button>
           </div>
         </div>
@@ -197,7 +197,7 @@ const TrustIndicators: React.FC = () => (
     </div>
     <div className="flex items-center gap-2">
       <StarIcon className="w-5 h-5 text-gold" />
-      <span className="font-semibold text-gray-900">Invite Only Beta</span>
+      <span className="font-semibold text-gray-900">Live & Available Now</span>
     </div>
     <div className="flex items-center gap-2">
       <LockIcon className="w-5 h-5 text-gray-700" />

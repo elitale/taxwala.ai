@@ -61,14 +61,14 @@ export const BenefitsSection: React.FC = () => {
         {/* Section Header */}
         <div className="flex items-center gap-4 mb-12 reveal-on-scroll">
           <div className="w-10 h-10 rounded-full border-2 border-gray-900 flex items-center justify-center">
-            <span className="text-sm font-bold">2</span>
+            <span className="text-sm font-bold">3</span>
           </div>
           <div className="h-px w-12 bg-gray-900" />
           <span className="text-sm font-semibold uppercase tracking-wider">Exclusive Benefits</span>
         </div>
 
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16 max-w-4xl reveal-on-scroll">
-          Why join the beta now?
+          What you get with TaxWala.ai
         </h2>
 
         {/* Benefits Grid */}

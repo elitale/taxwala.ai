@@ -198,7 +198,7 @@ export const FeatureComparison: React.FC = () => (
             data-tally-emoji-animation="wave"
             className="inline-block bg-gradient-to-r from-gold to-yellow-500 text-gray-900 font-bold py-4 px-8 rounded-full hover:shadow-2xl transition-all transform hover:scale-105 shadow-lg"
           >
-            Join 2,847 Salaried Professionals →
+            Start Your Tax Journey →
           </button>
         </div>
       </div>

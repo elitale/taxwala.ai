@@ -46,7 +46,7 @@ export const HowItWorksSection: React.FC = () => {
         {/* Section Header */}
         <div className="flex items-center gap-4 mb-12 reveal-on-scroll">
           <div className="w-10 h-10 rounded-full border-2 border-gray-900 flex items-center justify-center">
-            <span className="text-sm font-bold">1</span>
+            <span className="text-sm font-bold">2</span>
           </div>
           <div className="h-px w-12 bg-gray-900" />
           <span className="text-sm font-semibold uppercase tracking-wider">How It Works</span>

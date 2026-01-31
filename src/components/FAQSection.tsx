@@ -13,19 +13,19 @@ export const FAQSection: React.FC = () => {
 
   const faqs: FAQItem[] = [
     {
-      question: "When will TaxWala.ai launch publicly?",
+      question: "Can I start filing my taxes right now?",
       answer:
-        "We're planning to launch publicly in Q2 2026. Beta users will get access 6-8 weeks before the public launch, giving you exclusive early access to shape the product.",
+        "Yes! TaxWala.ai is fully live and operational. You can start filing your taxes immediately with no waiting period. All salaried professionals get lifetime free access to file their ITR-1 returns.",
     },
     {
-      question: "Is TaxWala.ai really free forever?",
+      question: "Is TaxWala.ai really free forever for salaried professionals?",
       answer:
-        "Yes! Beta users get lifetime free access with no hidden fees. After public launch, we may introduce premium features, but your core tax automation will always remain free. No credit card required, ever.",
+        "Yes! Lifetime free access for salaried professionals with no hidden fees. We'll always provide core tax automation for salaried income at no cost. No credit card required, ever.",
     },
     {
-      question: "How do I get an invite to the beta?",
+      question: "How do I get started with TaxWala.ai?",
       answer:
-        'Join the waitlist by clicking any "Request Early Access" button on this page. We\'re inviting users in batches, prioritizing small businesses and freelancers who will benefit most. You can also skip the waitlist by referring 3 friends.',
+        'Click any "Save Your Taxes" button on this page to sign up. The process takes less than 2 minutes. You can start filing immediately and complete your tax return by the March deadline.',
     },
     {
       question: "Is my financial data safe?",
@@ -33,9 +33,9 @@ export const FAQSection: React.FC = () => {
         "Absolutely. We use bank-level 256-bit encryption, ISO 27001 compliant infrastructure, and your data never leaves India. We never sell your data or share it with third parties. Your security is our top priority.",
     },
     {
-      question: "How does the referral program work?",
+      question: "What if I need help filing my taxes?",
       answer:
-        "After joining the waitlist, you'll receive a unique referral link. Share it with friends, colleagues, or on social media. When 3 people sign up using your link, you'll get instant beta access (skipping the queue) plus exclusive perks and early feature previews.",
+        "You get access to world-class support from tax experts. We're available to help during tax season and can answer questions within hours. You can also reach our team through chat or email anytime.",
     },
   ];
 
@@ -49,7 +49,7 @@ export const FAQSection: React.FC = () => {
         {/* Section Header */}
         <div className="flex items-center gap-4 mb-12 reveal-on-scroll">
           <div className="w-10 h-10 rounded-full border-2 border-gray-900 flex items-center justify-center">
-            <span className="text-sm font-bold">4</span>
+            <span className="text-sm font-bold">5</span>
           </div>
           <div className="h-px w-12 bg-gray-900" />
           <span className="text-sm font-semibold uppercase tracking-wider">Frequently Asked Questions</span>
@@ -66,12 +66,12 @@ export const FAQSection: React.FC = () => {
 
         {/* CTA After FAQ */}
         <div className="text-center mt-16 reveal-on-scroll">
-          <p className="text-gray-600 mb-6 text-lg">Still have questions?</p>
+          <p className="text-gray-600 mb-6 text-lg">Ready to file your taxes?</p>
           <button
             className="cta-button bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-all shadow-lg"
             onClick={() => window.location.href = TALLY_FORM_URL}
           >
-            Join our beta
+            Save Your Taxes Today
           </button>
         </div>
       </div>

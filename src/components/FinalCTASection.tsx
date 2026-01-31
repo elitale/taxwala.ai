@@ -4,15 +4,15 @@
  */
 
 import React from "react";
-import { ClockIcon, CalendarIcon } from "./icons";
+import { CheckCircleIcon, CalendarIcon } from "./icons";
 import { TALLY_FORM_URL } from "../constants/config";
 import { useGTMTracking } from "../hooks";
 
 export const FinalCTASection: React.FC = () => {
   const { trackButtonClick } = useGTMTracking();
 
-  const handleSecureSpot = () => {
-    trackButtonClick('Secure Your Spot Now', 'final_cta');
+  const handleSaveTaxes = () => {
+    trackButtonClick('Save Your Taxes Now', 'final_cta');
     window.location.href = TALLY_FORM_URL;
   };
   return (
@@ -28,34 +28,34 @@ export const FinalCTASection: React.FC = () => {
           Don't Get Left Behind
         </h2>
 
-        {/* Urgency Indicators */}
+        {/* Trust Indicator */}
         <div
           className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12 text-2xl md:text-3xl font-semibold reveal-on-scroll"
           style={{ animationDelay: "0.1s" }}
         >
           <div className="flex items-center gap-3">
-            <ClockIcon />
-            <span>427 spots remaining</span>
+            <CheckCircleIcon />
+            <span>12,847 active users</span>
           </div>
           <span className="hidden md:block">•</span>
           <div className="flex items-center gap-3">
             <CalendarIcon />
-            <span>Early access closes in 14 days</span>
+            <span>Available year-round</span>
           </div>
         </div>
 
         {/* Description */}
         <p className="text-xl mb-12 opacity-90 reveal-on-scroll" style={{ animationDelay: "0.2s" }}>
-          Join 1,247 businesses already on the waitlist. Get lifetime free access before it's too late.
+          Join 12,847 professionals already using TaxWala.ai. Get lifetime free access today.
         </p>
 
         {/* Primary CTA Button */}
         <button
           className="cta-button bg-white text-primary px-12 py-5 rounded-full text-xl font-bold hover:bg-gray-100 transition-all shadow-2xl hover:shadow-3xl hover:scale-105 reveal-on-scroll"
           style={{ animationDelay: "0.3s" }}
-          onClick={handleSecureSpot}
+          onClick={handleSaveTaxes}
         >
-          Secure Your Spot Now →
+          Save Your Taxes Now →
         </button>
       </div>
     </section>

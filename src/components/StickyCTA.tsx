@@ -18,7 +18,7 @@ export const StickyCTA: React.FC<StickyCTAProps> = ({ isVisible }) => {
   if (!isVisible) return null;
 
   const handleSignUp = () => {
-    trackButtonClick('Sign Up', 'sticky_cta');
+    trackButtonClick('Save Your Taxes', 'sticky_cta');
     window.location.href = TALLY_FORM_URL;
   };
 
@@ -28,7 +28,7 @@ export const StickyCTA: React.FC<StickyCTAProps> = ({ isVisible }) => {
         className="cta-button bg-primary text-white px-6 py-3 rounded-full font-semibold shadow-2xl hover:bg-blue-700 transition-all hover:scale-105 flex items-center gap-2"
         onClick={handleSignUp}
       >
-        <span>Sign Up Now</span>
+        <span>Save Your Taxes</span>
         <ArrowRightIcon />
       </button>
     </div>

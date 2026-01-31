@@ -48,7 +48,7 @@ const TaxwalaPage: React.FC = () => {
 
   return (
     <>
-      {/* Navigation */}
+      {/* 1. Navigation Header */}
       <Navigation navLinks={navLinks} />
 
       {/* AI Robot Assistant */}
@@ -56,7 +56,7 @@ const TaxwalaPage: React.FC = () => {
 
       {/* Main Content */}
       <main>
-        {/* Hero Section */}
+        {/* 2. Hero Section - Strong headline, CTA, and trust signals */}
         <PageFlipSection pageColor="#fefce8" delay={0}>
           <HeroSection
             isModalOpen={isModalOpen}
@@ -66,61 +66,59 @@ const TaxwalaPage: React.FC = () => {
           />
         </PageFlipSection>
 
-        {/* Money Audit Section (Value Exchange) */}
-        <MoneyAuditSection />
-
-        {/* Benefits Section */}
-        <PageFlipSection pageColor="#fffbeb" delay={0.1}>
-          <BenefitsSection />
-        </PageFlipSection>
-
-        {/* Feature Comparison Section */}
-        <PageFlipSection pageColor="#fffbeb" delay={0.1}>
-
-        <FeatureComparison />
-        </PageFlipSection>
-
-        {/* Post-Filing Lifecycle Section */}
-        <PageFlipSection pageColor="#fffbeb" delay={0.1}>
-        <PostFilingLifecycle />
-        </PageFlipSection>
-
-        {/* Problem Statement Section */}
-        <PageFlipSection pageColor="#fef3c7" delay={0.1}>
-          <ProblemSection />
-        </PageFlipSection>
-
-        {/* How It Works Section */}
-        <PageFlipSection pageColor="#fefce8" delay={0.2}>
-          <HowItWorksSection />
-        </PageFlipSection>
-
-        {/* Pricing Section */}
-        <PageFlipSection pageColor="#eff6ff" delay={0.15}>
-          <PricingSection />
-        </PageFlipSection>
-
-        {/* Trust & Security Section */}
+        {/* 3. Trust Signals - Testimonials & Social Proof */}
         <PageFlipSection pageColor="#fef3c7" delay={0.15}>
           <TrustSection />
         </PageFlipSection>
 
-        {/* FAQ Section */}
-        <PageFlipSection pageColor="#fefce8" delay={0.1}>
-          <FAQSection />
+        {/* 4. Problem/Solution Section */}
+        <PageFlipSection pageColor="#fef3c7" delay={0.1}>
+          <ProblemSection />
         </PageFlipSection>
 
-        {/* Team Section */}
-        <PageFlipSection pageColor="#fffbeb" delay={0.2}>
-          <TeamSection />
+        {/* 5. Value Exchange - Money Audit (Real Results) */}
+        <MoneyAuditSection />
+
+        {/* 6. How It Works - Features/Benefits Visual */}
+        <PageFlipSection pageColor="#fefce8" delay={0.2}>
+          <HowItWorksSection />
         </PageFlipSection>
 
-        {/* Guarantee Section */}
+        {/* 7. Benefits Section - Feature details and perks */}
+        <PageFlipSection pageColor="#fffbeb" delay={0.1}>
+          <BenefitsSection />
+        </PageFlipSection>
+
+        {/* 8. Feature Comparison - Competitive advantages */}
+        <PageFlipSection pageColor="#fffbeb" delay={0.1}>
+          <FeatureComparison />
+        </PageFlipSection>
+
+        {/* 9. Post-Filing Lifecycle - Year-round value */}
+        <PageFlipSection pageColor="#fffbeb" delay={0.1}>
+          <PostFilingLifecycle />
+        </PageFlipSection>
+
+        {/* 10. Pricing Section */}
+        <PageFlipSection pageColor="#eff6ff" delay={0.15}>
+          <PricingSection />
+        </PageFlipSection>
+
+        {/* 11. Team & Guarantee - Trust builders */}
         <PageFlipSection pageColor="#fef3c7" delay={0.1}>
           <GuaranteeSection />
         </PageFlipSection>
 
-        {/* Final CTA Section */}
+        <PageFlipSection pageColor="#fffbeb" delay={0.2}>
+          <TeamSection />
+        </PageFlipSection>
+
+        {/* 12. FAQ Section - Objection handling */}
+        <PageFlipSection pageColor="#fefce8" delay={0.1}>
+          <FAQSection />
+        </PageFlipSection>
+
+        {/* 13. Final CTA Section - Last conversion opportunity */}
         <PageFlipSection pageColor="#fefce8" delay={0.15}>
           <FinalCTASection />
         </PageFlipSection>
@@ -128,7 +126,7 @@ const TaxwalaPage: React.FC = () => {
         {/* Sticky CTA Button */}
         <StickyCTA isVisible={isStickyVisible} />
 
-        {/* Footer */}
+        {/* 14. Footer - Basic links and support */}
         <Footer />
       </main>
     </>
