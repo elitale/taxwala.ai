@@ -4,6 +4,44 @@
 
 ## Recent Updates (January 2026)
 
+### "How It Works" Made ITR-1 Specific (January 31, 2026)
+- **Change**: Replaced generic tax filing steps with ITR-1 specific Form 16 workflow
+- **Impact**: Clear expectations for ₹8-18L salaried professionals filing ITR-1
+- **Changes Made**:
+  1. **Step 1 Updated**:
+     - ❌ Before: "Connect - Link bank account, upload receipts, sync billing tools"
+     - ✅ After: "Upload Form 16 - AI extracts salary, TDS, employer details (2 min)"
+     - **Rationale**: Salaried ITR-1 filers don't need bank linking or billing tools
+  
+  2. **Step 2 Updated**:
+     - ❌ Before: "Relax - AI categorizes transactions, matches receipts"
+     - ✅ After: "Add Your Deductions - HRA, 80C (PPF, ELSS, insurance), home loan interest"
+     - **Rationale**: ITR-1 deductions are specific (HRA, 80C, home loan), not generic transactions
+  
+  3. **Step 3 Updated**:
+     - ❌ Before: "Done - Download filing, review, approve, submit"
+     - ✅ After: "Review & File - See calculation, refund, approve, e-file to IT portal"
+     - **Rationale**: Emphasize refund visibility and direct IT portal e-filing
+  
+  4. **Headline Updated**:
+     - ❌ Before: "Three steps to never worry about taxes again"
+     - ✅ After: "File your ITR-1 in 15 minutes flat"
+     - **Rationale**: Specific time commitment + ITR-1 clarity beats vague promise
+  
+  5. **CTA Updated**:
+     - ❌ Before: "Ready to file your taxes in minutes? / Start Filing Now"
+     - ✅ After: "Have your Form 16 ready? Start now. / Upload Form 16 & Start"
+     - **Rationale**: Clear next action (get Form 16) + specific CTA
+
+- **Before/After Summary**:
+  - **Before**: Generic (bank, receipts, billing tools) - confusing for salaried
+  - **After**: ITR-1 specific (Form 16 → deductions → file) - crystal clear
+  
+- **Files Modified**: `src/components/HowItWorksSection.tsx`
+- **Pull Request**: #2 - Make "How It Works" ITR-1 Specific
+- **Branch**: `feature/itr1-how-it-works`
+- **Status**: ✅ Ready for review
+
 ### Critical Website Issues Fixed (January 31, 2026)
 - **Change**: Fixed pricing contradiction, user count inconsistency, and unrealistic target audience examples
 - **Impact**: Resolved critical trust issues preventing conversions from ₹8-18L salaried professionals
@@ -1834,13 +1872,39 @@ When updating agent.md, consider if other docs need updates:
 
 **Last Updated**: January 31, 2026  
 **Maintained By**: AI Agents working on TaxWala.ai  
-**Version**: 1.5.0
+**Version**: 1.6.0
 
 **Update Protocol**: This file MUST be updated with every code change. No exceptions.
 
 ---
 
 ## Changelog
+
+### [1.6.0] - 2026-01-31
+#### Changed - "How It Works" ITR-1 Specificity
+- **HowItWorksSection Component Rewritten**:
+  - Replaced generic tax filing steps with ITR-1 specific workflow
+  - Step 1: "Connect bank/receipts" → "Upload Form 16 (AI extracts in 2 min)"
+  - Step 2: "Relax/AI categorizes" → "Add deductions (HRA, 80C, home loan)"
+  - Step 3: "Done/download" → "Review & File (see refund, e-file to IT portal)"
+  - Headline: "Three steps to never worry" → "File your ITR-1 in 15 minutes flat"
+  - CTA: "Ready to file?" → "Have your Form 16 ready?"
+  - Button: "Start Filing Now" → "Upload Form 16 & Start"
+  - Files: `src/components/HowItWorksSection.tsx`
+
+#### Impact
+- Clear Form 16 → deductions → file workflow for salaried
+- Removed confusion (no bank linking, receipts, billing tools needed)
+- Set correct expectations for ₹8-18L ITR-1 segment
+- Specific time commitment (15 min) beats vague promise
+
+#### Testing & Verification
+- ✅ Component structure unchanged (3 steps maintained)
+- ✅ Icons retained (RocketIcon, SmileIcon, CheckIcon)
+- ✅ TypeScript types unchanged
+- ✅ No breaking changes to component API
+- ✅ Pull Request #2 created
+- ✅ agent.md updated per protocol
 
 ### [1.5.0] - 2026-01-31
 #### Fixed - Critical Website Issues
