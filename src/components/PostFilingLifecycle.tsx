@@ -90,7 +90,7 @@ export const PostFilingLifecycle: React.FC = () => (
           Claim Your Year-Round Support →
         </button>
         <p className="text-sm text-gray-600">
-          Lifetime free access for all salaried professionals filing taxes in India.
+          Just ₹200 per filing. Pay only when you file.
         </p>
       </div>
     </div>

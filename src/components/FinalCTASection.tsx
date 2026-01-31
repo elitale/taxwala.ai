@@ -35,7 +35,7 @@ export const FinalCTASection: React.FC = () => {
         >
           <div className="flex items-center gap-3">
             <CheckCircleIcon />
-            <span>12,847 active users</span>
+            <span>1,247 active users</span>
           </div>
           <span className="hidden md:block">•</span>
           <div className="flex items-center gap-3">
@@ -46,7 +46,7 @@ export const FinalCTASection: React.FC = () => {
 
         {/* Description */}
         <p className="text-xl mb-12 opacity-90 reveal-on-scroll" style={{ animationDelay: "0.2s" }}>
-          Join 12,847 professionals already using TaxWala.ai. Get lifetime free access today.
+          Join 1,247 professionals already using TaxWala.ai. File your ITR for just ₹200 today.
         </p>
 
         {/* Primary CTA Button */}

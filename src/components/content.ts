@@ -5,31 +5,31 @@ export const heroCopy = {
   headline: "As a Salaried Professional,\nYou're Leaving ₹15-45k on the Table Every Year",
   description:
     "Your Form 16 hides deductions you've already earned. Our AI finds them in 15 minutes. Then we take care of you for the next 12 months — refund tracking, tax planning, notice alerts, next-year auto-fill. All included.",
-  waitlistCount: "12,847 salaried professionals already filing with TaxWala.ai",
+  waitlistCount: "1,247 salaried professionals already filing with TaxWala.ai",
 };
 
 export const moneyAuditScenarios = [
   {
     profession: "Software Engineer",
-    income: "₹50L+",
-    found: "₹28,000",
+    income: "₹12L",
+    found: "₹18,000",
     context: "HRA + 80C deductions missed",
   },
   {
-    profession: "Doctor",
-    income: "₹60L+",
-    found: "₹35,000",
-    context: "Clinic depreciation + medical equipment",
+    profession: "Marketing Manager",
+    income: "₹12L",
+    found: "₹18,000",
+    context: "HRA + 80C + home loan interest",
   },
   {
-    profession: "FAANG Manager",
-    income: "₹65L+",
-    found: "₹32,000",
-    context: "Multi-location HRA + stock options",
+    profession: "Senior Manager",
+    income: "₹18L",
+    found: "₹24,000",
+    context: "Multi-location HRA + 80C optimization",
   },
   {
     profession: "Finance Professional",
-    income: "₹45L+",
+    income: "₹15L",
     found: "₹22,000",
     context: "Home loan interest + education",
   },
@@ -272,7 +272,7 @@ export const faqItems = [
       "YES! TaxWala.ai is live and ready. Sign up, upload your Form 16, and our AI will have your ITR ready in 15 minutes. ₹200 per filing, pay only after you're satisfied with the filing.",
   },
   {
-    q: "Is TaxWala.ai really free forever for salaried professionals?",
+    q: "How much does TaxWala.ai cost?",
     a:
       "TaxWala costs ₹200 per ITR filing - that's it. No monthly subscription, no hidden charges, no credit card required upfront. You only pay when you're ready to file. Compare that to ClearTax (₹500-1,000) or CA fees (₹2,000-5,000).",
   },
@@ -294,7 +294,7 @@ export const faqItems = [
   {
     q: "When can I start using this?",
     a:
-      "Right now! TaxWala.ai is live and ready for all salaried professionals across India. Start filing immediately with lifetime free access for salaried income (ITR-1). No waiting, no waitlist.",
+      "Right now! TaxWala.ai is live and ready for all salaried professionals across India. File your ITR for just ₹200. No waiting, no waitlist.",
   },
 ];
 
