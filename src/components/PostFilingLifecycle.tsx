@@ -5,6 +5,15 @@
  */
 
 import React from "react";
+import {
+  DollarSign,
+  AlertTriangle,
+  Lock,
+  Zap,
+  BarChart3,
+  TrendingUp,
+  Check as CheckIcon,
+} from "lucide-react";
 import { postFilingLifecycle } from "./content";
 
 interface LifecycleCardProps {
@@ -12,14 +21,23 @@ interface LifecycleCardProps {
   description: string;
   details: string[];
   icon: string;
-  index: number;
 }
 
-const LifecycleCard: React.FC<LifecycleCardProps> = ({ title, description, details, icon, index }) => (
+// Map emoji/icon names to Lucide components
+const iconMap: { [key: string]: React.ReactNode } = {
+  "💰": <DollarSign className="w-8 h-8 text-primary" />,
+  "🚨": <AlertTriangle className="w-8 h-8 text-red-500" />,
+  "🔐": <Lock className="w-8 h-8 text-green-600" />,
+  "⚡": <Zap className="w-8 h-8 text-yellow-500" />,
+  "📊": <BarChart3 className="w-8 h-8 text-purple-600" />,
+  "📈": <TrendingUp className="w-8 h-8 text-emerald-500" />,
+};
+
+const LifecycleCard: React.FC<LifecycleCardProps> = ({ title, description, details, icon }) => (
   <div className="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-all transform hover:scale-105 h-full flex flex-col">
     {/* Icon & Title */}
     <div className="mb-6">
-      <div className="text-5xl mb-4">{icon}</div>
+      <div className="mb-4">{iconMap[icon] || icon}</div>
       <h3 className="text-2xl font-bold text-foreground">{title}</h3>
     </div>
 
@@ -30,7 +48,7 @@ const LifecycleCard: React.FC<LifecycleCardProps> = ({ title, description, detai
     <div className="space-y-3 border-t border-gray-100 pt-6">
       {details.map((detail, idx) => (
         <div key={idx} className="flex items-start gap-3">
-          <span className="text-primary text-lg font-bold">✓</span>
+          <CheckIcon className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
           <span className="text-sm text-gray-700">{detail}</span>
         </div>
       ))}
@@ -44,20 +62,20 @@ export const PostFilingLifecycle: React.FC = () => (
       {/* Header */}
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-          We Take Care of You After Filing
+          Tax Doesn't Stop After March 31st
         </h2>
         <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-4">
-          Your TaxWala relationship doesn't end at filing. We track your refunds, monitor tax notices, store documents, prefill next year, and send proactive tax planning alerts.
+          Salaried professionals think tax is a March panic. We turn it into a 3-minute annual ritual. Refund tracking, notice monitoring, auto-prefill next year, and tax-saving alerts keep working for you all year.
         </p>
         <p className="text-lg text-primary font-semibold">
-          This is the lifetime value that keeps you coming back.
+          Year 2 costs you ₹0 of your time. Year 5, you've recovered 10x more wealth than Year 1.
         </p>
       </div>
 
       {/* Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         {postFilingLifecycle.map((item, idx) => (
-          <LifecycleCard key={idx} {...item} index={idx} />
+          <LifecycleCard key={idx} {...item} />
         ))}
       </div>
 
@@ -72,7 +90,7 @@ export const PostFilingLifecycle: React.FC = () => (
           Claim Your Year-Round Support →
         </button>
         <p className="text-sm text-gray-600">
-          Limited 500 beta spots. Lifetime free access for early salaried professionals.
+          Lifetime free access for all salaried professionals filing taxes in India.
         </p>
       </div>
     </div>

@@ -1,27 +1,29 @@
 /**
  * Icons Barrel Export
- * Central export point for all icon components
+ * All icons sourced from lucide-react library
  */
 
-export { ClockIcon } from "./ClockIcon";
-export { CalendarIcon } from "./CalendarIcon";
-export { CheckCircleIcon } from "./CheckCircleIcon";
-export { StarIcon } from "./StarIcon";
-export { LockIcon } from "./LockIcon";
-export { MenuIcon } from "./MenuIcon";
-export { CloseIcon } from "./CloseIcon";
-export { ArrowRightIcon } from "./ArrowRightIcon";
-export { PlayIcon } from "./PlayIcon";
-export { ReceiptIcon } from "./ReceiptIcon";
-export { CheckmarkCircleIcon } from "./CheckmarkCircleIcon";
-export { TwitterIcon } from "./TwitterIcon";
-export { LinkedInIcon } from "./LinkedInIcon";
-export { RocketIcon } from "./RocketIcon";
-export { SmileIcon } from "./SmileIcon";
-export { CheckIcon } from "./CheckIcon";
-export { ChevronDownIcon } from "./ChevronDownIcon";
-export { SupportIcon } from "./SupportIcon";
-export { LightBulbIcon } from "./LightBulbIcon";
-export { GiftIcon } from "./GiftIcon";
-export { XCircleIcon } from "./XCircleIcon";
-export { ExclamationCircleIcon } from "./ExclamationCircleIcon";
+export {
+  Clock as ClockIcon,
+  Calendar as CalendarIcon,
+  CheckCircle2 as CheckCircleIcon,
+  Star as StarIcon,
+  Lock as LockIcon,
+  Menu as MenuIcon,
+  X as CloseIcon,
+  ArrowRight as ArrowRightIcon,
+  Play as PlayIcon,
+  ReceiptText as ReceiptIcon,
+  CheckCircle as CheckmarkCircleIcon,
+  Twitter as TwitterIcon,
+  Linkedin as LinkedInIcon,
+  Rocket as RocketIcon,
+  Smile as SmileIcon,
+  Check as CheckIcon,
+  ChevronDown as ChevronDownIcon,
+  Headphones as SupportIcon,
+  Lightbulb as LightBulbIcon,
+  Gift as GiftIcon,
+  XCircle as XCircleIcon,
+  AlertCircle as ExclamationCircleIcon,
+} from "lucide-react";

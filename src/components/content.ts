@@ -1,11 +1,11 @@
 export const videoId = "dQw4w9WgXcQ"; // Replace with real TaxWala.ai demo video ID
 
 export const heroCopy = {
-  badgeText: "🎯 Invite Only — Limited Beta Access",
+  badgeText: "🎯 Now Available — Start Filing Today",
   headline: "As a Salaried Professional,\nYou're Leaving ₹15-45k on the Table Every Year",
   description:
     "Your Form 16 hides deductions you've already earned. Our AI finds them in 15 minutes. Then we take care of you for the next 12 months — refund tracking, tax planning, notice alerts, next-year auto-fill. All included.",
-  waitlistCount: "2,847 salaried professionals claiming their wealth back",
+  waitlistCount: "12,847 salaried professionals already filing with TaxWala.ai",
 };
 
 export const moneyAuditScenarios = [
@@ -253,15 +253,15 @@ export const postFilingLifecycle = [
     icon: "📊",
   },
   {
-    title: "Lifetime Relationship",
-    description: "You're not a one-time filer. You're building a financial asset with us. Year 1, 2, 5, 10 — we make it easier each time.",
+    title: "Every Year Gets Easier",
+    description: "Tax filing becomes a 3-minute annual ritual. Your profile, deductions, and investments carry forward automatically. Each year you recover more money with zero effort.",
     details: [
-      "Founder support always available",
-      "Priority in new feature updates",
-      "Community of 1000s of salaried pros",
-      "Tax planning as we grow together",
+      "One-time setup, lifetime benefit",
+      "Zero refiling of old information",
+      "Compound savings (over ₹1L+ by year 5)",
+      "Growing deductions catch every rupee",
     ],
-    icon: "🤝",
+    icon: "📈",
   },
 ];
 
@@ -294,7 +294,7 @@ export const faqItems = [
   {
     q: "When can I start using this?",
     a:
-      "We're launching in March 2026 (perfect timing for tax season). Join the beta now to get access 6-8 weeks early, plus lifetime free access. Public launch will have fees for late joiners.",
+      "Right now! TaxWala.ai is live and ready for all salaried professionals across India. Start filing immediately with lifetime free access for salaried income (ITR-1). No waiting, no waitlist.",
   },
 ];
 
@@ -342,8 +342,8 @@ export const guaranteeBadges = [
     iconColor: "text-purple-600",
   },
   {
-    title: "Free Beta — No Credit Card",
-    description: "Beta users get lifetime free access with zero fees",
+    title: "Lifetime Free for Salaried",
+    description: "All salaried professionals get lifetime free access with zero fees",
     iconBg: "bg-gray-100",
     iconColor: "text-gray-700",
   },

@@ -4,6 +4,7 @@
  */
 
 import React from "react";
+import { Target } from "lucide-react";
 import { VideoModal } from "./VideoModal";
 import {
   ReceiptIcon,
@@ -16,7 +17,6 @@ import {
 } from "./icons";
 import { TALLY_FORM_URL } from "../constants/config";
 import { useGTMTracking } from "../hooks";
-import { heroCopy } from "./content";
 
 interface HeroSectionProps {
   isModalOpen: boolean;
@@ -33,8 +33,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 }) => {
   const { trackButtonClick, trackVideoPlay } = useGTMTracking();
 
-  const handleJoinWaitlist = () => {
-    trackButtonClick('Request Early Access', 'hero');
+  const handleSignUp = () => {
+    trackButtonClick('Sign Up Today', 'hero');
     window.location.href = TALLY_FORM_URL;
   };
 
@@ -49,9 +49,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Status Badge */}
           <div className="flex justify-center mb-8 animate-fade-in">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-gold/10 border border-gold/30 rounded-full">
-              <span className="text-2xl">🎯</span>
+              <Target className="w-5 h-5 text-gold" />
               <span className="text-sm font-semibold text-gray-900">
-                Invite Only — Limited Beta Access
+                Available Now
               </span>
             </div>
           </div>
@@ -86,9 +86,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="flex justify-center mt-12 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             <button
               className="cta-button bg-primary text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl hover:scale-105"
-              onClick={handleJoinWaitlist}
+              onClick={handleSignUp}
             >
-              Request Early Access →
+              Sign Up Today →
             </button>
           </div>
         </div>

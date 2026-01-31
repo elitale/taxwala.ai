@@ -4,7 +4,6 @@
  */
 
 import React from "react";
-import { TwitterIcon, LinkedInIcon } from "./icons";
 import { Logo } from "./Logo";
 
 export const Footer: React.FC = () => {
@@ -27,16 +26,12 @@ export const Footer: React.FC = () => {
             <FooterLink href="https://elitale.com/contact" label="Contact" />
             <FooterLink href="https://elitale.com/privacy" label="Privacy" />
             <FooterLink href="https://elitale.com/terms" label="Terms" />
-            <div className="flex items-center gap-4">
-              {/* <SocialLink href="#" icon="twitter" /> */}
-              {/* <SocialLink href="#" icon="linkedin" /> */}
-            </div>
           </div>
 
           {/* Status Badge */}
-          <div className="flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full">
-            <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-            <span className="text-sm font-medium text-primary">Private Beta</span>
+          <div className="flex items-center gap-2 px-4 py-2 bg-green-50 rounded-full">
+            <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+            <span className="text-sm font-medium text-green-600">Live and Available</span>
           </div>
         </div>
       </div>
@@ -54,21 +49,3 @@ const FooterLink: React.FC<FooterLinkProps> = ({ href, label }) => (
     {label}
   </a>
 );
-
-interface SocialLinkProps {
-  href: string;
-  icon: "twitter" | "linkedin";
-}
-
-const SocialLink: React.FC<SocialLinkProps> = ({ href, icon }) => {
-  const icons = {
-    twitter: <TwitterIcon />,
-    linkedin: <LinkedInIcon />,
-  };
-
-  return (
-    <a href={href} target="_blank" className="text-gray-600 hover:text-gray-900 transition-colors" aria-label={`Link to ${icon}`}>
-      {icons[icon]}
-    </a>
-  );
-};

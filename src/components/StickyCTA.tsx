@@ -17,8 +17,8 @@ export const StickyCTA: React.FC<StickyCTAProps> = ({ isVisible }) => {
 
   if (!isVisible) return null;
 
-  const handleJoinWaitlist = () => {
-    trackButtonClick('Join Waitlist', 'sticky_cta');
+  const handleSignUp = () => {
+    trackButtonClick('Sign Up', 'sticky_cta');
     window.location.href = TALLY_FORM_URL;
   };
 
@@ -26,9 +26,9 @@ export const StickyCTA: React.FC<StickyCTAProps> = ({ isVisible }) => {
     <div className="fixed bottom-6 right-6 z-40">
       <button
         className="cta-button bg-primary text-white px-6 py-3 rounded-full font-semibold shadow-2xl hover:bg-blue-700 transition-all hover:scale-105 flex items-center gap-2"
-        onClick={handleJoinWaitlist}
+        onClick={handleSignUp}
       >
-        <span>Join Waitlist</span>
+        <span>Sign Up Now</span>
         <ArrowRightIcon />
       </button>
     </div>
