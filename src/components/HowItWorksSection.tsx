@@ -78,12 +78,12 @@ export const HowItWorksSection: React.FC = () => {
 
         {/* CTA */}
         <div className="text-center reveal-on-scroll">
-          <p className="text-gray-600 mb-6 text-lg">Watch the video to see it in action</p>
+          <p className="text-gray-600 mb-6 text-lg">Ready to file your taxes in minutes?</p>
           <button
             className="cta-button bg-gray-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-black transition-all shadow-lg"
             onClick={() => window.location.href = TALLY_FORM_URL}
           >
-            Get Early Access
+            Start Filing Now
           </button>
         </div>
       </div>

@@ -18,8 +18,8 @@ import { TALLY_FORM_URL } from "../constants/config";
 export const BenefitsSection: React.FC = () => {
   const benefits: BenefitItem[] = [
     {
-      title: "Lifetime Free for Salaried",
-      description: "All salaried professionals get TaxWala.ai free forever. Zero hidden fees, zero credit card required.",
+      title: "Affordable Pricing",
+      description: "Just ₹200 per ITR filing. No hidden fees, no subscriptions. Pay only when you file.",
       iconBackground: "bg-gold/20",
       iconColor: "text-gold",
     },

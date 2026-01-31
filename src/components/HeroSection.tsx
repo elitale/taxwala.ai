@@ -64,8 +64,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               Take This Long
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              AI-powered tax automation for Indian businesses. Connect your bank, upload receipts, and let our AI
-              handle the rest. <span className="font-semibold text-gray-900">Zero fees. Zero hassle.</span>
+              AI-powered tax automation for Indian salaried professionals. Upload your Form 16, and let our AI
+              handle the rest. <span className="font-semibold text-gray-900">Just ₹200 per filing. Zero hassle.</span>
             </p>
             {/* Salaried Focus Clarity */}
             <p className="text-sm font-medium text-primary mt-6 bg-blue-50 py-3 px-6 rounded-full inline-block">
@@ -183,7 +183,7 @@ const UserProof: React.FC = () => (
         </div>
       </div>
       <p className="text-sm text-gray-600">
-        <span className="font-bold text-primary">1,247 businesses</span> already waiting
+        <span className="font-bold text-primary">1,247 salaried professionals</span> already using TaxWala
       </p>
     </div>
   </div>
@@ -193,7 +193,7 @@ const TrustIndicators: React.FC = () => (
   <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 text-sm animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
     <div className="flex items-center gap-2">
       <CheckCircleIcon className="w-5 h-5 text-green-600" />
-      <span className="font-semibold text-gray-900">100% Free Forever</span>
+      <span className="font-semibold text-gray-900">₹200 per filing</span>
     </div>
     <div className="flex items-center gap-2">
       <StarIcon className="w-5 h-5 text-gold" />

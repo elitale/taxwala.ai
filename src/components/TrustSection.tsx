@@ -11,25 +11,25 @@ import { TALLY_FORM_URL } from "../constants/config";
 export const TrustSection: React.FC = () => {
   const testimonials: Testimonial[] = [
     {
-      name: "Arjun Mehta",
-      role: "E-commerce Founder",
+      name: "Priya Sharma",
+      role: "Software Engineer, Bangalore",
       quote:
-        "I was spending 25 hours every month on tax paperwork. TaxWala.ai cut that to 2 hours. This is a game-changer for my business.",
-      image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=100&h=100&fit=crop&crop=faces",
+        "I had no idea I was missing ₹28,000 in HRA deductions. TaxWala found them automatically from my rent payments. My CA never bothered.",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces",
     },
     {
-      name: "Rohan Singh",
-      role: "Startup Founder",
+      name: "Rahul Verma",
+      role: "Marketing Manager, Mumbai",
       quote:
-        "Filing taxes used to be my biggest nightmare. Now it's completely automated. I focus on growing my startup while TaxWala handles the rest.",
-      image: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=100&h=100&fit=crop&crop=faces",
-    },
-    {
-      name: "Karan Patel",
-      role: "Freelance Developer",
-      quote:
-        "As a freelancer, I had zero time for tax paperwork. TaxWala.ai handles everything. I just upload receipts and it's done. Best tool I've used!",
+        "Changed jobs twice last year. Had 3 Form 16s to reconcile. TaxWala handled it perfectly in 10 minutes. Never using a CA again.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces",
+    },
+    {
+      name: "Ananya Desai",
+      role: "Finance Professional, Pune",
+      quote:
+        "Filed my ITR-1 in 12 minutes. Found ₹22,000 in home loan interest deductions I forgot about. Worth way more than the ₹200 fee.",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces",
     },
   ];
 
@@ -46,7 +46,7 @@ export const TrustSection: React.FC = () => {
         </div>
 
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16 max-w-4xl reveal-on-scroll">
-          Built by experts, trusted by businesses
+          Built by experts, trusted by salaried professionals
         </h2>
 
         {/* Company Info Card */}

@@ -267,14 +267,14 @@ export const postFilingLifecycle = [
 
 export const faqItems = [
   {
-    q: "I'm just a salaried employee. Do I really need this?",
+    q: "Can I start filing my taxes right now?",
     a:
-      "YES. Most salaried people overpay ₹5,000-20,000 in taxes annually because they miss deductions (HRA, 80C, home loan, NPS, medical). TaxWala's AI finds ALL eligible deductions automatically. Plus you save ₹2,000-5,000 CA fees every year.",
+      "YES! TaxWala.ai is live and ready. Sign up, upload your Form 16, and our AI will have your ITR ready in 15 minutes. ₹200 per filing, pay only after you're satisfied with the filing.",
   },
   {
-    q: "Is this really free forever for salaried people?",
+    q: "Is TaxWala.ai really free forever for salaried professionals?",
     a:
-      "100% YES. If you file ITR-1 (salaried income only), you get lifetime free access. No tricks, no hidden fees, no credit card ever. We may charge for business income (ITR-3/4) later, but salaried stays free forever.",
+      "TaxWala costs ₹200 per ITR filing - that's it. No monthly subscription, no hidden charges, no credit card required upfront. You only pay when you're ready to file. Compare that to ClearTax (₹500-1,000) or CA fees (₹2,000-5,000).",
   },
   {
     q: "How is this different from ClearTax or other platforms?",
@@ -342,8 +342,8 @@ export const guaranteeBadges = [
     iconColor: "text-purple-600",
   },
   {
-    title: "Lifetime Free for Salaried",
-    description: "All salaried professionals get lifetime free access with zero fees",
+    title: "Transparent Pricing",
+    description: "Just ₹200 per filing. No subscriptions, no hidden charges",
     iconBg: "bg-gray-100",
     iconColor: "text-gray-700",
   },
