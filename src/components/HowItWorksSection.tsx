@@ -11,9 +11,9 @@ export const HowItWorksSection: React.FC = () => {
   const steps = [
     {
       number: 1,
-      title: "Connect",
+      title: "Upload Form 16",
       description:
-        "Link your bank account in 30 seconds. Upload receipts with a photo. Sync your billing tools.",
+        "Upload your Form 16 from employer. Our AI extracts salary, TDS, employer details automatically. Takes 2 minutes.",
       iconBg: "bg-primary/10",
       iconColor: "text-primary",
       delay: "0.1s",
@@ -21,9 +21,9 @@ export const HowItWorksSection: React.FC = () => {
     },
     {
       number: 2,
-      title: "Relax",
+      title: "Add Your Deductions",
       description:
-        "Our AI categorizes transactions, matches receipts, and processes while you sleep.",
+        "Tell us about HRA rent payments, 80C investments (PPF, ELSS, insurance), and home loan interest. We calculate exemptions for you.",
       iconBg: "bg-purple-100",
       iconColor: "text-purple-600",
       delay: "0.2s",
@@ -31,8 +31,8 @@ export const HowItWorksSection: React.FC = () => {
     },
     {
       number: 3,
-      title: "Done",
-      description: "Download your tax filing in 1 click. Review, approve, and submit. That's it.",
+      title: "Review & File",
+      description: "See your tax calculation, refund amount, and all deductions. Approve with one click. We e-file to IT portal immediately.",
       iconBg: "bg-green-100",
       iconColor: "text-green-600",
       delay: "0.3s",
@@ -53,7 +53,7 @@ export const HowItWorksSection: React.FC = () => {
         </div>
 
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16 max-w-4xl reveal-on-scroll">
-          Three steps to never worry about taxes again
+          File your ITR-1 in 15 minutes flat
         </h2>
 
         {/* Steps Grid */}
@@ -78,12 +78,12 @@ export const HowItWorksSection: React.FC = () => {
 
         {/* CTA */}
         <div className="text-center reveal-on-scroll">
-          <p className="text-gray-600 mb-6 text-lg">Ready to file your taxes in minutes?</p>
+          <p className="text-gray-600 mb-6 text-lg">Have your Form 16 ready? Start now.</p>
           <button
             className="cta-button bg-gray-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-black transition-all shadow-lg"
             onClick={() => window.location.href = TALLY_FORM_URL}
           >
-            Start Filing Now
+            Upload Form 16 & Start
           </button>
         </div>
       </div>
