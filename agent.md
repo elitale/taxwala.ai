@@ -4,6 +4,41 @@
 
 ## Recent Updates (January 2026)
 
+### Testimonials Mobile/Tablet Design Improved (January 31, 2026)
+- **Change**: Improved responsive design of testimonials section for mobile and tablet devices
+- **Impact**: Better readability and layout on smaller screens
+- **Changes Made**:
+  1. **Testimonials Grid**:
+     - Mobile: 1 column (stacked vertically)
+     - Tablet: 2 columns (`sm:grid-cols-2`)
+     - Desktop: 3 columns (`lg:grid-cols-3`)
+     - Responsive gaps: `gap-6` mobile → `md:gap-8` desktop
+  
+  2. **Testimonial Cards**:
+     - Responsive padding: `p-6` → `md:p-8`
+     - Smaller avatars on mobile: `w-12 h-12` → `md:w-16 md:h-16`
+     - Responsive text: `text-sm` → `md:text-base`
+     - Added `flex-col h-full` for equal height cards
+     - Added `line-clamp-2` on role to prevent overflow
+     - Quote uses `flex-grow` to push stars to bottom
+  
+  3. **Company Info Card**:
+     - Responsive padding: `p-6` → `md:p-12`
+     - Smaller logo: `w-10 h-10` → `md:w-12 md:h-12`
+     - Text sizing: `text-xs/text-base` → `md:text-sm/md:text-xl`
+     - Added `truncate` for company name
+     - Smaller security feature icons on mobile
+  
+  4. **Urgency Section**:
+     - Responsive text: `text-xl` → `md:text-2xl`
+     - Full-width button on mobile: `w-full sm:w-auto`
+     - Fixed user count: 12,847 → 1,247 (consistency)
+
+- **Files Modified**: `src/components/TrustSection.tsx`
+- **Pull Request**: #5 - Improve Testimonials Mobile/Tablet Design
+- **Branch**: `fix/testimonials-mobile-design`
+- **Status**: ✅ Ready for review
+
 ### Lucide Star Icons Fixed Properly (January 31, 2026) - CRITICAL FIX
 - **Change**: Fixed ALL StarIcon usages to use Lucide React props correctly (fill + strokeWidth)
 - **Impact**: Stars now render properly as filled/solid across entire site
@@ -1908,13 +1943,36 @@ When updating agent.md, consider if other docs need updates:
 
 **Last Updated**: January 31, 2026  
 **Maintained By**: AI Agents working on TaxWala.ai  
-**Version**: 1.8.0
+**Version**: 1.9.0
 
 **Update Protocol**: This file MUST be updated with every code change. No exceptions.
 
 ---
 
 ## Changelog
+
+### [1.9.0] - 2026-01-31
+#### Changed - Mobile/Tablet Responsive Design
+- **Testimonials Section Mobile Optimization**:
+  - Responsive grid: 1 col mobile → 2 col tablet → 3 col desktop
+  - Smaller padding/text/icons on mobile
+  - Equal height cards with flexbox
+  - Full-width CTA button on mobile
+  - User count fixed: 12,847 → 1,247
+  - File: `TrustSection.tsx`
+
+#### Impact
+- ✅ Better mobile UX (no cramped layout)
+- ✅ No text overflow on small screens
+- ✅ Easier to tap CTA button
+- ✅ Cards look professional on all screen sizes
+
+#### Testing & Verification
+- ✅ Responsive breakpoints: mobile/tablet/desktop
+- ✅ Tailwind responsive classes properly applied
+- ✅ No breaking changes to desktop layout
+- ✅ Pull Request #5 created
+- ✅ agent.md updated per protocol
 
 ### [1.8.0] - 2026-01-31
 #### Fixed - CRITICAL: Lucide Star Icons
