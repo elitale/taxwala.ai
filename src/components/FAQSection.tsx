@@ -15,17 +15,17 @@ export const FAQSection: React.FC = () => {
     {
       question: "Can I start filing my taxes right now?",
       answer:
-        "Yes! TaxWala.ai is fully live and operational. You can start filing your taxes immediately with no waiting period. All salaried professionals get lifetime free access to file their ITR-1 returns.",
+        "Yes! TaxWala.ai is fully live and operational. You can start filing your taxes immediately with no waiting period. The filing fee is ₹200 per return - a one-time payment that's significantly lower than traditional CA fees (₹2000-5000).",
     },
     {
-      question: "Is TaxWala.ai really free forever for salaried professionals?",
+      question: "What does the ₹200 filing fee include?",
       answer:
-        "Yes! Lifetime free access for salaried professionals with no hidden fees. We'll always provide core tax automation for salaried income at no cost. No credit card required, ever.",
+        "Everything you need for a complete ITR filing: AI-powered data extraction from Form 16, automatic calculation of all deductions (80C, 80D, HRA, home loan interest), validation against 26AS, expert review by tax professionals, and direct e-filing to the Income Tax portal. Plus free re-filing if any errors are found.",
     },
     {
       question: "How do I get started with TaxWala.ai?",
       answer:
-        'Click any "Save Your Taxes" button on this page to sign up. The process takes less than 2 minutes. You can start filing immediately and complete your tax return by the March deadline.',
+        'Click any "Save Your Taxes" button on this page to sign up. The process takes less than 2 minutes. Upload your Form 16, answer a few questions about deductions, review your pre-filled return, and we\'ll handle the e-filing. You pay ₹200 only when you\'re ready to file.',
     },
     {
       question: "Is my financial data safe?",
@@ -35,7 +35,7 @@ export const FAQSection: React.FC = () => {
     {
       question: "What if I need help filing my taxes?",
       answer:
-        "You get access to world-class support from tax experts. We're available to help during tax season and can answer questions within hours. You can also reach our team through chat or email anytime.",
+        "You get access to expert support from our tax professionals. We're available during tax season to answer questions via chat or email, typically responding within a few hours. Complex cases get a free consultation call to ensure accuracy.",
     },
   ];
 

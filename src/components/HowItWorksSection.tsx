@@ -11,9 +11,9 @@ export const HowItWorksSection: React.FC = () => {
   const steps = [
     {
       number: 1,
-      title: "Upload Form 16",
+      title: "Upload Form 16 & Bank Statement",
       description:
-        "Upload your Form 16 from employer. Our AI extracts salary, TDS, employer details automatically. Takes 2 minutes.",
+        "Upload your Form 16 PDF. Optionally connect your bank for automatic detection of HRA rent payments, home loan EMIs, and 80C investments. Our AI extracts all salary details, TDS, and employer info in seconds.",
       iconBg: "bg-primary/10",
       iconColor: "text-primary",
       delay: "0.1s",
@@ -21,9 +21,9 @@ export const HowItWorksSection: React.FC = () => {
     },
     {
       number: 2,
-      title: "Add Your Deductions",
+      title: "Verify Deductions & Exemptions",
       description:
-        "Tell us about HRA rent payments, 80C investments (PPF, ELSS, insurance), and home loan interest. We calculate exemptions for you.",
+        "Review AI-detected deductions: 80C (PPF, ELSS, LIC, NSC), 80D (health insurance), HRA exemption (rent vs salary calculation), and home loan interest (Section 24). Add any missed investments. We validate against your 26AS automatically.",
       iconBg: "bg-purple-100",
       iconColor: "text-purple-600",
       delay: "0.2s",
@@ -31,8 +31,8 @@ export const HowItWorksSection: React.FC = () => {
     },
     {
       number: 3,
-      title: "Review & File",
-      description: "See your tax calculation, refund amount, and all deductions. Approve with one click. We e-file to IT portal immediately.",
+      title: "Review, Pay ₹200 & E-File",
+      description: "See your complete tax calculation, refund amount (or tax due), and all applied deductions. Expert review included. One-time payment of ₹200. We e-file directly to the Income Tax portal with your digital signature.",
       iconBg: "bg-green-100",
       iconColor: "text-green-600",
       delay: "0.3s",
