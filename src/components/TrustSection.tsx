@@ -12,23 +12,23 @@ export const TrustSection: React.FC = () => {
   const testimonials: Testimonial[] = [
     {
       name: "Priya Sharma",
-      role: "Software Engineer, Bangalore",
+      role: "Software Engineer, ₹12L CTC • Bangalore",
       quote:
-        "I had no idea I was missing ₹28,000 in HRA deductions. TaxWala found them automatically from my rent payments. My CA never bothered.",
+        "Changed jobs mid-year and had 2 Form 16s. My CA quoted ₹3000 just to reconcile. TaxWala did it automatically in 8 minutes. Found ₹28k in HRA deductions I almost missed!",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces",
     },
     {
       name: "Rahul Verma",
-      role: "Marketing Manager, Mumbai",
+      role: "Marketing Manager, ₹15L CTC • Mumbai",
       quote:
-        "Changed jobs twice last year. Had 3 Form 16s to reconcile. TaxWala handled it perfectly in 10 minutes. Never using a CA again.",
+        "First time filing ITR myself. Was worried about mistakes. TaxWala's AI checked everything against my 26AS, found all my 80C investments, even reminded me about my NPS contributions. Zero errors.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces",
     },
     {
       name: "Ananya Desai",
-      role: "Finance Professional, Pune",
+      role: "Finance Analyst, ₹9.5L CTC • Pune",
       quote:
-        "Filed my ITR-1 in 12 minutes. Found ₹22,000 in home loan interest deductions I forgot about. Worth way more than the ₹200 fee.",
+        "My salary has standard deduction, HRA, and LTA. Used to take me 3 hours with ClearTax. With TaxWala, I uploaded Form 16, answered 3 questions, done. ₹22k home loan interest automatically added!",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces",
     },
   ];
