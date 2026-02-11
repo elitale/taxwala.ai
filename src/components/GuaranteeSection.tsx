@@ -1,6 +1,6 @@
 /**
  * Guarantee Section
- * Displays TaxWala Confidence Guarantee with 4 trust badges
+ * Displays MunimChaha Confidence Guarantee with 4 trust badges
  * Positioned before final CTA to reduce signup hesitation
  */
 
@@ -17,12 +17,12 @@ export const GuaranteeSection: React.FC = () => {
   const icons = [CheckCircleIcon, CheckmarkCircleIcon, SupportIcon, GiftIcon];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-blue-50">
+    <section className="py-20 bg-linear-to-b from-white to-blue-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16 reveal-on-scroll">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            TaxWala Confidence Guarantee
+            MunimChaha Confidence Guarantee
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Your trust is our priority. Here's our commitment to you.

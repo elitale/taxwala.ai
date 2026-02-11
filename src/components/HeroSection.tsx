@@ -39,7 +39,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   };
 
   const handleVideoClick = () => {
-    trackVideoPlay(videoId, 'TaxWala Demo');
+    trackVideoPlay(videoId, 'MunimChacha Demo');
     onModalOpen();
   };
   return (
@@ -67,6 +67,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               AI-powered tax automation for Indian salaried professionals. Upload your Form 16, and let our AI
               handle the rest. <span className="font-semibold text-gray-900">Just ₹200 per filing. Zero hassle.</span>
             </p>
+            <br />
             {/* Salaried Focus Clarity */}
             <p className="text-sm font-medium text-primary mt-6 bg-blue-50 py-3 px-6 rounded-full inline-block">
               Built for salaried professionals with Form 16 income. Scaling to freelancers & businesses later.
@@ -111,7 +112,7 @@ interface VideoPreviewProps {
 const VideoPreview: React.FC<VideoPreviewProps> = ({ onVideoClick }) => (
   <div className="max-w-5xl mx-auto mb-12 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
     <div className="relative group cursor-pointer" onClick={onVideoClick}>
-      <div className="aspect-video rounded-2xl overflow-hidden border-2 border-gray-200 shadow-2xl bg-gradient-to-br from-blue-50 to-purple-50">
+      <div className="aspect-video rounded-2xl overflow-hidden border-2 border-gray-200 shadow-2xl bg-linear-to-br from-blue-50 to-purple-50">
         <div className="w-full h-full flex items-center justify-center relative overflow-hidden">
           <div className="relative w-full h-full p-12 flex items-center justify-center gap-8">
             {/* Receipt Icon */}
@@ -183,7 +184,7 @@ const UserProof: React.FC = () => (
         </div>
       </div>
       <p className="text-sm text-gray-600">
-        <span className="font-bold text-primary">1,247 salaried professionals</span> already using TaxWala
+        <span className="font-bold text-primary">1,247 salaried professionals</span> already using MunimChacha
       </p>
     </div>
   </div>

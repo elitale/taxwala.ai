@@ -1,6 +1,6 @@
 # Indian Tax Filing SaaS – API Provider Map (Production-Ready)
 
-This document is a **step-by-step integration checklist** for building an Indian ITR filing SaaS (like TaxWala.ai).
+This document is a **step-by-step integration checklist** for building an Indian ITR filing SaaS (like MunimChaha).
 
 It covers:
 
@@ -138,7 +138,7 @@ https://uidai.gov.in/ecosystem/authentication-devices-documents/offline-kyc.html
 
 Flow:
 1. User downloads Offline Aadhaar XML  
-2. User uploads to TaxWala  
+2. User uploads to MunimChaha  
 3. System verifies UIDAI signature  
 
 ---
@@ -417,7 +417,7 @@ Use for:
 
 ---
 
-# Recommended MVP Provider Stack (TaxWala.ai)
+# Recommended MVP Provider Stack (MunimChaha)
 
 | Category | MVP Choice |
 |---------|------------|

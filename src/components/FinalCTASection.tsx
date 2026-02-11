@@ -46,7 +46,7 @@ export const FinalCTASection: React.FC = () => {
 
         {/* Description */}
         <p className="text-xl mb-12 opacity-90 reveal-on-scroll" style={{ animationDelay: "0.2s" }}>
-          Join 1,247 professionals already using TaxWala.ai. File your ITR for just ₹200 today.
+          Join 1,247 professionals already using MunimChaha. File your ITR for just ₹200 today.
         </p>
 
         {/* Primary CTA Button */}

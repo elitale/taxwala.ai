@@ -4,18 +4,22 @@
  */
 
 import React from "react";
-import { Logo } from "./Logo";
+// import { Logo } from "./Logo";
+import logo from "../assets/images/logo.svg?url";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-white border-t border-gray-200 py-8 px-6">
+    <footer className="bg-white/0 border-t border-gray-200 py-8 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo & Copyright */}
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-3">
-              <Logo className="w-8 h-8" />
-              <span className="font-bold">TaxWala.ai</span>
+              {/* <Logo className="w-8 h-8" /> */}
+              <img src={logo} alt="MunimChaha Logo"
+              style={{ height: "42px", width: "auto", cursor: "pointer" }}
+            />
+              {/* <span className="font-bold">MunimChaha</span> */}
             </div>
             <span className="text-sm text-gray-600">© {(new Date()).getFullYear()} Elitale Softwares Pvt Ltd</span>
           </div>

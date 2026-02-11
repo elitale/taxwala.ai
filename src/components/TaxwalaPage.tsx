@@ -1,5 +1,5 @@
 /**
- * Main TaxWala Page Component
+ * Main MunimChaha Page Component
  * Orchestrates all sections and handles state management
  */
 
@@ -24,11 +24,11 @@ import {
   FinalCTASection,
   StickyCTA,
   Footer,
-} from "../components/index";
+} from "./index";
 import { useModalControl, useScrollDetection, useRevealOnScroll, useSmoothScroll } from "../hooks/index";
 import type { NavLink } from "../types/index";
 
-const TaxwalaPage: React.FC = () => {
+const MunimChahaPage: React.FC = () => {
   // Initialize hooks
   const { isOpen: isModalOpen, open: openModal, close: closeModal } = useModalControl();
   const isStickyVisible = useScrollDetection(800);
@@ -133,4 +133,4 @@ const TaxwalaPage: React.FC = () => {
   );
 };
 
-export default TaxwalaPage;
+export default MunimChahaPage;
