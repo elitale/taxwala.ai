@@ -23,8 +23,7 @@ export const Navigation: React.FC<NavigationProps> = ({ navLinks }) => {
 
   const handleNavClick = (label: string) => {
     trackButtonClick(label, 'navigation');
-  };
-
+   };
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/50 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 py-4">
@@ -34,10 +33,8 @@ export const Navigation: React.FC<NavigationProps> = ({ navLinks }) => {
             <img src={logo} alt="MunimChaha Logo"
               style={{ height: "56px", width: "auto", cursor: "pointer" }}
             />
-            {/* <span className="text-xl font-bold tracking-tight">TaxWala.ai</span> */}
+            {/* <span className="text-xl font-bold tracking-tight">MunimChaha</span> */}
           </div>
-
-
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks?.map((link) => (

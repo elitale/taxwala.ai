@@ -59,7 +59,7 @@ They need automation — done correctly.
 So I decided to build something for myself.
 
 
-That’s how **TaxWala.ai** was born.
+That’s how **MunimChaha** was born.
 
 An AI-powered tax filing system  
 built specifically for Indian businesses.
@@ -122,7 +122,7 @@ And you always stay in control.
 
 
 To make this completely risk-free for you,  
-here’s our **TaxWala Confidence Guarantee**:
+here’s our **MunimChaha Confidence Guarantee**:
 
 - **Nothing is filed without your approval.**  
 - **Every return is reviewed by a Chartered Accountant.**  
@@ -153,7 +153,7 @@ I built this for myself.
 But then I thought —  
 why not open this up to other business owners like you?
 
-So we’re opening **beta access** to TaxWala.ai.
+So we’re opening **beta access** to MunimChaha.
 
 Only **500 businesses** will get in.
 
@@ -184,14 +184,14 @@ Here’s what to do next.
 
 Click the button below.  
 Enter your email.  
-Join the TaxWala.ai beta waitlist.
+Join the MunimChaha beta waitlist.
 
 In the next 30 minutes,  
 you could be done with tax work  
 that usually takes hours.
 
 
-I built TaxWala.ai because I needed it.
+I built MunimChaha because I needed it.
 
 If you’re tired of tax confusion, stress, and wasted time —  
 you’ll need it too.

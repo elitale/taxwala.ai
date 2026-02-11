@@ -1,7 +1,7 @@
 /**
  * Feature Comparison Section
  * Shows salaried-focused feature comparison vs competitors
- * Emphasizes why TaxWala is built for salaried professionals
+ * Emphasizes why MunimChaha is built for salaried professionals
  */
 
 import React from "react";
@@ -23,7 +23,7 @@ import {
 
 interface ComparisonRowProps {
   feature: string;
-  taxwala: string;
+  MunimChaha: string;
   cleartax: string;
   quicko: string;
   taxbuddy: string;
@@ -64,10 +64,9 @@ const CompetitorLogo: React.FC<{ logo: string; alt: string }> = ({ logo, alt }) 
     className="h-8 md:h-10 object-contain mx-auto"
   />
 );
-
 const ComparisonRow: React.FC<ComparisonRowProps> = ({
   feature,
-  taxwala,
+  MunimChaha,
   cleartax,
   quicko,
   taxbuddy,
@@ -90,9 +89,9 @@ const ComparisonRow: React.FC<ComparisonRowProps> = ({
           <div className="text-sm text-gray-600 leading-relaxed ml-8">{explanation}</div>
         </div>
 
-        {/* TaxWala */}
+        {/* MunimChaha */}
         <div className="text-center py-2 md:py-0 flex flex-col items-center justify-center">
-          <StatusIcon status={taxwala} />
+          <StatusIcon status={MunimChaha} />
         </div>
 
         {/* ClearTax */}
@@ -194,7 +193,7 @@ export const FeatureComparison: React.FC = () => (
             </div>
           </div>
           <p className="text-lg text-gray-700 mb-6 font-semibold">
-            See the difference? <span className="text-primary font-bold">TaxWala is built obsessively for salaried professionals.</span>
+            See the difference? <span className="text-primary font-bold">MunimChacha is built obsessively for salaried professionals.</span>
           </p>
           <button
             data-tally-open="wgxDQB"

@@ -63,7 +63,7 @@ What I need to know but can't find:
 8. CONFUSING COMPARISON TABLE 📊
 
   • Claims to compare with ClearTax, Quicko, TaxBuddy
-  • But uses green checkmarks for TaxWala and red crosses for competitors
+  • But uses green checkmarks for MunimChaha and red crosses for competitors
   • Some claims seem exaggerated (e.g., "Auto-Fill Salary from Bank API" — ClearTax has this too)
   • Problem: Feels biased and unrealistic. I'll just Google these competitors instead.
 

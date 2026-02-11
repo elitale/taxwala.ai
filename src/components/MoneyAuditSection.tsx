@@ -31,7 +31,7 @@ const MoneyAuditItem: React.FC<MoneyAuditItemProps> = ({ profession, income, fou
 );
 
 export const MoneyAuditSection: React.FC = () => (
-  <section className="py-16 px-6 bg-gradient-to-b from-blue-50 to-white">
+  <section className="py-16 px-6 bg-linear-to-b from-blue-50 to-white">
     <div className="max-w-6xl mx-auto">
       {/* Header */}
       <div className="text-center mb-12">
@@ -39,7 +39,7 @@ export const MoneyAuditSection: React.FC = () => (
           See What Real Salaried Professionals Found
         </h2>
         <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-          Your audit could look similar. TaxWala finds deductions in your profile right now.
+          Your audit could look similar. MunimChaha finds deductions in your profile right now.
         </p>
       </div>
 

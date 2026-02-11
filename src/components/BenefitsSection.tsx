@@ -56,7 +56,7 @@ export const BenefitsSection: React.FC = () => {
   ];
 
   return (
-    <section id="benefits" className="py-24 px-6 bg-gradient-to-b from-white to-blue-50">
+    <section id="benefits" className="py-24 px-6 bg-linear-to-b from-white to-blue-50">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="flex items-center gap-4 mb-12 reveal-on-scroll">
@@ -68,7 +68,7 @@ export const BenefitsSection: React.FC = () => {
         </div>
 
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16 max-w-4xl reveal-on-scroll">
-          What you get with TaxWala.ai
+          What you get with MunimChaha
         </h2>
 
         {/* Benefits Grid */}

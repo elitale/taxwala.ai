@@ -1,4 +1,4 @@
-# Agent Instructions - TaxWala.ai Technical Guide
+# Agent Instructions - MunimChacha Technical Guide
 
 > Comprehensive technical documentation for AI agents working on this codebase. This file contains every technical detail, pattern, and convention used in the project.
 
@@ -143,7 +143,7 @@
      - **Rationale**: ₹8-15L salaried professionals couldn't relate to ₹60L+ examples
   
   4. **FAQ Updated for Clarity**:
-     - Changed question: "Is TaxWala.ai really free forever?" → "How much does TaxWala.ai cost?"
+     - Changed question: "Is MunimChacha really free forever?" → "How much does MunimChacha cost?"
      - Removed misleading "lifetime free" answer
      - **Files Modified**: `content.ts` (faqItems)
 
@@ -169,7 +169,7 @@
 
 ### Product Positioning: Beta → Mature Product
 - **Change**: Removed all "beta", "invite-only", "waitlist", and "limited spots" messaging
-- **New Positioning**: TaxWala.ai presented as a **live, production-ready service**
+- **New Positioning**: MunimChacha presented as a **live, production-ready service**
 - **Updated Messaging**:
   - "Invite Only — Limited Beta Access" → "Now Available — Start Filing Today"
   - "Request Early Access" → "Sign Up Today"
@@ -214,12 +214,12 @@
 
 ### Page Structure Reorganization (SaaS Best Practices)
 - **Issue**: Previous page flow had broken step numbering (Steps 1→2→3→4 in illogical order)
-- **Solution**: Reorganized TaxwalaPage.tsx to follow proven SaaS conversion funnel structure
+- **Solution**: Reorganized MunimChachaPage.tsx to follow proven SaaS conversion funnel structure
 - **New Page Flow**:
   1. **Header** - Navigation component with links
   2. **Hero Section** - Strong headline, value prop, CTA button
   3. **Trust Signals** (Step 1) - Customer testimonials and social proof
-  4. **Problem/Solution** - Identifies pain point and how TaxWala solves it
+  4. **Problem/Solution** - Identifies pain point and how MunimChacha solves it
   5. **Value Exchange** (MoneyAuditSection) - Shows real deductions found
   6. **How It Works** (Step 2) - 3-step process visualization
   7. **Exclusive Benefits** (Step 3) - 6 exclusive benefits with icons
@@ -236,7 +236,7 @@
   - BenefitsSection: 2 → 3 (after how it works)
   - FAQSection: 4 → 5 (after feature comparisons)
 - **Rationale**: This ordering follows the proven SaaS landing page pattern that maximizes conversions by building trust early, establishing problem/solution fit, then presenting features and benefits
-- **File Modified**: `src/components/TaxwalaPage.tsx` - Entire component render sequence reorganized
+- **File Modified**: `src/components/MunimChachaPage.tsx` - Entire component render sequence reorganized
 - **Files Updated**: TrustSection.tsx, HowItWorksSection.tsx, BenefitsSection.tsx, FAQSection.tsx (step numbers updated)
 - **Build Status**: ✅ Build verified successful after changes, 0 TypeScript errors
 
@@ -300,7 +300,7 @@ export const Component: React.FC<ComponentProps> = ({ title, count }) => {
 
 ### Directory Layout
 ```
-/Users/soni/work/elitale/taxwala-react/
+/Users/soni/work/elitale/MunimChacha-react/
 ├── public/                          # Static assets, served at root
 │   ├── llm.txt                     # Concise project overview
 │   ├── llm-full.txt                # Complete documentation
@@ -330,7 +330,7 @@ export const Component: React.FC<ComponentProps> = ({ title, count }) => {
 │   │   ├── FinalCTASection.tsx     # Final CTA
 │   │   ├── StickyCTA.tsx           # Floating button
 │   │   ├── Footer.tsx              # Site footer
-│   │   ├── TaxwalaPage.tsx         # Main orchestrator
+│   │   ├── MunimChachaPage.tsx         # Main orchestrator
 │   │   └── index.ts                # Component barrel export
 │   ├── hooks/
 │   │   └── index.ts                # Custom React hooks
@@ -591,14 +591,14 @@ const handleToggle = (index: number) => {
 
 **Smartlead Principle**: Gets users to value-exchange moment as soon as possible (above benefits section)
 
-**Usage in TaxwalaPage**:
+**Usage in MunimChachaPage**:
 ```typescript
 // Added right after HeroSection
 <MoneyAuditSection />
 ```
 
 ### FeatureComparison
-**Purpose**: Salaried-focused feature comparison table (TaxWala vs ClearTax/Quicko/TaxBuddy) without pricing.
+**Purpose**: Salaried-focused feature comparison table (MunimChacha vs ClearTax/Quicko/TaxBuddy) without pricing.
 
 **Location**: `src/components/FeatureComparison.tsx`
 
@@ -613,7 +613,7 @@ const handleToggle = (index: number) => {
 
 **Content Strategy**: Each feature emphasizes why it matters for salaried users (auto-fill, HRA, multi-employer, etc.)
 
-**Usage in TaxwalaPage**:
+**Usage in MunimChachaPage**:
 ```typescript
 // Added after BenefitsSection, before PostFilingLifecycle
 <FeatureComparison />
@@ -635,7 +635,7 @@ const handleToggle = (index: number) => {
 
 **Smartlead Principle #1**: "Get people to value exchange moment as soon as possible" + keep re-iterating value post-filing
 
-**Usage in TaxwalaPage**:
+**Usage in MunimChachaPage**:
 ```typescript
 // Added after FeatureComparison, before ProblemSection
 <PostFilingLifecycle />
@@ -844,7 +844,7 @@ export function useRevealOnScroll(): void {
   }, []);
 }
 
-// Usage in TaxwalaPage:
+// Usage in MunimChachaPage:
 useRevealOnScroll();
 ```
 
@@ -870,7 +870,7 @@ export function useSmoothScroll(): void {
   }, []);
 }
 
-// Usage in TaxwalaPage:
+// Usage in MunimChachaPage:
 useSmoothScroll();
 ```
 
@@ -919,7 +919,7 @@ trackSectionView('pricing');
 Track video play interactions.
 ```typescript
 const { trackVideoPlay } = useGTMTracking();
-videoRef.addEventListener('play', () => trackVideoPlay('video123', 'TaxWala Demo'));
+videoRef.addEventListener('play', () => trackVideoPlay('video123', 'MunimChacha Demo'));
 ```
 
 #### trackModalOpen(modalName: string) / trackModalClose(modalName: string)
@@ -1067,7 +1067,7 @@ const scenario: MoneyAuditScenario = {
 ```typescript
 export interface FeatureComparisonFeature {
   feature: string;         // Feature name
-  taxwala: string;         // TaxWala status (✅/⚠️/❌)
+  MunimChacha: string;         // MunimChacha status (✅/⚠️/❌)
   cleartax: string;        // ClearTax status
   quicko: string;          // Quicko status
   taxbuddy: string;        // TaxBuddy status
@@ -1077,7 +1077,7 @@ export interface FeatureComparisonFeature {
 // Usage in FeatureComparison:
 const feature: FeatureComparisonFeature = {
   feature: "Auto-Fill Salary from Bank API",
-  taxwala: "✅",
+  MunimChacha: "✅",
   cleartax: "❌",
   quicko: "⚠️",
   taxbuddy: "❌",
@@ -1352,13 +1352,13 @@ const { title, description } = Astro.props;
 ---
 // src/pages/index.astro
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { TaxwalaPage } from "../components/TaxwalaPage";
+import { MunimChachaPage } from "../components/MunimChachaPage";
 
-const title = "TaxWala.ai - AI-Powered Tax Automation | Private Beta";
+const title = "MunimChacha - AI-Powered Tax Automation | Private Beta";
 const description = "Join the invite-only beta...";
 ---
 <BaseLayout title={title} description={description}>
-  <TaxwalaPage client:load />
+  <MunimChachaPage client:load />
   
   <Fragment slot="scripts">
     <script src="https://tally.so/widgets/embed.js"></script>
@@ -1462,10 +1462,10 @@ const Child: React.FC<ChildProps> = ({ onItemClick }) => {
 };
 ```
 
-### Modal Pattern (Used in TaxwalaPage)
+### Modal Pattern (Used in MunimChachaPage)
 ```typescript
 // Main component manages modal state
-export const TaxwalaPage: React.FC = () => {
+export const MunimChachaPage: React.FC = () => {
   const { isOpen, open, close } = useModalControl();
   const videoId = "dQw4w9WgXcQ";
 
@@ -1620,7 +1620,7 @@ docs/documentation-update
 
 ### Problem: Animation not working
 **Solution**:
-1. Verify `useRevealOnScroll()` is called in TaxwalaPage
+1. Verify `useRevealOnScroll()` is called in MunimChachaPage
 2. Check element has `reveal-on-scroll` class
 3. Confirm CSS animations are defined in BaseLayout.astro
 
@@ -1707,7 +1707,7 @@ Before committing code, verify:
 **Location**: `/public/llms.txt`
 
 **What to Include**:
-- **Product Identity**: Clear explanation of what TaxWala.ai is and its mission
+- **Product Identity**: Clear explanation of what MunimChacha is and its mission
 - **Problem Statement**: Pain points the product solves (time, money, stress, manual work)
 - **Solution Overview**: How the product helps in simple terms (3-step process)
 - **Use Cases**: Real-world scenarios where users benefit (e-commerce, freelancers, startups, agencies)
@@ -1942,7 +1942,7 @@ When updating agent.md, consider if other docs need updates:
 ---
 
 **Last Updated**: January 31, 2026  
-**Maintained By**: AI Agents working on TaxWala.ai  
+**Maintained By**: AI Agents working on MunimChacha  
 **Version**: 1.9.0
 
 **Update Protocol**: This file MUST be updated with every code change. No exceptions.
@@ -2083,7 +2083,7 @@ When updating agent.md, consider if other docs need updates:
 ### [1.4.0] - 2026-01-30
 #### Added
 - **MoneyAuditSection** component: Salaried-specific value-exchange moments showing exact deductions found by real professionals (Engineer ₹28k, Doctor ₹35k, Manager ₹22k, Professional ₹32k)
-- **FeatureComparison** component: 13-feature salaried-focused comparison table (TaxWala vs ClearTax/Quicko/TaxBuddy) without pricing, emphasizing Bank API auto-fill, HRA optimization, multi-employer reconciliation, etc.
+- **FeatureComparison** component: 13-feature salaried-focused comparison table (MunimChacha vs ClearTax/Quicko/TaxBuddy) without pricing, emphasizing Bank API auto-fill, HRA optimization, multi-employer reconciliation, etc.
 - **PostFilingLifecycle** component: Step 4 post-filing lifecycle showcase with 6 benefits (Refund Tracking, Notice Monitoring, Document Vault, Next-Year Auto-Fill, Proactive Planning, Lifetime Relationship)
 - **New Content Types**: MoneyAuditScenario, FeatureComparisonFeature, PostFilingLifecycleItem interfaces in content.ts
 - Smartlead value-first principles integration throughout messaging
@@ -2093,9 +2093,9 @@ When updating agent.md, consider if other docs need updates:
 - Salaried clarity badge in hero: "Built for salaried professionals with Form 16 income"
 
 #### Changed
-- Page structure in TaxwalaPage.tsx: Hero → Money Audit → Benefits → Feature Comparison → Post-Filing Lifecycle → Rest
+- Page structure in MunimChachaPage.tsx: Hero → Money Audit → Benefits → Feature Comparison → Post-Filing Lifecycle → Rest
 - HeroSection now includes salaried focus clarification badge
-- TaxwalaPage component imports reorganized to include new sections
+- MunimChachaPage component imports reorganized to include new sections
 - Component barrel export (index.ts) includes MoneyAuditSection, FeatureComparison, PostFilingLifecycle
 - All content aligned with Smartlead's value principles (value exchange moment, heavy customer favor, recurring value, human touch, community)
 
@@ -2108,7 +2108,7 @@ When updating agent.md, consider if other docs need updates:
 #### Testing & Verification
 - No TypeScript errors (all components fully typed)
 - All props interfaces documented
-- Feature comparison data structure supports 4 competitors (TaxWala, ClearTax, Quicko, TaxBuddy)
+- Feature comparison data structure supports 4 competitors (MunimChacha, ClearTax, Quicko, TaxBuddy)
 - Responsive grid layouts tested for mobile/tablet/desktop
 - GTM analytics hooks ready in all interactive components
 - Build successful: `npm run build`

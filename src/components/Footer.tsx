@@ -7,7 +7,6 @@ import React from "react";
 // import { Logo } from "./Logo";
 import logo from "../assets/images/logo.svg?url";
 
-
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-white/0 border-t border-gray-200 py-8 px-6">
@@ -20,7 +19,7 @@ export const Footer: React.FC = () => {
               <img src={logo} alt="MunimChaha Logo"
               style={{ height: "42px", width: "auto", cursor: "pointer" }}
             />
-              {/* <span className="font-bold">TaxWala.ai</span> */}
+              {/* <span className="font-bold">MunimChaha</span> */}
             </div>
             <span className="text-sm text-gray-600">© {(new Date()).getFullYear()} Elitale Softwares Pvt Ltd</span>
           </div>
