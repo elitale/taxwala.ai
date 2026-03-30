@@ -1,11 +1,11 @@
-export const videoId = "dQw4w9WgXcQ"; // Replace with real munimchacha.com demo video ID
+export const videoId = "dQw4w9WgXcQ"; // Replace with real MunimChaCha.com demo video ID
 
 export const heroCopy = {
   badgeText: "🎯 Now Available — Start Filing Today",
   headline: "As a Salaried Professional,\nYou're Leaving ₹15-45k on the Table Every Year",
   description:
     "Your Form 16 hides deductions you've already earned. Our AI finds them in 15 minutes. Then we take care of you for the next 12 months — refund tracking, tax planning, notice alerts, next-year auto-fill. All included.",
-  waitlistCount: "1,247 salaried professionals already filing with TaxWala.ai",
+  waitlistCount: "1,247 salaried professionals already filing with MunimChaCha.com",
 };
 
 export const moneyAuditScenarios = [
@@ -87,11 +87,11 @@ export const benefits = [
 
 export const featureComparison = {
   heading: "Built for Salaried Professionals - Competitors Built for Everyone",
-  subheading: "Here's why salaried professionals choose TaxWala:",
+  subheading: "Here's why salaried professionals choose MunimChaCha:",
   features: [
     {
       feature: "Auto-Fill Salary from Bank API",
-      taxwala: "✅",
+      munimchacha: "✅",
       cleartax: "❌",
       quicko: "⚠️",
       taxbuddy: "❌",
@@ -99,7 +99,7 @@ export const featureComparison = {
     },
     {
       feature: "AI Receipt Upload & Auto-Detect Deductions",
-      taxwala: "✅",
+      munimchacha: "✅",
       cleartax: "❌",
       quicko: "❌",
       taxbuddy: "❌",
@@ -107,7 +107,7 @@ export const featureComparison = {
     },
     {
       feature: "5-Minute ITR-1 Filing for Salaried",
-      taxwala: "✅",
+      munimchacha: "✅",
       cleartax: "⚠️",
       quicko: "❌",
       taxbuddy: "❌",
@@ -115,7 +115,7 @@ export const featureComparison = {
     },
     {
       feature: "HRA Optimization & Auto-Calculation",
-      taxwala: "✅",
+      munimchacha: "✅",
       cleartax: "⚠️",
       quicko: "❌",
       taxbuddy: "⚠️",
@@ -123,7 +123,7 @@ export const featureComparison = {
     },
     {
       feature: "80C Deduction Auto-Detection",
-      taxwala: "✅",
+      munimchacha: "✅",
       cleartax: "❌",
       quicko: "⚠️",
       taxbuddy: "❌",
@@ -131,7 +131,7 @@ export const featureComparison = {
     },
     {
       feature: "Multi-Employer Form 16 Reconciliation",
-      taxwala: "✅",
+      munimchacha: "✅",
       cleartax: "❌",
       quicko: "❌",
       taxbuddy: "❌",
@@ -139,7 +139,7 @@ export const featureComparison = {
     },
     {
       feature: "Refund Tracking Dashboard",
-      taxwala: "✅",
+      munimchacha: "✅",
       cleartax: "❌",
       quicko: "❌",
       taxbuddy: "❌",
@@ -147,7 +147,7 @@ export const featureComparison = {
     },
     {
       feature: "Tax Notice Monitoring & Alerts",
-      taxwala: "✅",
+      munimchacha: "✅",
       cleartax: "❌",
       quicko: "⚠️",
       taxbuddy: "❌",
@@ -155,7 +155,7 @@ export const featureComparison = {
     },
     {
       feature: "Secure Document Vault",
-      taxwala: "✅",
+      munimchacha: "✅",
       cleartax: "⚠️",
       quicko: "❌",
       taxbuddy: "⚠️",
@@ -163,7 +163,7 @@ export const featureComparison = {
     },
     {
       feature: "Next-Year Auto-Fill Prefill",
-      taxwala: "✅",
+      munimchacha: "✅",
       cleartax: "❌",
       quicko: "❌",
       taxbuddy: "❌",
@@ -171,7 +171,7 @@ export const featureComparison = {
     },
     {
       feature: "Proactive Tax Planning Alerts",
-      taxwala: "✅",
+      munimchacha: "✅",
       cleartax: "❌",
       quicko: "❌",
       taxbuddy: "⚠️",
@@ -179,7 +179,7 @@ export const featureComparison = {
     },
     {
       feature: "Year-Round Salaried Support",
-      taxwala: "✅",
+      munimchacha: "✅",
       cleartax: "❌",
       quicko: "❌",
       taxbuddy: "❌",
@@ -187,7 +187,7 @@ export const featureComparison = {
     },
     {
       feature: "Built Specifically for Salaried (ITR-1)",
-      taxwala: "✅",
+      munimchacha: "✅",
       cleartax: "❌",
       quicko: "❌",
       taxbuddy: "❌",
@@ -269,22 +269,22 @@ export const faqItems = [
   {
     q: "Can I start filing my taxes right now?",
     a:
-      "YES! TaxWala.ai is live and ready. Sign up, upload your Form 16, and our AI will have your ITR ready in 15 minutes. ₹200 per filing, pay only after you're satisfied with the filing.",
+      "YES! MunimChaCha is live and ready. Sign up, upload your Form 16, and our AI will have your ITR ready in 15 minutes. ₹200 per filing, pay only after you're satisfied with the filing.",
   },
   {
-    q: "How much does TaxWala.ai cost?",
+    q: "How much does MunimChaCha cost?",
     a:
-      "TaxWala costs ₹200 per ITR filing - that's it. No monthly subscription, no hidden charges, no credit card required upfront. You only pay when you're ready to file. Compare that to ClearTax (₹500-1,000) or CA fees (₹2,000-5,000).",
+      "MunimChaCha costs ₹200 per ITR filing - that's it. No monthly subscription, no hidden charges, no credit card required upfront. You only pay when you're ready to file. Compare that to ClearTax (₹500-1,000) or CA fees (₹2,000-5,000).",
   },
   {
     q: "How is this different from ClearTax or other platforms?",
     a:
-      "ClearTax makes YOU do the work - you manually enter every investment, calculate HRA, figure out deductions. TaxWala's AI does it FOR you. Upload Form 16, we auto-fill everything, find missed deductions, and file in 15 minutes. Plus free forever vs ₹500-1,000 annual fees.",
+      "ClearTax makes YOU do the work - you manually enter every investment, calculate HRA, figure out deductions. MunimChaCha's AI does it FOR you. Upload Form 16, we auto-fill everything, find missed deductions, and file in 15 minutes. Plus free forever vs ₹500-1,000 annual fees.",
   },
   {
     q: "What if I have multiple employers or rental income?",
     a:
-      "No problem! TaxWala handles multiple Form 16s, house rent income, and capital gains from stocks/mutual funds. Our AI reconciles everything automatically. If you have business income, we'll support that soon (stay tuned).",
+      "No problem! MunimChaCha handles multiple Form 16s, house rent income, and capital gains from stocks/mutual funds. Our AI reconciles everything automatically. If you have business income, we'll support that soon (stay tuned).",
   },
   {
     q: "Can I trust this with my financial data?",
@@ -294,7 +294,7 @@ export const faqItems = [
   {
     q: "When can I start using this?",
     a:
-      "Right now! TaxWala.ai is live and ready for all salaried professionals across India. File your ITR for just ₹200. No waiting, no waitlist.",
+      "Right now! MunimChaCha is live and ready for all salaried professionals across India. File your ITR for just ₹200. No waiting, no waitlist.",
   },
 ];
 
@@ -303,21 +303,21 @@ export const testimonials = [
     name: "Priya Sharma",
     role: "Software Engineer, Bangalore (₹65L salary)",
     quote:
-      "I used to pay ₹3,500 to a CA every year for ITR-1. TaxWala found ₹32,000 in HRA + 80C deductions I was missing. Never paying a CA again.",
+      "I used to pay ₹3,500 to a CA every year for ITR-1. MunimChaCha found ₹32,000 in HRA + 80C deductions I was missing. Never paying a CA again.",
     img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces",
   },
   {
     name: "Dr. Rahul Verma",
     role: "Doctor, Mumbai (Salary + Clinic income)",
     quote:
-      "I thought my clinic income made taxes complicated. TaxWala found ₹18,000 in clinic equipment depreciation deductions. Filed ITR-2 in 20 minutes.",
+      "I thought my clinic income made taxes complicated. MunimChaCha found ₹18,000 in clinic equipment depreciation deductions. Filed ITR-2 in 20 minutes.",
     img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces",
   },
   {
     name: "Ananya Desai",
     role: "FAANG Manager, Bangalore (₹60L + transferred from Delhi)",
     quote:
-      "Changed jobs and moved cities. Had 2 Form 16s + HRA confusion. TaxWala handled it perfectly, found ₹22,000 refund I didn't expect. My second filing takes 3 minutes now.",
+      "Changed jobs and moved cities. Had 2 Form 16s + HRA confusion. MunimChaCha handled it perfectly, found ₹22,000 refund I didn't expect. My second filing takes 3 minutes now.",
     img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces",
   },
 ];

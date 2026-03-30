@@ -39,7 +39,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   };
 
   const handleVideoClick = () => {
-    trackVideoPlay(videoId, 'TaxWala Demo');
+    trackVideoPlay(videoId, 'MunimChaCha.com Demo');
     onModalOpen();
   };
   return (
@@ -183,7 +183,7 @@ const UserProof: React.FC = () => (
         </div>
       </div>
       <p className="text-sm text-gray-600">
-        <span className="font-bold text-primary">1,247 salaried professionals</span> already using TaxWala
+        <span className="font-bold text-primary">1,247 salaried professionals</span> already using MunimChaCha
       </p>
     </div>
   </div>

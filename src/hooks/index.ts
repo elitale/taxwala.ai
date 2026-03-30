@@ -1,5 +1,5 @@
 /**
- * Custom hooks for TaxWala application
+ * Custom hooks for MunimChaCha application
  */
 
 import { useEffect, useState } from "react";

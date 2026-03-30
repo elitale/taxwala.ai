@@ -1,6 +1,6 @@
 # Indian Tax Filing SaaS – API Provider Map (Production-Ready)
 
-This document is a **step-by-step integration checklist** for building an Indian ITR filing SaaS (like munimchacha.com).
+This document is a **step-by-step integration checklist** for building an Indian ITR filing SaaS (like MunimChaCha.com).
 
 It covers:
 
@@ -417,7 +417,7 @@ Use for:
 
 ---
 
-# Recommended MVP Provider Stack (munimchacha.com)
+# Recommended MVP Provider Stack (MunimChaCha.com)
 
 | Category | MVP Choice |
 |---------|------------|

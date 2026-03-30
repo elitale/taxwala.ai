@@ -14,21 +14,21 @@ export const TrustSection: React.FC = () => {
       name: "Priya Sharma",
       role: "Software Engineer, ₹12L CTC • Bangalore",
       quote:
-        "Changed jobs mid-year and had 2 Form 16s. My CA quoted ₹3000 just to reconcile. TaxWala did it automatically in 8 minutes. Found ₹28k in HRA deductions I almost missed!",
+        "Changed jobs mid-year and had 2 Form 16s. My CA quoted ₹3000 just to reconcile. MunimChaCha.com did it automatically in 8 minutes. Found ₹28k in HRA deductions I almost missed!",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces",
     },
     {
       name: "Rahul Verma",
       role: "Marketing Manager, ₹15L CTC • Mumbai",
       quote:
-        "First time filing ITR myself. Was worried about mistakes. TaxWala's AI checked everything against my 26AS, found all my 80C investments, even reminded me about my NPS contributions. Zero errors.",
+        "First time filing ITR myself. Was worried about mistakes. MunimChaCha's AI checked everything against my 26AS, found all my 80C investments, even reminded me about my NPS contributions. Zero errors.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces",
     },
     {
       name: "Ananya Desai",
       role: "Finance Analyst, ₹9.5L CTC • Pune",
       quote:
-        "My salary has standard deduction, HRA, and LTA. Used to take me 3 hours with ClearTax. With TaxWala, I uploaded Form 16, answered 3 questions, done. ₹22k home loan interest automatically added!",
+        "My salary has standard deduction, HRA, and LTA. Used to take me 3 hours with ClearTax. With MunimChaCha.com, I uploaded Form 16, answered 3 questions, done. ₹22k home loan interest automatically added!",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces",
     },
   ];

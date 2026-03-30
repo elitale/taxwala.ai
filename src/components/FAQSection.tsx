@@ -15,7 +15,7 @@ export const FAQSection: React.FC = () => {
     {
       question: "Can I start filing my taxes right now?",
       answer:
-        "Yes! TaxWala.ai is fully live and operational. You can start filing your taxes immediately with no waiting period. The filing fee is ₹200 per return - a one-time payment that's significantly lower than traditional CA fees (₹2000-5000).",
+        "Yes! MunimChaCha.com is fully live and operational. You can start filing your taxes immediately with no waiting period. The filing fee is ₹200 per return - a one-time payment that's significantly lower than traditional CA fees (₹2000-5000).",
     },
     {
       question: "What does the ₹200 filing fee include?",
@@ -23,7 +23,7 @@ export const FAQSection: React.FC = () => {
         "Everything you need for a complete ITR filing: AI-powered data extraction from Form 16, automatic calculation of all deductions (80C, 80D, HRA, home loan interest), validation against 26AS, expert review by tax professionals, and direct e-filing to the Income Tax portal. Plus free re-filing if any errors are found.",
     },
     {
-      question: "How do I get started with TaxWala.ai?",
+      question: "How do I get started with MunimChaCha.com?",
       answer:
         'Click any "Save Your Taxes" button on this page to sign up. The process takes less than 2 minutes. Upload your Form 16, answer a few questions about deductions, review your pre-filled return, and we\'ll handle the e-filing. You pay ₹200 only when you\'re ready to file.',
     },

@@ -1,6 +1,6 @@
 /**
  * Logo Component
- * Displays the munimchacha.com logo
+ * Displays the MunimChaCha.com logo
  * Can be used in both React and Astro components
  */
 
@@ -24,7 +24,7 @@ export const Logo: React.FC<LogoProps> = ({
   return (
     <img 
       src="/face.png" 
-      alt="munimchacha.com Logo" 
+      alt="MunimChaCha.com Logo" 
       className={finalClassName}
       style={style}
     />

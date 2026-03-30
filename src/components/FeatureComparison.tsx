@@ -1,7 +1,7 @@
 /**
  * Feature Comparison Section
  * Shows salaried-focused feature comparison vs competitors
- * Emphasizes why TaxWala is built for salaried professionals
+ * Emphasizes why MunimChaCha is built for salaried professionals
  */
 
 import React from "react";
@@ -22,7 +22,7 @@ import {
 
 interface ComparisonRowProps {
   feature: string;
-  taxwala: string;
+  munimchacha: string;
   cleartax: string;
   quicko: string;
   taxbuddy: string;
@@ -66,7 +66,7 @@ const CompetitorLogo: React.FC<{ logo: string; alt: string }> = ({ logo, alt }) 
 
 const ComparisonRow: React.FC<ComparisonRowProps> = ({
   feature,
-  taxwala,
+  munimchacha,
   cleartax,
   quicko,
   taxbuddy,
@@ -89,9 +89,9 @@ const ComparisonRow: React.FC<ComparisonRowProps> = ({
           <div className="text-xs text-gray-600 leading-relaxed ml-8 md:ml-0">{explanation}</div>
         </div>
 
-        {/* TaxWala */}
+        {/* MunimChaCha */}
         <div className="text-center py-2 md:py-0 flex flex-col items-center justify-center">
-          <StatusIcon status={taxwala} />
+          <StatusIcon status={munimchacha} />
         </div>
 
         {/* ClearTax */}
@@ -159,7 +159,7 @@ export const FeatureComparison: React.FC = () => (
               </div>
             </div>
             <div className="text-center flex items-center justify-center">
-              <CompetitorLogo logo="/logo.svg" alt="TaxWala" />
+              <CompetitorLogo logo="/logo.svg" alt="MunimChaCha" />
             </div>
             <div className="text-center flex items-center justify-center">
               <CompetitorLogo logo="/cleartax.png" alt="ClearTax" />
@@ -190,7 +190,7 @@ export const FeatureComparison: React.FC = () => (
             </div>
           </div>
           <p className="text-lg text-gray-700 mb-6 font-semibold">
-            See the difference? <span className="text-primary font-bold">TaxWala is built obsessively for salaried professionals.</span>
+            See the difference? <span className="text-primary font-bold">MunimChaCha is built obsessively for salaried professionals.</span>
           </p>
           <button
             data-tally-open="wgxDQB"

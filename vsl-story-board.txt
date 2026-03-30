@@ -28,11 +28,11 @@ Scene 5 — Insight
 - Voiceover: Problem isn’t effort; it’s manual work. Need automation done right for India.
 - On-screen text: "Automation > Manual spreadsheets"
 
-Scene 6 — Birth of munimchacha.com
+Scene 6 — Birth of MunimChaCha.com
 - Goal: Introduce solution origin.
 - Visual: Logo reveal; quick UI glimpses.
-- Voiceover: Built munimchacha.com for himself; AI-powered tax filing for Indian businesses.
-- On-screen text: "munimchacha.com — AI tax filing for India"
+- Voiceover: Built MunimChaCha.com for himself; AI-powered tax filing for Indian businesses.
+- On-screen text: "MunimChaCha.com — AI tax filing for India"
 
 Scene 7 — Outcome Snapshot
 - Goal: Promise speed.
@@ -114,7 +114,7 @@ Scene 19 — Social Proof & Urgency
 
 Scene 20 — CTA
 - Goal: Clear next step.
-- Visual: Big CTA button "Join munimchacha.com beta"; email field; 30-minute progress bar.
+- Visual: Big CTA button "Join MunimChaCha.com beta"; email field; 30-minute progress bar.
 - Voiceover: Click button, enter email, join beta waitlist; be done in 30 minutes.
 - On-screen text: "Join beta now →"
 

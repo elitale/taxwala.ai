@@ -41,7 +41,7 @@ export const TeamSection: React.FC = () => {
         <div className="text-center mb-16 reveal-on-scroll">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Built by Tax Experts, For Salaried Professionals</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're a team of engineers, tax experts, and salaried professionals who understand the hassle of ITR-1 filing. We built TaxWala to solve it once and for all.
+            We're a team of engineers, tax experts, and salaried professionals who understand the hassle of ITR-1 filing. We built MunimChaCha to solve it once and for all.
           </p>
         </div>
 

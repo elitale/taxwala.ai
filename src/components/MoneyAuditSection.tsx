@@ -39,7 +39,7 @@ export const MoneyAuditSection: React.FC = () => (
           See What Real Salaried Professionals Found
         </h2>
         <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-          Your audit could look similar. TaxWala finds deductions in your profile right now.
+          Your audit could look similar. MunimChaCha.com finds deductions in your profile right now.
         </p>
       </div>
 

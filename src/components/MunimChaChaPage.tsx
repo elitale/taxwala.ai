@@ -28,7 +28,7 @@ import {
 import { useModalControl, useScrollDetection, useRevealOnScroll, useSmoothScroll } from "../hooks/index";
 import type { NavLink } from "../types/index";
 
-const TaxwalaPage: React.FC = () => {
+const MunimChaChaPage: React.FC = () => {
   // Initialize hooks
   const { isOpen: isModalOpen, open: openModal, close: closeModal } = useModalControl();
   const isStickyVisible = useScrollDetection(800);
@@ -133,4 +133,4 @@ const TaxwalaPage: React.FC = () => {
   );
 };
 
-export default TaxwalaPage;
+export default MunimChaChaPage;

@@ -1,16 +1,16 @@
 ---
 import "../styles/global.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import TaxwalaPage from "../components/TaxwalaPage";
+import MunimChaChaPage from "../components/MunimChaChaPage";
 
-const title = "TaxWala.ai - AI-Powered Tax Automation for Salaried Professionals";
+const title = "MunimChaCha - AI-Powered Tax Automation for Salaried Professionals";
 const description =
   "AI-powered tax automation for Indian salaried professionals. File taxes in 15 minutes. Recover ₹15-45k annually. Zero fees forever.";
 const image = "/banner.png";
 ---
 
 <BaseLayout {title} {description} {image}>
-  <TaxwalaPage client:load />
+  <MunimChaChaPage client:load />
   <Fragment slot="scripts">
     <script is:inline src="https://tally.so/widgets/embed.js"></script>
     <script is:inline src="/dhws-data-injector.js"></script>

@@ -1,4 +1,4 @@
-# Agent Instructions - munimchacha.com Technical Guide
+# Agent Instructions - MunimChaCha.com Technical Guide
 
 > Comprehensive technical documentation for AI agents working on this codebase. This file contains every technical detail, pattern, and convention used in the project.
 
@@ -1354,7 +1354,7 @@ const { title, description } = Astro.props;
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { TaxwalaPage } from "../components/TaxwalaPage";
 
-const title = "munimchacha.com - AI-Powered Tax Automation | Private Beta";
+const title = "MunimChaCha.com - AI-Powered Tax Automation | Private Beta";
 const description = "Join the invite-only beta...";
 ---
 <BaseLayout title={title} description={description}>
@@ -1707,7 +1707,7 @@ Before committing code, verify:
 **Location**: `/public/llms.txt`
 
 **What to Include**:
-- **Product Identity**: Clear explanation of what munimchacha.com is and its mission
+- **Product Identity**: Clear explanation of what MunimChaCha.com is and its mission
 - **Problem Statement**: Pain points the product solves (time, money, stress, manual work)
 - **Solution Overview**: How the product helps in simple terms (3-step process)
 - **Use Cases**: Real-world scenarios where users benefit (e-commerce, freelancers, startups, agencies)
@@ -1944,7 +1944,7 @@ When updating agent.md, consider if other docs need updates:
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Last Updated**: January 30, 2026  
-**Maintained By**: AI Agents working on munimchacha.com  
+**Maintained By**: AI Agents working on MunimChaCha.com  
 **Version**: 1.3.0
 =======
 **Last Updated**: January 31, 2026  

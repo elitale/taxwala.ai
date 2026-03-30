@@ -1,5 +1,5 @@
 /**
- * Shared types and interfaces for the TaxWala application
+ * Shared types and interfaces for the MunimChaCha application
  */
 
 export interface NavLink {

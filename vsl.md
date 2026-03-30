@@ -59,7 +59,7 @@ They need automation — done correctly.
 So I decided to build something for myself.
 
 
-That’s how **munimchacha.com** was born.
+That’s how **MunimChaCha.com** was born.
 
 An AI-powered tax filing system  
 built specifically for Indian businesses.
@@ -153,7 +153,7 @@ I built this for myself.
 But then I thought —  
 why not open this up to other business owners like you?
 
-So we’re opening **beta access** to munimchacha.com.
+So we’re opening **beta access** to MunimChaCha.com.
 
 Only **500 businesses** will get in.
 
@@ -184,14 +184,14 @@ Here’s what to do next.
 
 Click the button below.  
 Enter your email.  
-Join the munimchacha.com beta waitlist.
+Join the MunimChaCha.com beta waitlist.
 
 In the next 30 minutes,  
 you could be done with tax work  
 that usually takes hours.
 
 
-I built munimchacha.com because I needed it.
+I built MunimChaCha.com because I needed it.
 
 If you’re tired of tax confusion, stress, and wasted time —  
 you’ll need it too.

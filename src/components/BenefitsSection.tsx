@@ -68,7 +68,7 @@ export const BenefitsSection: React.FC = () => {
         </div>
 
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16 max-w-4xl reveal-on-scroll">
-          What you get with TaxWala.ai
+          What you get with MunimChaCha.com
         </h2>
 
         {/* Benefits Grid */}

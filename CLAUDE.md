@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-munimchacha.com is a landing page for an AI-powered tax automation service targeting Indian businesses. The site is built with Astro 5, React 19, and Tailwind CSS 4, featuring:
+MunimChaCha.com is a landing page for an AI-powered tax automation service targeting Indian businesses. The site is built with Astro 5, React 19, and Tailwind CSS 4, featuring:
 - Single-page architecture with animated page-flip sections
 - Multiple analytics integrations (Google Analytics, Meta Pixel, PostHog)
 - Sentry error monitoring with Spotlight debugging
@@ -117,5 +117,5 @@ No external state management library. State is managed through:
 - **Third-party scripts**: Tally form embed and data injector scripts are loaded via `<script is:inline>` in the "scripts" slot
 - **Analytics**: `window.gtag` and `window.fbq` are declared globally in `src/env.d.ts` and `src/hooks/index.ts`
 - **Constants**: Update `src/constants/config.ts` for beta spots, waitlist counts, form URLs, etc.
-- **SEO**: Site URL is configured in `astro.config.mjs` as `https://munimchacha.com`
+- **SEO**: Site URL is configured in `astro.config.mjs` as `https://MunimChaCha.com`
 - **Type checking**: The build command includes `astro check` for type validation before building

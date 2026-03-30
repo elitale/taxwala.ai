@@ -31,7 +31,7 @@ export const Navigation: React.FC<NavigationProps> = ({ navLinks }) => {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <Logo className="w-10 h-10" />
-            <span className="text-xl font-bold tracking-tight">munimchacha.com</span>
+            <span className="text-xl font-bold tracking-tight">MunimChaCha.com</span>
           </div>
 
           {/* Desktop Navigation */}

@@ -1,6 +1,6 @@
 /**
  * Guarantee Section
- * Displays TaxWala Confidence Guarantee with 4 trust badges
+ * Displays MunimChaCha Confidence Guarantee with 4 trust badges
  * Positioned before final CTA to reduce signup hesitation
  */
 
@@ -22,7 +22,7 @@ export const GuaranteeSection: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16 reveal-on-scroll">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            TaxWala Confidence Guarantee
+            MunimChaCha.com Confidence Guarantee
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Your trust is our priority. Here's our commitment to you.
