@@ -1,12 +1,12 @@
-# TaxWala.ai - AI-Powered Tax Automation for Indian Businesses
+# munimchacha.com - AI-Powered Tax Automation for Indian Businesses
 
 > Making tax filing effortless for Indian businesses and freelancers through AI-powered automation. Join our invite-only beta to get lifetime free access.
 
-## What is TaxWala.ai?
+## What is munimchacha.com?
 
-TaxWala.ai is an AI-powered tax automation platform designed specifically for Indian businesses, freelancers, and entrepreneurs. We're solving the biggest pain point in running a business in India: tax filing.
+munimchacha.com is an AI-powered tax automation platform designed specifically for Indian businesses, freelancers, and entrepreneurs. We're solving the biggest pain point in running a business in India: tax filing.
 
-Our mission is to eliminate the hours of manual work, expensive CPA fees, and stress that comes with tax compliance. With TaxWala.ai, you connect your bank account, upload receipts with a photo, and let AI handle everything else.
+Our mission is to eliminate the hours of manual work, expensive CPA fees, and stress that comes with tax compliance. With munimchacha.com, you connect your bank account, upload receipts with a photo, and let AI handle everything else.
 
 ## The Problem We're Solving
 
@@ -22,7 +22,7 @@ Tax regulations are complex and constantly changing. Missing deadlines leads to 
 ### Manual Data Entry
 Every transaction needs to be categorized. Every receipt needs to be matched. Every invoice needs to be logged. It's tedious, error-prone, and soul-crushing work.
 
-## How TaxWala.ai Helps
+## How munimchacha.com Helps
 
 ### 3-Step Process
 
@@ -41,44 +41,44 @@ Download your tax filing in one click. Review, approve, and submit. Your taxes a
 - **Always Compliant**: Stay up-to-date with Indian tax regulations automatically
 - **Bank-Level Security**: Your data is encrypted and never leaves India
 - **Real-Time Processing**: See your tax status updated live as transactions happen
-- **Lifetime Free Access**: Beta users get TaxWala.ai completely free forever
+- **Lifetime Free Access**: Beta users get munimchacha.com completely free forever
 
-## Who Should Use TaxWala.ai?
+## Who Should Use munimchacha.com?
 
 ### E-Commerce Business Owners
-If you run an online store with hundreds of transactions monthly, TaxWala.ai automatically categorizes sales, expenses, and calculates GST. Perfect for Shopify, WooCommerce, or marketplace sellers who are drowning in transaction data.
+If you run an online store with hundreds of transactions monthly, munimchacha.com automatically categorizes sales, expenses, and calculates GST. Perfect for Shopify, WooCommerce, or marketplace sellers who are drowning in transaction data.
 
-**Before TaxWala.ai**: 25 hours/month reconciling transactions, matching receipts, preparing GST returns
-**After TaxWala.ai**: 2 hours/month reviewing and approving automated filings
+**Before munimchacha.com**: 25 hours/month reconciling transactions, matching receipts, preparing GST returns
+**After munimchacha.com**: 2 hours/month reviewing and approving automated filings
 
 ### Freelancers and Consultants
-For independent professionals juggling multiple clients and projects, TaxWala.ai tracks income across projects, categorizes business expenses, and handles TDS calculations automatically.
+For independent professionals juggling multiple clients and projects, munimchacha.com tracks income across projects, categorizes business expenses, and handles TDS calculations automatically.
 
-**Before TaxWala.ai**: Shoebox full of receipts, spreadsheets everywhere, panic during tax season
-**After TaxWala.ai**: Snap photos of receipts, everything organized automatically, stress-free filing
+**Before munimchacha.com**: Shoebox full of receipts, spreadsheets everywhere, panic during tax season
+**After munimchacha.com**: Snap photos of receipts, everything organized automatically, stress-free filing
 
 ### Startup Founders
-Early-stage startups need to focus on product and growth, not tax paperwork. TaxWala.ai gives founders their time back while ensuring they stay compliant from day one.
+Early-stage startups need to focus on product and growth, not tax paperwork. munimchacha.com gives founders their time back while ensuring they stay compliant from day one.
 
-**Before TaxWala.ai**: Paying ₹50k+ to CPA, still spending hours gathering documents
-**After TaxWala.ai**: Zero fees, zero manual work, more time to build the business
+**Before munimchacha.com**: Paying ₹50k+ to CPA, still spending hours gathering documents
+**After munimchacha.com**: Zero fees, zero manual work, more time to build the business
 
 ### Small Business Owners
-Restaurants, retail stores, service businesses with regular expenses and multiple revenue streams. TaxWala.ai handles complex scenarios like inventory, multiple GST rates, and cash transactions.
+Restaurants, retail stores, service businesses with regular expenses and multiple revenue streams. munimchacha.com handles complex scenarios like inventory, multiple GST rates, and cash transactions.
 
-**Before TaxWala.ai**: Paper receipts everywhere, Excel chaos, errors in filing
-**After TaxWala.ai**: Digital receipts, automatic categorization, error-free submissions
+**Before munimchacha.com**: Paper receipts everywhere, Excel chaos, errors in filing
+**After munimchacha.com**: Digital receipts, automatic categorization, error-free submissions
 
 ### Digital Agencies
-Agencies managing multiple client projects need to track expenses per client, calculate project profitability, and handle complex billing. TaxWala.ai does this automatically.
+Agencies managing multiple client projects need to track expenses per client, calculate project profitability, and handle complex billing. munimchacha.com does this automatically.
 
-**Before TaxWala.ai**: Manual time tracking, spreadsheet hell, delayed billing
-**After TaxWala.ai**: Automatic expense allocation, instant reports, faster payments
+**Before munimchacha.com**: Manual time tracking, spreadsheet hell, delayed billing
+**After munimchacha.com**: Automatic expense allocation, instant reports, faster payments
 
 ## Why Join the Beta Now?
 
 ### Lifetime Free Access
-Beta users get TaxWala.ai completely free forever. No hidden fees. No credit card required. No "introductory period" that expires. Free means free.
+Beta users get munimchacha.com completely free forever. No hidden fees. No credit card required. No "introductory period" that expires. Free means free.
 
 Once we launch publicly, this will be a paid product. But early supporters who believe in us get rewarded with lifetime access at zero cost.
 
@@ -101,18 +101,18 @@ Early access closes in **14 days**.
 ## Real Impact: User Testimonials
 
 **Arjun Mehta, E-commerce Founder**
-"I was spending 25 hours every month on tax paperwork. TaxWala.ai cut that to 2 hours. This is a game-changer for my business. I can finally focus on growing sales instead of organizing receipts."
+"I was spending 25 hours every month on tax paperwork. munimchacha.com cut that to 2 hours. This is a game-changer for my business. I can finally focus on growing sales instead of organizing receipts."
 
 **Rohan Singh, Startup Founder**
 "Filing taxes used to be my biggest nightmare. Now it's completely automated. I focus on building my startup while TaxWala handles the rest. Best tool I've discovered this year."
 
 **Karan Patel, Freelance Developer**
-"As a freelancer, I had zero time for tax paperwork. TaxWala.ai handles everything. I just upload receipts and it's done. Saved me ₹45,000 in CPA fees this year."
+"As a freelancer, I had zero time for tax paperwork. munimchacha.com handles everything. I just upload receipts and it's done. Saved me ₹45,000 in CPA fees this year."
 
 ## Trust and Security
 
 ### Built by Experts
-TaxWala.ai is powered by **Elitale Softwares Private Limited**, a registered Indian company. Our team combines expertise in AI, finance, and Indian tax regulations to deliver a product you can trust.
+munimchacha.com is powered by **Elitale Softwares Private Limited**, a registered Indian company. Our team combines expertise in AI, finance, and Indian tax regulations to deliver a product you can trust.
 
 ### Bank-Level Security
 - 256-bit encryption for all data
@@ -125,8 +125,8 @@ TaxWala.ai is powered by **Elitale Softwares Private Limited**, a registered Ind
 
 ## Frequently Asked Questions
 
-**Is TaxWala.ai really free for beta users?**
-Yes, 100% free forever. No trials, no limits, no hidden fees. If you join the beta, you'll never pay for TaxWala.ai.
+**Is munimchacha.com really free for beta users?**
+Yes, 100% free forever. No trials, no limits, no hidden fees. If you join the beta, you'll never pay for munimchacha.com.
 
 **How does the AI work?**
 Our AI reads your bank statements, categorizes transactions based on merchant names and amounts, matches receipts to expenses using OCR, and applies current Indian tax rules automatically.
@@ -141,7 +141,7 @@ We're launching to the public in approximately 8-12 weeks. Beta users get early 
 Beta users get priority support with direct access to our founders. We respond within hours, not days.
 
 **Can I cancel anytime?**
-There's nothing to cancel for beta users – you're not paying anything. If you ever want to stop using TaxWala.ai, just stop logging in.
+There's nothing to cancel for beta users – you're not paying anything. If you ever want to stop using munimchacha.com, just stop logging in.
 
 ## Join the Beta
 

@@ -1,4 +1,4 @@
-create a proper working flow in the mermaid.js with this information for taxwala.ai
+create a proper working flow in the mermaid.js with this information for munimchacha.com
 
 
 how auth screen should look like 
@@ -40,9 +40,9 @@ ask few onboarding questions
 ```mermaid
 flowchart TD
 
-    %% TaxWala.ai Auth + Onboarding Flow (Miro-style UX)
+    %% munimchacha.com Auth + Onboarding Flow (Miro-style UX)
 
-    Start["User Visits TaxWala.ai"] --> Landing["Auth Screen (Popup Modal)\nBackground Preview: Dashboard + AI Tax Insights"]
+    Start["User Visits munimchacha.com"] --> Landing["Auth Screen (Popup Modal)\nBackground Preview: Dashboard + AI Tax Insights"]
 
     %% Step 1: Email Entry
     Landing --> EmailStep["Enter Email Address"]

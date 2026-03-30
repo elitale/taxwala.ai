@@ -42,7 +42,7 @@ export const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose, videoId
 
         <div className="aspect-video bg-black rounded-xl overflow-hidden shadow-2xl">
           <iframe
-            title="TaxWala.ai Demo Video"
+            title="munimchacha.com Demo Video"
             width="100%"
             height="100%"
             src={youtubeSrc}

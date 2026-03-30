@@ -56,7 +56,7 @@ UX copy guidance
 - Avoid “Upload everything.” Prefer “Connect your tax data” and “We’ll auto-detect missing income.”
 - Keep checklist short and context-specific; pre-fill wherever possible.
 
-MVP scope (TaxWala.ai launch)
+MVP scope (munimchacha.com launch)
 - Must: PAN, Form 16 upload, AIS sync, bank interest, 80C + 80D proofs.
 - Nice later: business/GST flows, crypto, full notice handling for mismatches.
 

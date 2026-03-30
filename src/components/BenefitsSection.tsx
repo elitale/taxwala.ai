@@ -19,7 +19,7 @@ export const BenefitsSection: React.FC = () => {
   const benefits: BenefitItem[] = [
     {
       title: "Lifetime Free Access",
-      description: "Beta users get TaxWala.ai free forever. No hidden fees, no credit card required.",
+      description: "Beta users get munimchacha.com free forever. No hidden fees, no credit card required.",
       iconBackground: "bg-gold/20",
       iconColor: "text-gold",
     },

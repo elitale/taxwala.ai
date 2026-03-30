@@ -13,12 +13,12 @@ export const FAQSection: React.FC = () => {
 
   const faqs: FAQItem[] = [
     {
-      question: "When will TaxWala.ai launch publicly?",
+      question: "When will munimchacha.com launch publicly?",
       answer:
         "We're planning to launch publicly in Q2 2026. Beta users will get access 6-8 weeks before the public launch, giving you exclusive early access to shape the product.",
     },
     {
-      question: "Is TaxWala.ai really free forever?",
+      question: "Is munimchacha.com really free forever?",
       answer:
         "Yes! Beta users get lifetime free access with no hidden fees. After public launch, we may introduce premium features, but your core tax automation will always remain free. No credit card required, ever.",
     },

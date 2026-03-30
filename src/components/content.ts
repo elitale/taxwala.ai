@@ -1,4 +1,4 @@
-export const videoId = "dQw4w9WgXcQ"; // Replace with real TaxWala.ai demo video ID
+export const videoId = "dQw4w9WgXcQ"; // Replace with real munimchacha.com demo video ID
 
 export const heroCopy = {
   badgeText: "Invite Only — Limited Beta Access",
@@ -11,7 +11,7 @@ export const heroCopy = {
 export const benefits = [
   {
     title: "Lifetime Free Access",
-    desc: "Beta users get TaxWala.ai free forever. No hidden fees, no credit card required.",
+    desc: "Beta users get munimchacha.com free forever. No hidden fees, no credit card required.",
     iconBg: "bg-gold/20",
     iconColor: "text-gold",
     iconPath:
@@ -59,12 +59,12 @@ export const benefits = [
 
 export const faqItems = [
   {
-    q: "When will TaxWala.ai launch publicly?",
+    q: "When will munimchacha.com launch publicly?",
     a:
       "We're planning to launch publicly in Q2 2026. Beta users will get access 6-8 weeks before the public launch, giving you exclusive early access to shape the product.",
   },
   {
-    q: "Is TaxWala.ai really free forever?",
+    q: "Is munimchacha.com really free forever?",
     a:
       "Yes! Beta users get lifetime free access with no hidden fees. After public launch, we may introduce premium features, but your core tax automation will always remain free. No credit card required, ever.",
   },
@@ -90,7 +90,7 @@ export const testimonials = [
     name: "Arjun Mehta",
     role: "E-commerce Founder",
     quote:
-      "I was spending 25 hours every month on tax paperwork. TaxWala.ai cut that to 2 hours. This is a game-changer for my business.",
+      "I was spending 25 hours every month on tax paperwork. munimchacha.com cut that to 2 hours. This is a game-changer for my business.",
     img: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=100&h=100&fit=crop&crop=faces",
   },
   {
@@ -104,7 +104,7 @@ export const testimonials = [
     name: "Karan Patel",
     role: "Freelance Developer",
     quote:
-      "As a freelancer, I had zero time for tax paperwork. TaxWala.ai handles everything. I just upload receipts and it's done. Best tool I've used!",
+      "As a freelancer, I had zero time for tax paperwork. munimchacha.com handles everything. I just upload receipts and it's done. Best tool I've used!",
     img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces",
   },
 ];

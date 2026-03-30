@@ -1,6 +1,6 @@
 # Indian Tax Filing SaaS – API Provider Map (Production-Ready)
 
-This document is a **step-by-step integration checklist** for building an Indian ITR filing SaaS (like TaxWala.ai).
+This document is a **step-by-step integration checklist** for building an Indian ITR filing SaaS (like munimchacha.com).
 
 It covers:
 
@@ -417,7 +417,7 @@ Use for:
 
 ---
 
-# Recommended MVP Provider Stack (TaxWala.ai)
+# Recommended MVP Provider Stack (munimchacha.com)
 
 | Category | MVP Choice |
 |---------|------------|

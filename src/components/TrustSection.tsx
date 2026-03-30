@@ -14,7 +14,7 @@ export const TrustSection: React.FC = () => {
       name: "Arjun Mehta",
       role: "E-commerce Founder",
       quote:
-        "I was spending 25 hours every month on tax paperwork. TaxWala.ai cut that to 2 hours. This is a game-changer for my business.",
+        "I was spending 25 hours every month on tax paperwork. munimchacha.com cut that to 2 hours. This is a game-changer for my business.",
       image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=100&h=100&fit=crop&crop=faces",
     },
     {
@@ -28,7 +28,7 @@ export const TrustSection: React.FC = () => {
       name: "Karan Patel",
       role: "Freelance Developer",
       quote:
-        "As a freelancer, I had zero time for tax paperwork. TaxWala.ai handles everything. I just upload receipts and it's done. Best tool I've used!",
+        "As a freelancer, I had zero time for tax paperwork. munimchacha.com handles everything. I just upload receipts and it's done. Best tool I've used!",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces",
     },
   ];

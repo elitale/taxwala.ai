@@ -1,4 +1,4 @@
-# Agent Instructions - TaxWala.ai Technical Guide
+# Agent Instructions - munimchacha.com Technical Guide
 
 > Comprehensive technical documentation for AI agents working on this codebase. This file contains every technical detail, pattern, and convention used in the project.
 
@@ -727,7 +727,7 @@ export interface BenefitItem {
 // Usage:
 const benefit: BenefitItem = {
   title: "Lifetime Free Access",
-  description: "Beta users get TaxWala.ai free forever.",
+  description: "Beta users get munimchacha.com free forever.",
   iconBackground: "bg-gold/20",
   iconColor: "text-gold",
 };
@@ -956,7 +956,7 @@ const { title, description } = Astro.props;
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { TaxwalaPage } from "../components/TaxwalaPage";
 
-const title = "TaxWala.ai - AI-Powered Tax Automation | Private Beta";
+const title = "munimchacha.com - AI-Powered Tax Automation | Private Beta";
 const description = "Join the invite-only beta...";
 ---
 <BaseLayout title={title} description={description}>
@@ -1309,7 +1309,7 @@ Before committing code, verify:
 **Location**: `/public/llms.txt`
 
 **What to Include**:
-- **Product Identity**: Clear explanation of what TaxWala.ai is and its mission
+- **Product Identity**: Clear explanation of what munimchacha.com is and its mission
 - **Problem Statement**: Pain points the product solves (time, money, stress, manual work)
 - **Solution Overview**: How the product helps in simple terms (3-step process)
 - **Use Cases**: Real-world scenarios where users benefit (e-commerce, freelancers, startups, agencies)
@@ -1544,7 +1544,7 @@ When updating agent.md, consider if other docs need updates:
 ---
 
 **Last Updated**: January 30, 2026  
-**Maintained By**: AI Agents working on TaxWala.ai  
+**Maintained By**: AI Agents working on munimchacha.com  
 **Version**: 1.3.0
 
 **Update Protocol**: This file MUST be updated with every code change. No exceptions.

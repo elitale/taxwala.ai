@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-3">
               <Logo className="w-8 h-8" />
-              <span className="font-bold">TaxWala.ai</span>
+              <span className="font-bold">munimchacha.com</span>
             </div>
             <span className="text-sm text-gray-600">© {(new Date()).getFullYear()} Elitale Softwares Pvt Ltd</span>
           </div>

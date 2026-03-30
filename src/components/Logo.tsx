@@ -1,6 +1,6 @@
 /**
  * Logo Component
- * Displays the TaxWala.ai logo
+ * Displays the munimchacha.com logo
  * Can be used in both React and Astro components
  */
 
@@ -23,8 +23,8 @@ export const Logo: React.FC<LogoProps> = ({
 
   return (
     <img 
-      src="/logo.svg" 
-      alt="TaxWala.ai Logo" 
+      src="/face.png" 
+      alt="munimchacha.com Logo" 
       className={finalClassName}
       style={style}
     />
