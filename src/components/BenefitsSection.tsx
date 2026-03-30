@@ -18,38 +18,38 @@ import { TALLY_FORM_URL } from "../constants/config";
 export const BenefitsSection: React.FC = () => {
   const benefits: BenefitItem[] = [
     {
-      title: "Lifetime Free Access",
-      description: "Beta users get munimchacha.com free forever. No hidden fees, no credit card required.",
+      title: "Affordable Pricing",
+      description: "Just ₹200 per ITR filing. No hidden fees, no subscriptions. Pay only when you file.",
       iconBackground: "bg-gold/20",
       iconColor: "text-gold",
     },
     {
-      title: "Priority Support",
-      description: "Direct access to our founders. Get help within hours, not days.",
+      title: "World-Class Support",
+      description: "Live support from tax experts. Get help within hours, any time during tax season.",
       iconBackground: "bg-primary/10",
       iconColor: "text-primary",
     },
     {
-      title: "Shape the Product",
-      description: "Your feedback directly influences features. Build what you need.",
+      title: "AI + Human Review",
+      description: "Our AI handles the complexity. Your filing reviewed by Chartered Accountants.",
       iconBackground: "bg-purple-100",
       iconColor: "text-purple-600",
     },
     {
-      title: "First to Launch",
-      description: "Get access weeks before public launch. Start automating immediately.",
+      title: "Start Immediately",
+      description: "File your taxes today. Recover ₹15-45k in deductions by the March deadline.",
       iconBackground: "bg-green-100",
       iconColor: "text-green-600",
     },
     {
       title: "Referral Rewards",
-      description: "Refer 3 friends, skip the waitlist instantly. Get exclusive perks.",
+      description: "Refer friends and earn exclusive benefits. Help others save taxes too.",
       iconBackground: "bg-orange-100",
       iconColor: "text-orange-600",
     },
     {
-      title: "Limited Spots",
-      description: "Only 500 invites available. Once full, join the public waitlist.",
+      title: "Trust & Security",
+      description: "Bank-level 256-bit encryption. Your data never leaves India. ISO 27001 compliant.",
       iconBackground: "bg-red-100",
       iconColor: "text-red-600",
     },
@@ -61,14 +61,14 @@ export const BenefitsSection: React.FC = () => {
         {/* Section Header */}
         <div className="flex items-center gap-4 mb-12 reveal-on-scroll">
           <div className="w-10 h-10 rounded-full border-2 border-gray-900 flex items-center justify-center">
-            <span className="text-sm font-bold">2</span>
+            <span className="text-sm font-bold">3</span>
           </div>
           <div className="h-px w-12 bg-gray-900" />
           <span className="text-sm font-semibold uppercase tracking-wider">Exclusive Benefits</span>
         </div>
 
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16 max-w-4xl reveal-on-scroll">
-          Why join the beta now?
+          What you get with TaxWala.ai
         </h2>
 
         {/* Benefits Grid */}

@@ -4,6 +4,7 @@
  */
 
 import React from "react";
+import { Target } from "lucide-react";
 import { VideoModal } from "./VideoModal";
 import {
   ReceiptIcon,
@@ -32,8 +33,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 }) => {
   const { trackButtonClick, trackVideoPlay } = useGTMTracking();
 
-  const handleJoinWaitlist = () => {
-    trackButtonClick('Request Early Access', 'hero');
+  const handleSignUp = () => {
+    trackButtonClick('Save Your Taxes Today', 'hero');
     window.location.href = TALLY_FORM_URL;
   };
 
@@ -48,9 +49,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Status Badge */}
           <div className="flex justify-center mb-8 animate-fade-in">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-gold/10 border border-gold/30 rounded-full">
-              <span className="text-2xl">🎯</span>
+              <Target className="w-5 h-5 text-gold" />
               <span className="text-sm font-semibold text-gray-900">
-                Invite Only — Limited Beta Access
+                Available Now
               </span>
             </div>
           </div>
@@ -63,8 +64,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               Take This Long
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              AI-powered tax automation for Indian businesses. Connect your bank, upload receipts, and let our AI
-              handle the rest. <span className="font-semibold text-gray-900">Zero fees. Zero hassle.</span>
+              AI-powered tax automation for Indian salaried professionals. Upload your Form 16, and let our AI
+              handle the rest. <span className="font-semibold text-gray-900">Just ₹200 per filing. Zero hassle.</span>
+            </p>
+            {/* Salaried Focus Clarity */}
+            <p className="text-sm font-medium text-primary mt-6 bg-blue-50 py-3 px-6 rounded-full inline-block">
+              Built for salaried professionals with Form 16 income. Scaling to freelancers & businesses later.
             </p>
           </div>
 
@@ -81,9 +86,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="flex justify-center mt-12 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             <button
               className="cta-button bg-primary text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl hover:scale-105"
-              onClick={handleJoinWaitlist}
+              onClick={handleSignUp}
             >
-              Request Early Access →
+              Save Your Taxes Today →
             </button>
           </div>
         </div>
@@ -178,7 +183,7 @@ const UserProof: React.FC = () => (
         </div>
       </div>
       <p className="text-sm text-gray-600">
-        <span className="font-bold text-primary">1,247 businesses</span> already waiting
+        <span className="font-bold text-primary">1,247 salaried professionals</span> already using TaxWala
       </p>
     </div>
   </div>
@@ -188,11 +193,11 @@ const TrustIndicators: React.FC = () => (
   <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 text-sm animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
     <div className="flex items-center gap-2">
       <CheckCircleIcon className="w-5 h-5 text-green-600" />
-      <span className="font-semibold text-gray-900">100% Free Forever</span>
+      <span className="font-semibold text-gray-900">₹200 per filing</span>
     </div>
     <div className="flex items-center gap-2">
-      <StarIcon className="w-5 h-5 text-gold" />
-      <span className="font-semibold text-gray-900">Invite Only Beta</span>
+      <StarIcon fill="#FFD700" strokeWidth={0} className="w-5 h-5" />
+      <span className="font-semibold text-gray-900">Live & Available Now</span>
     </div>
     <div className="flex items-center gap-2">
       <LockIcon className="w-5 h-5 text-gray-700" />

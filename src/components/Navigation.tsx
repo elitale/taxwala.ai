@@ -90,8 +90,8 @@ interface NavigationCTAProps {
 const NavigationCTA: React.FC<NavigationCTAProps> = ({ fullWidth = false }) => {
   const { trackButtonClick } = useGTMTracking();
 
-  const handleJoinWaitlist = () => {
-    trackButtonClick('Join Waitlist', 'navigation');
+  const handleSignUp = () => {
+    trackButtonClick('Sign Up', 'navigation');
     window.location.href = TALLY_FORM_URL;
   };
 
@@ -100,9 +100,9 @@ const NavigationCTA: React.FC<NavigationCTAProps> = ({ fullWidth = false }) => {
       className={`cta-button bg-primary text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-700 transition-all shadow-sm ${
         fullWidth ? "w-full" : ""
       }`}
-      onClick={handleJoinWaitlist}
+      onClick={handleSignUp}
     >
-      Join Waitlist
+      Sign Up
     </button>
   );
 };

@@ -12,7 +12,7 @@ export const PricingSection: React.FC = () => {
   const { trackButtonClick } = useGTMTracking();
 
   const handleFileITR = () => {
-    trackButtonClick('File my ITR', 'pricing');
+    trackButtonClick('Save My Taxes', 'pricing');
     window.location.href = TALLY_FORM_URL;
   };
   return (
@@ -81,7 +81,7 @@ export const PricingSection: React.FC = () => {
               >
                 <span className="flex items-center justify-center gap-2">
                   <RocketIcon className="w-5 h-5" />
-                  File my ITR
+                  Save My Taxes
                 </span>
               </button>
             </div>

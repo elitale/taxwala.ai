@@ -13,17 +13,17 @@ export const ProblemSection: React.FC = () => {
           {/* Left: Problem Text */}
           <div className="space-y-8 reveal-on-scroll">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-              Spending <span className="text-primary">20+ hours monthly</span> on tax paperwork?
+              Form 16 confuses you <span className="text-primary">every single year</span>?
             </h2>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-              Paying <span className="text-primary">₹50,000+ annually</span> to accountants?
+              Missing <span className="text-primary">₹45,000+ in deductions</span> you're eligible for?
             </h2>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-              Drowning in <span className="text-primary">receipts and invoices</span>?
+              Paying CAs <span className="text-primary">₹2,000-5,000</span> for a simple ITR-1?
             </h2>
 
             <div className="pt-8">
-              <p className="text-2xl font-bold text-gray-900">We're building the solution.</p>
+              <p className="text-2xl font-bold text-gray-900">You deserve better. We built it.</p>
             </div>
           </div>
 
@@ -33,15 +33,15 @@ export const ProblemSection: React.FC = () => {
               <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=600&fit=crop&crop=faces"
-                  alt="Business owner stressed with paperwork"
+                  alt="Salaried professional stressed with tax filing"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 max-w-xs">
                 <p className="text-sm font-semibold text-gray-900">
-                  "I spent 3 weeks just organizing receipts for ITR filing. Never again."
+                  "I spent 3 weekends trying to understand HRA calculation. This should be easier."
                 </p>
-                <p className="text-xs text-gray-600 mt-2">— Typical Business Owner</p>
+                <p className="text-xs text-gray-600 mt-2">— Software Engineer, Bangalore</p>
               </div>
             </div>
           </div>

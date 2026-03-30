@@ -39,9 +39,9 @@ export const TeamSection: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 reveal-on-scroll">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Built by Entrepreneurs, For Entrepreneurs</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Built by Tax Experts, For Salaried Professionals</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're a team of founders who felt the pain of tax paperwork firsthand. Now we're solving it for you.
+            We're a team of engineers, tax experts, and salaried professionals who understand the hassle of ITR-1 filing. We built TaxWala to solve it once and for all.
           </p>
         </div>
 

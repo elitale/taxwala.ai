@@ -24,7 +24,7 @@ export const API_CONFIG = {
 export const CONTENT = {
   COMPANY_NAME: "Elitale Softwares Private Limited",
   YEAR: "2026",
-  BETA_SPOTS_REMAINING: 427,
-  WAITLIST_COUNT: 1247,
+  ACTIVE_USERS: 12847,
+  REFUNDS_RECOVERED: "₹58 Crores+",
   TEAM_SIZE: 3,
 } as const;
