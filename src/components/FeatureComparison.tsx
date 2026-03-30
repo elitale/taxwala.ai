@@ -159,7 +159,7 @@ export const FeatureComparison: React.FC = () => (
               </div>
             </div>
             <div className="text-center flex items-center justify-center">
-              <CompetitorLogo logo="/face.png" alt="TaxWala" />
+              <CompetitorLogo logo="/logo.svg" alt="TaxWala" />
             </div>
             <div className="text-center flex items-center justify-center">
               <CompetitorLogo logo="/cleartax.png" alt="ClearTax" />
