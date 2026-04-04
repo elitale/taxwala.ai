@@ -1,0 +1,10 @@
+{
+  "routes": [
+    {
+      "handle": "error",
+      "src": "/.*",
+      "status": 500,
+      "dest": "/500/index.html"
+    }
+  ]
+}

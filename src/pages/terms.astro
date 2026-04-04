@@ -1,0 +1,393 @@
+---
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Terms of Service - MunimChaCha";
+const description = "Terms of Service for MunimChaCha by Elitale Softwares Private Limited. Read the terms governing use of our AI-powered tax filing platform.";
+---
+
+<BaseLayout {title} {description}>
+  <main class="max-w-4xl mx-auto px-6 py-16 text-gray-800 leading-relaxed">
+    <a href="/" class="inline-flex items-center text-blue-600 hover:text-blue-800 mb-8 text-sm font-medium">
+      ← Back to Home
+    </a>
+
+    <h1 class="text-4xl font-bold text-gray-900 mb-2">Terms of Service</h1>
+    <p class="text-sm text-gray-500 mb-10">Last updated: 4 April 2026</p>
+
+    <div class="space-y-10 text-[15px]">
+
+      <!-- 1. Introduction and Acceptance -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">1. Introduction and Acceptance</h2>
+        <p>
+          These Terms of Service ("Terms") constitute a legally binding agreement between you ("User", "you", or "your")
+          and <strong>Elitale Softwares Private Limited</strong> (CIN: U62013RJ2023PTC089483), a company incorporated under
+          the Companies Act, 2013, having its registered office at D2 121 A, Near Ballabh Garden, Bikaner, Rajasthan, India
+          ("Company", "we", "us", or "our").
+        </p>
+        <p class="mt-3">
+          These Terms govern your access to and use of the website
+          <a href="https://munimchacha.com" class="text-blue-600 underline">https://munimchacha.com</a> ("Website"),
+          the MunimChaCha mobile application available on iOS and Android ("App"), and all related services, features,
+          content, and tools provided by the Company (collectively, the "Platform" and "Services").
+        </p>
+        <p class="mt-3">
+          By creating an account, accessing, or using the Platform in any manner, you acknowledge that you have read,
+          understood, and agree to be bound by these Terms and our
+          <a href="/privacy-policy" class="text-blue-600 underline">Privacy Policy</a>, which is incorporated herein by
+          reference. If you do not agree to these Terms, you must not access or use the Platform.
+        </p>
+      </section>
+
+      <!-- 2. Definitions -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">2. Definitions</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>"Services"</strong> means the AI-powered tax preparation, computation, deduction identification, and ITR e-filing services provided through the Platform.</li>
+          <li><strong>"ITR"</strong> means Income Tax Return as prescribed under the Income Tax Act, 1961.</li>
+          <li><strong>"Assessment Year" ("AY")</strong> means the year following the financial year in which income is earned, during which the ITR for that financial year must be filed.</li>
+          <li><strong>"Form 16"</strong> means the TDS certificate issued by an employer under Section 203 of the Income Tax Act, 1961.</li>
+          <li><strong>"User Content"</strong> means all documents, data, information, and materials you upload, submit, or provide through the Platform.</li>
+          <li><strong>"AI Processing"</strong> means the automated extraction, analysis, and computation performed by our artificial intelligence systems on your tax documents and data.</li>
+        </ul>
+      </section>
+
+      <!-- 3. Eligibility -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">3. Eligibility</h2>
+        <p>By using the Platform, you represent and warrant that:</p>
+        <ul class="list-disc pl-6 space-y-2 mt-2">
+          <li>You are a resident of India for income tax purposes, or are required to file an ITR in India.</li>
+          <li>You possess a valid Permanent Account Number (PAN) issued by the Income Tax Department of India.</li>
+          <li>If you are a minor (below 18 years of age), you are using the Platform with the consent and supervision of your parent or legal guardian, who agrees to be bound by these Terms on your behalf.</li>
+          <li>You have the legal capacity and authority to enter into these Terms and to authorize the Company to act on your behalf for the purposes of tax preparation and filing (where applicable).</li>
+          <li>The information you provide is accurate, complete, and truthful.</li>
+        </ul>
+      </section>
+
+      <!-- 4. Account Registration and Security -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">4. Account Registration and Security</h2>
+        <p>
+          To access the Services, you must create an account by providing your phone number and verifying it via
+          one-time password ("OTP"). You agree to:
+        </p>
+        <ul class="list-disc pl-6 space-y-2 mt-2">
+          <li>Provide accurate and current registration information.</li>
+          <li>Maintain the security of your account by not sharing your OTP or granting access to your account to any unauthorized person.</li>
+          <li>Notify us immediately at <a href="mailto:soni+privacy@munimchacha.com" class="text-blue-600 underline">soni+privacy@munimchacha.com</a> if you suspect unauthorized access to your account.</li>
+          <li>Accept responsibility for all activities that occur under your account.</li>
+        </ul>
+        <p class="mt-3">
+          We reserve the right to suspend or terminate accounts that we reasonably believe have been compromised or
+          are being used in violation of these Terms.
+        </p>
+      </section>
+
+      <!-- 5. Description of Services -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">5. Description of Services</h2>
+
+        <h3 class="font-semibold mt-4 mb-2">5.1 What We Provide</h3>
+        <p>MunimChaCha provides the following Services:</p>
+        <ul class="list-disc pl-6 space-y-1 mt-2">
+          <li><strong>Document Upload and AI Extraction:</strong> You can upload tax documents (Form 16, salary slips, investment proofs, etc.), and our AI system automatically extracts relevant financial data.</li>
+          <li><strong>Tax Computation:</strong> Based on extracted and user-provided data, we compute your taxable income and identify applicable deductions under the Income Tax Act, 1961 (including Sections 80C, 80D, 80E, 80G, 80TTA, 24(b), HRA exemption under Section 10(13A), and other applicable provisions).</li>
+          <li><strong>ITR Preparation:</strong> We prepare your ITR (primarily ITR-1/Sahaj for salaried individuals) based on the computed data.</li>
+          <li><strong>E-filing (Where Authorized):</strong> Where you explicitly authorize us, we submit your ITR electronically to the Income Tax Department of India on your behalf. Alternatively, you may use the prepared ITR data to file it yourself through the Income Tax e-filing portal.</li>
+          <li><strong>Filing History:</strong> We maintain records of your past filings for your reference.</li>
+        </ul>
+
+        <h3 class="font-semibold mt-4 mb-2">5.2 What We Do Not Provide</h3>
+        <ul class="list-disc pl-6 space-y-1 mt-2">
+          <li>We are <strong>not</strong> a Chartered Accountant (CA) firm, tax consultancy, or legal advisory service.</li>
+          <li>The Services do not constitute professional tax advice, legal advice, or financial advice.</li>
+          <li>We do not guarantee the accuracy of AI-extracted data. You are responsible for reviewing and confirming all data before filing.</li>
+          <li>We do not guarantee any specific tax refund amount, tax savings, or outcome of filing.</li>
+          <li>We do not represent you before the Income Tax Department in assessment, appeal, or litigation proceedings.</li>
+        </ul>
+      </section>
+
+      <!-- 6. User Obligations -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">6. User Obligations</h2>
+        <p>By using the Services, you agree to:</p>
+        <ul class="list-disc pl-6 space-y-2 mt-2">
+          <li><strong>Provide Accurate Information:</strong> You are solely responsible for the accuracy, completeness, and truthfulness of all information and documents you provide. Filing an ITR with incorrect or fraudulent information is a punishable offence under the Income Tax Act, 1961 (Sections 276C, 277).</li>
+          <li><strong>Review Before Filing:</strong> You must carefully review the computed tax details, deductions, income breakdowns, and the prepared ITR before authorizing submission. The Company is not liable for errors arising from incorrect or incomplete information provided by you.</li>
+          <li><strong>Comply with Tax Laws:</strong> You are responsible for compliance with all applicable provisions of the Income Tax Act, 1961 and rules made thereunder. The use of our Services does not exempt you from your statutory obligations as an assessee.</li>
+          <li><strong>Timely Filing:</strong> You are responsible for ensuring your ITR is filed before the applicable due date under Section 139 of the Income Tax Act, 1961. We are not liable for any penalties or consequences arising from late filing.</li>
+          <li><strong>No Misuse:</strong> You shall not use the Platform for any unlawful purpose, to file fraudulent returns, to attempt to gain unauthorized access to the Platform or its systems, or to interfere with the Platform's operation.</li>
+        </ul>
+      </section>
+
+      <!-- 7. Fees, Payments, and Refund Policy -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">7. Fees, Payments, and Refund Policy</h2>
+
+        <h3 class="font-semibold mt-4 mb-2">7.1 Service Fees</h3>
+        <p>
+          The current fee for ITR preparation and e-filing through MunimChaCha is displayed on the Platform at the time
+          of purchase. All fees are inclusive of applicable taxes (GST) unless stated otherwise. The Company reserves the
+          right to change fees at any time; however, any fee change will not affect transactions already completed.
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">7.2 Payment Processing</h3>
+        <p>
+          Payments are processed through <strong>Razorpay Software Private Limited</strong>, a PCI-DSS compliant payment
+          gateway. We do not store your credit card, debit card, net banking, or UPI credentials on our servers. All
+          payment transactions are governed by Razorpay's terms of service and privacy policy in addition to these Terms.
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">7.3 Refund Policy</h3>
+        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mt-2">
+          <p class="font-semibold text-blue-900 mb-2">7-Day Full Refund Guarantee</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>You may request a <strong>full refund within 7 (seven) days</strong> from the date of payment.</li>
+            <li>To request a refund, email <a href="mailto:soni+privacy@munimchacha.com" class="text-blue-600 underline">soni+privacy@munimchacha.com</a> with your registered phone number and payment receipt.</li>
+            <li>Refunds will be processed to the original payment method within 5–7 business days of approval.</li>
+            <li>If your ITR has already been successfully submitted to the Income Tax Department before the refund request, a refund may still be issued; however, the filing cannot be reversed as it is a government submission.</li>
+            <li>Refund requests made after 7 days from the date of payment will not be entertained.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 8. Intellectual Property -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">8. Intellectual Property</h2>
+
+        <h3 class="font-semibold mt-4 mb-2">8.1 Company's Intellectual Property</h3>
+        <p>
+          The Platform, including its design, layout, text, graphics, software, AI models, algorithms, code, logos,
+          trademarks ("MunimChaCha", "MunimChaCha.com"), and all other intellectual property, are owned by or licensed
+          to Elitale Softwares Private Limited and are protected under the Copyright Act, 1957, the Trade Marks Act, 1999,
+          the Information Technology Act, 2000, and other applicable intellectual property laws of India.
+        </p>
+        <p class="mt-3">
+          You are granted a limited, non-exclusive, non-transferable, revocable license to access and use the Platform
+          solely for its intended purpose of personal tax filing. You may not copy, modify, distribute, sell, or create
+          derivative works based on the Platform or any part thereof.
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">8.2 User Content</h3>
+        <p>
+          You retain ownership of all documents and data you upload to the Platform. By uploading User Content, you grant
+          us a limited, non-exclusive license to process, store, and use such content solely for the purpose of providing
+          the Services to you. We will not use your User Content for any other purpose without your explicit consent.
+        </p>
+      </section>
+
+      <!-- 9. Disclaimer of Warranties -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">9. Disclaimer of Warranties</h2>
+        <p class="font-semibold">THE SERVICES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS.</p>
+        <p class="mt-3">To the maximum extent permitted by applicable Indian law:</p>
+        <ul class="list-disc pl-6 space-y-2 mt-2">
+          <li>We make <strong>no warranties or representations</strong>, express or implied, regarding the accuracy, completeness, or reliability of the AI-processed data, tax computations, deduction identification, or any other output of the Services.</li>
+          <li>We do not warrant that the Platform will be uninterrupted, error-free, secure, or free of viruses or harmful components.</li>
+          <li>We do not warrant the accuracy of data extracted from your uploaded documents. AI extraction is an automated process that may contain errors. <strong>You bear sole responsibility for verifying all extracted data before filing.</strong></li>
+          <li>We do not guarantee that the use of our Services will result in any specific tax refund, tax savings, or favourable assessment by the Income Tax Department.</li>
+          <li>We disclaim all implied warranties, including warranties of merchantability, fitness for a particular purpose, and non-infringement, to the extent permitted by law.</li>
+        </ul>
+      </section>
+
+      <!-- 10. Limitation of Liability -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">10. Limitation of Liability</h2>
+        <p>To the maximum extent permitted under applicable Indian law:</p>
+        <ul class="list-disc pl-6 space-y-2 mt-2">
+          <li>
+            The Company's total aggregate liability to you for any and all claims arising out of or in connection with
+            these Terms or your use of the Services shall not exceed the <strong>total amount paid by you to the Company
+            in the 12 months preceding the event giving rise to the claim</strong>.
+          </li>
+          <li>
+            In no event shall the Company, its directors, employees, agents, or affiliates be liable for any
+            <strong>indirect, incidental, special, consequential, or punitive damages</strong>, including but not limited to:
+            loss of profits, loss of data, loss of tax refund, penalties imposed by the Income Tax Department,
+            interest on tax liability, assessment or reassessment proceedings, or any other financial loss — whether
+            arising from contract, tort, negligence, strict liability, or any other legal theory, even if the Company
+            has been advised of the possibility of such damages.
+          </li>
+          <li>
+            The Company shall not be liable for any loss, penalty, or adverse consequence arising from:
+            (a) incorrect, incomplete, or fraudulent information provided by you;
+            (b) your failure to review the prepared ITR before authorizing submission;
+            (c) changes in tax laws, rules, or interpretations after the date of filing;
+            (d) actions or omissions of the Income Tax Department;
+            (e) your failure to file before the statutory due date;
+            (f) technical failures, internet disruptions, or force majeure events beyond our reasonable control.
+          </li>
+        </ul>
+      </section>
+
+      <!-- 11. Indemnification -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">11. Indemnification</h2>
+        <p>
+          You agree to indemnify, defend, and hold harmless Elitale Softwares Private Limited, its directors, officers,
+          employees, agents, and affiliates from and against any and all claims, damages, losses, liabilities, costs,
+          and expenses (including reasonable legal fees) arising from or related to:
+        </p>
+        <ul class="list-disc pl-6 space-y-1 mt-2">
+          <li>Your breach of these Terms.</li>
+          <li>Your violation of any applicable law or regulation, including the Income Tax Act, 1961.</li>
+          <li>The inaccuracy, incompleteness, or fraudulence of information or documents you provide.</li>
+          <li>Your use or misuse of the Services.</li>
+          <li>Any claim by a third party arising from your use of the Platform.</li>
+        </ul>
+      </section>
+
+      <!-- 12. Termination -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">12. Termination</h2>
+
+        <h3 class="font-semibold mt-4 mb-2">12.1 Termination by You</h3>
+        <p>
+          You may stop using the Platform and request account deletion at any time by contacting us at
+          <a href="mailto:soni+privacy@munimchacha.com" class="text-blue-600 underline">soni+privacy@munimchacha.com</a>.
+          Account deletion is subject to our data retention obligations as described in our
+          <a href="/privacy-policy" class="text-blue-600 underline">Privacy Policy</a>.
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">12.2 Termination by Us</h3>
+        <p>We may suspend or terminate your access to the Platform, with or without notice, if:</p>
+        <ul class="list-disc pl-6 space-y-1 mt-2">
+          <li>You breach any provision of these Terms.</li>
+          <li>We reasonably suspect fraudulent activity or misrepresentation.</li>
+          <li>We are required to do so by law, regulation, or court order.</li>
+          <li>We discontinue the Services (with reasonable prior notice to active users).</li>
+        </ul>
+
+        <h3 class="font-semibold mt-4 mb-2">12.3 Effect of Termination</h3>
+        <p>
+          Upon termination: (a) your right to access the Platform ceases immediately; (b) Sections 8, 9, 10, 11, 13, 14,
+          and 15 of these Terms shall survive termination; (c) data retention shall be governed by our Privacy Policy.
+        </p>
+      </section>
+
+      <!-- 13. Governing Law and Dispute Resolution -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">13. Governing Law and Dispute Resolution</h2>
+
+        <h3 class="font-semibold mt-4 mb-2">13.1 Governing Law</h3>
+        <p>
+          These Terms shall be governed by and construed in accordance with the laws of India, including but not limited
+          to the Information Technology Act, 2000, the Indian Contract Act, 1872, the Consumer Protection Act, 2019,
+          and the Income Tax Act, 1961.
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">13.2 Dispute Resolution</h3>
+        <p>
+          In the event of any dispute, controversy, or claim arising out of or in connection with these Terms or the
+          Services ("Dispute"), the parties shall first attempt to resolve the Dispute amicably through good-faith
+          negotiation for a period of 30 days from the date one party notifies the other of the Dispute.
+        </p>
+        <p class="mt-3">
+          If the Dispute is not resolved through negotiation, it shall be referred to and finally resolved by
+          <strong>arbitration</strong> in accordance with the Arbitration and Conciliation Act, 1996 (as amended).
+          The arbitration shall be conducted by a sole arbitrator mutually appointed by the parties. The seat and
+          venue of arbitration shall be <strong>Bikaner, Rajasthan, India</strong>. The language of arbitration shall be English.
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">13.3 Jurisdiction</h3>
+        <p>
+          Subject to the arbitration clause above, the courts of <strong>Bikaner, Rajasthan, India</strong> shall have
+          exclusive jurisdiction over any proceedings arising out of or in connection with these Terms.
+        </p>
+      </section>
+
+      <!-- 14. Force Majeure -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">14. Force Majeure</h2>
+        <p>
+          The Company shall not be liable for any failure or delay in performing its obligations under these Terms if such
+          failure or delay results from circumstances beyond our reasonable control, including but not limited to: natural
+          disasters, pandemics, government actions, changes in law or regulation, internet or telecommunications failures,
+          cyberattacks, power outages, the Income Tax e-filing portal being unavailable, or any other force majeure event.
+        </p>
+      </section>
+
+      <!-- 15. General Provisions -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">15. General Provisions</h2>
+
+        <h3 class="font-semibold mt-4 mb-2">15.1 Entire Agreement</h3>
+        <p>
+          These Terms, together with the <a href="/privacy-policy" class="text-blue-600 underline">Privacy Policy</a>,
+          constitute the entire agreement between you and the Company regarding your use of the Platform and supersede
+          all prior and contemporaneous understandings, agreements, representations, and warranties.
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">15.2 Severability</h3>
+        <p>
+          If any provision of these Terms is held to be invalid, illegal, or unenforceable by a court of competent
+          jurisdiction, the remaining provisions shall continue in full force and effect. The invalid provision shall be
+          modified to the minimum extent necessary to make it valid and enforceable while preserving the parties' original intent.
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">15.3 Waiver</h3>
+        <p>
+          No failure or delay by the Company in exercising any right or remedy under these Terms shall constitute a waiver
+          of that right or remedy. A waiver of any provision shall not constitute a waiver of any other provision.
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">15.4 Assignment</h3>
+        <p>
+          You may not assign or transfer your rights or obligations under these Terms without our prior written consent.
+          The Company may assign its rights and obligations to a successor entity in the event of a merger, acquisition,
+          or sale of substantially all of its assets, provided such successor agrees to be bound by these Terms.
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">15.5 Notices</h3>
+        <p>
+          All notices to the Company shall be sent to
+          <a href="mailto:soni+privacy@munimchacha.com" class="text-blue-600 underline">soni+privacy@munimchacha.com</a>.
+          All notices to you will be sent to the phone number or other contact information associated with your account.
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">15.6 No Third-Party Beneficiaries</h3>
+        <p>
+          These Terms do not confer any rights on any third party. Only the parties to these Terms are entitled to
+          enforce them.
+        </p>
+      </section>
+
+      <!-- 16. Changes to These Terms -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">16. Changes to These Terms</h2>
+        <p>
+          We reserve the right to modify these Terms at any time. When we make material changes, we will:
+        </p>
+        <ul class="list-disc pl-6 space-y-1 mt-2">
+          <li>Update the "Last updated" date at the top of this page.</li>
+          <li>Notify you via push notification (mobile app) or through the Platform.</li>
+          <li>Where required by the Consumer Protection Act, 2019 or other applicable law, obtain your consent to the revised terms.</li>
+        </ul>
+        <p class="mt-3">
+          Your continued use of the Platform after the effective date of any changes constitutes your acceptance of the
+          revised Terms. If you do not agree to the revised Terms, you must discontinue use of the Platform.
+        </p>
+      </section>
+
+      <!-- 17. Contact Us -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">17. Contact Us</h2>
+        <p>For any questions or concerns regarding these Terms, please contact us:</p>
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 mt-3">
+          <p><strong>Elitale Softwares Private Limited</strong></p>
+          <p>D2 121 A, Near Ballabh Garden, Bikaner, Rajasthan, India</p>
+          <p>CIN: U62013RJ2023PTC089483</p>
+          <p>Email: <a href="mailto:soni+privacy@munimchacha.com" class="text-blue-600 underline">soni+privacy@munimchacha.com</a></p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-16 pt-8 border-t border-gray-200 text-center">
+      <a href="/" class="text-blue-600 hover:text-blue-800 text-sm font-medium">← Back to MunimChaCha.com</a>
+    </div>
+  </main>
+</BaseLayout>

@@ -24,8 +24,8 @@ export const Footer: React.FC = () => {
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
             <FooterLink href="https://elitale.com/about" label="About" />
             <FooterLink href="https://elitale.com/contact" label="Contact" />
-            <FooterLink href="https://elitale.com/privacy" label="Privacy" />
-            <FooterLink href="https://elitale.com/terms" label="Terms" />
+            <FooterLink href="/privacy-policy" label="Privacy" />
+            <FooterLink href="/terms" label="Terms" />
           </div>
 
           {/* Status Badge */}
@@ -44,8 +44,15 @@ interface FooterLinkProps {
   label: string;
 }
 
-const FooterLink: React.FC<FooterLinkProps> = ({ href, label }) => (
-  <a href={href} target="_blank" className="text-gray-600 hover:text-gray-900 transition-colors">
-    {label}
-  </a>
-);
+const FooterLink: React.FC<FooterLinkProps> = ({ href, label }) => {
+  const isExternal = href.startsWith("http");
+  return (
+    <a
+      href={href}
+      {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+      className="text-gray-600 hover:text-gray-900 transition-colors"
+    >
+      {label}
+    </a>
+  );
+};

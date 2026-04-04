@@ -1,0 +1,33 @@
+---
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Page Not Found - MunimChaCha";
+const description = "The page you're looking for doesn't exist.";
+---
+
+<BaseLayout {title} {description}>
+  <main class="min-h-screen flex items-center justify-center px-6">
+    <div class="text-center max-w-lg">
+      <p class="text-8xl font-bold text-blue-600">404</p>
+      <h1 class="mt-4 text-3xl font-bold text-gray-900">Page not found</h1>
+      <p class="mt-4 text-gray-600 text-lg">
+        Sorry, we couldn't find the page you're looking for. It may have been moved or doesn't exist.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/"
+          class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          ← Back to Home
+        </a>
+        <a
+          href="mailto:soni+privacy@munimchacha.com"
+          class="inline-flex items-center px-6 py-3 border border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-50 transition-colors"
+        >
+          Contact Support
+        </a>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

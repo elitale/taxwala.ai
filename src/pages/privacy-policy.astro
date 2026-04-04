@@ -1,0 +1,431 @@
+---
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Privacy Policy - MunimChaCha";
+const description = "Privacy Policy of MunimChaCha by Elitale Softwares Private Limited. Learn how we collect, use, and protect your personal and financial data.";
+---
+
+<BaseLayout {title} {description}>
+  <main class="max-w-4xl mx-auto px-6 py-16 text-gray-800 leading-relaxed">
+    <a href="/" class="inline-flex items-center text-blue-600 hover:text-blue-800 mb-8 text-sm font-medium">
+      ← Back to Home
+    </a>
+
+    <h1 class="text-4xl font-bold text-gray-900 mb-2">Privacy Policy</h1>
+    <p class="text-sm text-gray-500 mb-10">Last updated: 4 April 2026</p>
+
+    <div class="space-y-10 text-[15px]">
+
+      <!-- 1. Introduction -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">1. Introduction</h2>
+        <p>
+          This Privacy Policy ("Policy") is published in compliance with the Information Technology Act, 2000 ("IT Act"),
+          the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011 ("SPDI Rules"),
+          the Digital Personal Data Protection Act, 2023 ("DPDP Act"), and all applicable rules and regulations thereunder.
+        </p>
+        <p class="mt-3">
+          <strong>Elitale Softwares Private Limited</strong> (CIN: U62013RJ2023PTC089483), a company incorporated under the
+          Companies Act, 2013, having its registered office at D2 121 A, Near Ballabh Garden, Bikaner, Rajasthan, India
+          ("Company", "we", "us", or "our") operates the website
+          <a href="https://munimchacha.com" class="text-blue-600 underline">https://munimchacha.com</a> ("Website")
+          and the MunimChaCha mobile application available on iOS and Android ("App"). The Website and App are collectively
+          referred to as the "Platform".
+        </p>
+        <p class="mt-3">
+          This Policy describes our practices regarding the collection, use, storage, disclosure, and protection of your
+          personal data when you access or use the Platform and our AI-powered tax preparation and ITR e-filing services
+          ("Services"). By accessing or using the Platform, you consent to the practices described in this Policy.
+        </p>
+      </section>
+
+      <!-- 2. Definitions -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">2. Definitions</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>"Personal Data"</strong> means any data about an individual who is identifiable by or in relation to such data, as defined under the DPDP Act, 2023.</li>
+          <li><strong>"Sensitive Personal Data or Information" ("SPDI")</strong> means personal information as defined under Rule 3 of the SPDI Rules, including passwords, financial information (bank account, PAN, tax-related data), and biometric data.</li>
+          <li><strong>"Data Principal"</strong> means the individual whose personal data is collected and processed — i.e., you, the user.</li>
+          <li><strong>"Data Fiduciary"</strong> means Elitale Softwares Private Limited, which determines the purpose and means of processing personal data.</li>
+          <li><strong>"Processing"</strong> includes collection, storage, use, disclosure, sharing, erasure, or destruction of personal data.</li>
+        </ul>
+      </section>
+
+      <!-- 3. Data We Collect -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">3. Data We Collect</h2>
+
+        <h3 class="font-semibold mt-4 mb-2">3.1 Information You Provide Directly</h3>
+        <table class="w-full border border-gray-200 text-sm">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-200 px-4 py-2 text-left">Category</th>
+              <th class="border border-gray-200 px-4 py-2 text-left">Data Points</th>
+              <th class="border border-gray-200 px-4 py-2 text-left">Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Identity Data</td>
+              <td class="border border-gray-200 px-4 py-2">Full name, date of birth, phone number</td>
+              <td class="border border-gray-200 px-4 py-2">Account creation, OTP-based authentication, ITR preparation</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Government Identifiers</td>
+              <td class="border border-gray-200 px-4 py-2">PAN (Permanent Account Number), Aadhaar number</td>
+              <td class="border border-gray-200 px-4 py-2">ITR filing with the Income Tax Department of India, identity verification as required by law</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Financial Data</td>
+              <td class="border border-gray-200 px-4 py-2">Bank account details (account number, IFSC), salary information, Form 16, Form 26AS, Annual Information Statement (AIS), salary slips</td>
+              <td class="border border-gray-200 px-4 py-2">Computation of taxable income, identification of deductions under Sections 80C, 80D, HRA, and other applicable provisions; ITR preparation and e-filing</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Tax Documents</td>
+              <td class="border border-gray-200 px-4 py-2">Uploaded documents (Form 16, investment proofs, rent receipts, insurance policies, medical bills)</td>
+              <td class="border border-gray-200 px-4 py-2">Automated extraction of relevant data for accurate ITR computation</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="font-semibold mt-6 mb-2">3.2 Information Collected Automatically</h3>
+        <table class="w-full border border-gray-200 text-sm">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-200 px-4 py-2 text-left">Category</th>
+              <th class="border border-gray-200 px-4 py-2 text-left">Data Points</th>
+              <th class="border border-gray-200 px-4 py-2 text-left">Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Device & Technical Data</td>
+              <td class="border border-gray-200 px-4 py-2">Device model, operating system version, unique device identifiers, IP address, browser type, screen resolution</td>
+              <td class="border border-gray-200 px-4 py-2">Service optimization, crash reporting, security monitoring</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Usage Data</td>
+              <td class="border border-gray-200 px-4 py-2">Pages viewed, features used, session duration, clicks, navigation paths</td>
+              <td class="border border-gray-200 px-4 py-2">Product improvement, analytics, personalization</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Crash & Performance Data</td>
+              <td class="border border-gray-200 px-4 py-2">Error logs, stack traces, app performance metrics</td>
+              <td class="border border-gray-200 px-4 py-2">Debugging, reliability improvements (via Firebase Crashlytics and Performance Monitoring)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="font-semibold mt-6 mb-2">3.3 Device Permissions (Mobile App)</h3>
+        <p>The MunimChaCha mobile app may request the following device permissions. Each permission is requested only when needed and can be denied or revoked at any time through your device settings:</p>
+        <ul class="list-disc pl-6 space-y-1 mt-2">
+          <li><strong>Camera:</strong> To scan and photograph tax documents for upload.</li>
+          <li><strong>Document Picker / File Access:</strong> To select and upload tax documents (Form 16, salary slips, etc.) from your device storage.</li>
+          <li><strong>Contacts:</strong> To enable referral features. Contact data is not uploaded or stored on our servers without your explicit action.</li>
+          <li><strong>Media Library / Photos:</strong> To save generated tax computation results or receipts to your device.</li>
+          <li><strong>Push Notifications:</strong> To send filing status updates, deadline reminders, and important service announcements.</li>
+        </ul>
+      </section>
+
+      <!-- 4. Legal Basis for Processing -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">4. Legal Basis for Processing</h2>
+        <p>We process your personal data on the following legal grounds as permitted under the DPDP Act, 2023 and the IT Act, 2000:</p>
+        <ul class="list-disc pl-6 space-y-2 mt-2">
+          <li><strong>Consent:</strong> You provide explicit consent when you create an account, upload tax documents, and authorize us to prepare or file your ITR. You may withdraw consent at any time (see Section 11).</li>
+          <li><strong>Performance of Contract:</strong> Processing is necessary to provide the Services you have requested, including tax computation and ITR filing.</li>
+          <li><strong>Legal Obligation:</strong> We may process and retain your data to comply with applicable tax laws, the IT Act, and regulatory requirements of the Income Tax Department of India.</li>
+          <li><strong>Legitimate Interest:</strong> For fraud prevention, security monitoring, service improvement, and analytics, where such interests are not overridden by your rights.</li>
+        </ul>
+      </section>
+
+      <!-- 5. How We Use Your Data -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">5. How We Use Your Data</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Tax Preparation & Filing:</strong> To compute your taxable income, identify applicable deductions, prepare your ITR, and (where authorized by you) e-file it with the Income Tax Department of India.</li>
+          <li><strong>Account Management:</strong> To create and manage your account, authenticate you via phone OTP, and maintain your filing history.</li>
+          <li><strong>Payment Processing:</strong> To process service fees through our payment partner (Razorpay). We do not store your credit/debit card numbers or UPI credentials on our servers.</li>
+          <li><strong>Communication:</strong> To send filing status updates, tax deadline reminders, service notifications, and respond to your support queries.</li>
+          <li><strong>Product Improvement:</strong> To analyze aggregate usage patterns, diagnose technical issues, and improve the accuracy and usability of our AI-powered services.</li>
+          <li><strong>Legal Compliance:</strong> To comply with applicable laws, respond to lawful requests from government authorities, and enforce our Terms of Service.</li>
+        </ul>
+      </section>
+
+      <!-- 6. Third-Party Services and Data Sharing -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">6. Third-Party Services and Data Sharing</h2>
+        <p>We do not sell, rent, or trade your personal data to any third party. We share your data only in the following limited circumstances:</p>
+
+        <h3 class="font-semibold mt-4 mb-2">6.1 Government Authorities</h3>
+        <p>
+          When you authorize us to e-file your ITR, we transmit the necessary filing information to the
+          <strong>Income Tax Department of India</strong> through official channels. This is essential for the
+          performance of the Services and is required by law.
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">6.2 Service Providers</h3>
+        <p>We engage the following categories of service providers who process data on our behalf under strict contractual obligations:</p>
+        <table class="w-full border border-gray-200 text-sm mt-2">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-200 px-4 py-2 text-left">Provider</th>
+              <th class="border border-gray-200 px-4 py-2 text-left">Purpose</th>
+              <th class="border border-gray-200 px-4 py-2 text-left">Data Shared</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Amazon Web Services (AWS)</td>
+              <td class="border border-gray-200 px-4 py-2">Cloud infrastructure and data storage</td>
+              <td class="border border-gray-200 px-4 py-2">All Platform data (stored in AWS Mumbai region, ap-south-1)</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Razorpay Software Pvt Ltd</td>
+              <td class="border border-gray-200 px-4 py-2">Payment processing</td>
+              <td class="border border-gray-200 px-4 py-2">Transaction amount, order ID; Razorpay's own privacy policy governs card/bank data</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Google (Firebase)</td>
+              <td class="border border-gray-200 px-4 py-2">Crash reporting (Crashlytics), performance monitoring, app security (App Check), remote configuration</td>
+              <td class="border border-gray-200 px-4 py-2">Device identifiers, crash logs, performance metrics</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">PostHog Inc.</td>
+              <td class="border border-gray-200 px-4 py-2">Product analytics</td>
+              <td class="border border-gray-200 px-4 py-2">Anonymized usage events, device type, session data</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Google LLC (Google Analytics)</td>
+              <td class="border border-gray-200 px-4 py-2">Website analytics</td>
+              <td class="border border-gray-200 px-4 py-2">Anonymized browsing data, page views, device information</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Meta Platforms Inc.</td>
+              <td class="border border-gray-200 px-4 py-2">Advertising measurement (Meta Pixel)</td>
+              <td class="border border-gray-200 px-4 py-2">Page views, conversion events (no personal financial data is shared)</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Zoho Corporation Pvt Ltd</td>
+              <td class="border border-gray-200 px-4 py-2">Customer support chat</td>
+              <td class="border border-gray-200 px-4 py-2">Chat messages, name (if provided during chat)</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Sentry (Functional Software Inc.)</td>
+              <td class="border border-gray-200 px-4 py-2">Website error monitoring</td>
+              <td class="border border-gray-200 px-4 py-2">Error logs, stack traces, browser information</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="font-semibold mt-4 mb-2">6.3 Legal Disclosure</h3>
+        <p>
+          We may disclose your personal data if required to do so by law, or in the good-faith belief that such action is
+          necessary to: (a) comply with a legal obligation or lawful request by public authorities; (b) protect and defend
+          our rights or property; (c) prevent fraud or illegal activity; or (d) protect the personal safety of users or the public.
+        </p>
+      </section>
+
+      <!-- 7. Data Storage and Security -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">7. Data Storage and Security</h2>
+
+        <h3 class="font-semibold mt-4 mb-2">7.1 Storage Location</h3>
+        <p>
+          All personal data is stored on servers located in <strong>India (AWS Mumbai region, ap-south-1)</strong>,
+          in compliance with data localization requirements applicable to financial data under Indian law.
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">7.2 Security Measures</h3>
+        <p>We implement reasonable security practices and procedures as required under the SPDI Rules, including:</p>
+        <ul class="list-disc pl-6 space-y-1 mt-2">
+          <li>Encryption of data in transit (TLS 1.2 or higher) and at rest (AES-256).</li>
+          <li>Authentication tokens stored securely on-device using platform-native secure storage (Expo SecureStore).</li>
+          <li>Role-based access controls limiting internal access to personal data on a need-to-know basis.</li>
+          <li>Regular security assessments and vulnerability monitoring.</li>
+          <li>Firebase App Check to prevent unauthorized API access from non-genuine app instances.</li>
+        </ul>
+        <p class="mt-3">
+          While we implement industry-standard safeguards, no method of electronic transmission or storage is 100% secure.
+          We cannot guarantee absolute security of your data.
+        </p>
+      </section>
+
+      <!-- 8. Data Retention -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">8. Data Retention</h2>
+        <table class="w-full border border-gray-200 text-sm">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-200 px-4 py-2 text-left">Data Category</th>
+              <th class="border border-gray-200 px-4 py-2 text-left">Retention Period</th>
+              <th class="border border-gray-200 px-4 py-2 text-left">Reason</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Tax filing records (ITR data, Form 16, 26AS, AIS, computation sheets)</td>
+              <td class="border border-gray-200 px-4 py-2">7 years from the end of the relevant assessment year</td>
+              <td class="border border-gray-200 px-4 py-2">Section 149 of the Income Tax Act, 1961 permits reassessment proceedings for up to 6 years (10 years in specific cases); 7-year retention ensures compliance</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Account and identity data (name, phone number, PAN)</td>
+              <td class="border border-gray-200 px-4 py-2">Duration of your account + 7 years</td>
+              <td class="border border-gray-200 px-4 py-2">Legal compliance and dispute resolution</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Payment transaction records</td>
+              <td class="border border-gray-200 px-4 py-2">7 years from the date of transaction</td>
+              <td class="border border-gray-200 px-4 py-2">Compliance with applicable financial regulations and the Companies Act, 2013</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Usage and analytics data</td>
+              <td class="border border-gray-200 px-4 py-2">Deleted upon your request, or anonymized after 24 months of account inactivity</td>
+              <td class="border border-gray-200 px-4 py-2">Product improvement; no legal retention requirement</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 px-4 py-2">Crash logs and error reports</td>
+              <td class="border border-gray-200 px-4 py-2">90 days</td>
+              <td class="border border-gray-200 px-4 py-2">Debugging and service stability</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="mt-3">
+          When data reaches the end of its retention period, it is securely deleted or irreversibly anonymized.
+        </p>
+      </section>
+
+      <!-- 9. Cookies and Tracking Technologies -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">9. Cookies and Tracking Technologies</h2>
+        <p>Our Website uses the following cookies and tracking technologies:</p>
+        <ul class="list-disc pl-6 space-y-2 mt-2">
+          <li><strong>Essential Cookies:</strong> Required for the Website to function (e.g., session management). Cannot be disabled.</li>
+          <li><strong>Analytics Cookies:</strong> Google Analytics and PostHog use cookies to collect anonymized usage data. You can opt out by using your browser's cookie settings or by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline">Google Analytics Opt-out Browser Add-on</a>.</li>
+          <li><strong>Advertising Cookies:</strong> Meta Pixel places cookies for advertising measurement. You can manage your ad preferences through <a href="https://www.facebook.com/adpreferences" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline">Meta's Ad Preferences</a>.</li>
+        </ul>
+        <p class="mt-3">
+          The MunimChaCha mobile app does not use cookies. Mobile analytics are collected via Firebase and PostHog SDKs using device identifiers.
+        </p>
+      </section>
+
+      <!-- 10. Cross-Border Data Transfers -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">10. Cross-Border Data Transfers</h2>
+        <p>
+          Your primary personal data (including all financial and tax-related data) is stored within India in the AWS Mumbai region.
+        </p>
+        <p class="mt-3">
+          Certain third-party service providers (PostHog, Google Analytics, Meta, Sentry) may process limited,
+          non-financial data (such as device information, anonymized usage events, and crash logs) on servers located
+          outside India, including in the United States. Such transfers are made in accordance with the provisions of
+          the DPDP Act, 2023, and only to jurisdictions or entities that maintain adequate data protection standards.
+        </p>
+        <p class="mt-3">
+          No financial data, government identifiers (PAN, Aadhaar), or tax filing documents are transferred outside India.
+        </p>
+      </section>
+
+      <!-- 11. Your Rights -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">11. Your Rights as a Data Principal</h2>
+        <p>Under the DPDP Act, 2023 and the IT Act, 2000, you have the following rights:</p>
+        <ul class="list-disc pl-6 space-y-2 mt-2">
+          <li><strong>Right to Access:</strong> You may request confirmation of whether we process your personal data and obtain a summary of the data we hold.</li>
+          <li><strong>Right to Correction:</strong> You may request correction of inaccurate or incomplete personal data.</li>
+          <li><strong>Right to Erasure:</strong> You may request deletion of your personal data, subject to our legal retention obligations (see Section 8). Tax filing records required under the Income Tax Act cannot be deleted before the statutory retention period expires.</li>
+          <li><strong>Right to Withdraw Consent:</strong> You may withdraw your consent at any time. Withdrawal does not affect the lawfulness of processing conducted prior to withdrawal. Note that withdrawing consent may result in our inability to provide the Services.</li>
+          <li><strong>Right to Grievance Redressal:</strong> You have the right to file a complaint with our Grievance Officer or with the Data Protection Board of India.</li>
+          <li><strong>Right to Nominate:</strong> Under the DPDP Act, you may nominate another individual to exercise your rights on your behalf in the event of your death or incapacity.</li>
+        </ul>
+        <p class="mt-3">
+          To exercise any of these rights, contact us at
+          <a href="mailto:soni+privacy@munimchacha.com" class="text-blue-600 underline">soni+privacy@munimchacha.com</a>.
+          We will respond to your request within 30 days.
+        </p>
+      </section>
+
+      <!-- 12. Children's Privacy -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">12. Children's Privacy</h2>
+        <p>
+          MunimChaCha is a tax filing service and is designed for use by individuals who are required to file income tax
+          returns in India. While we do not impose a minimum age restriction, the nature of the Services (requiring PAN,
+          Aadhaar, and financial data) means the Platform is intended for use by taxpayers or their authorized representatives.
+        </p>
+        <p class="mt-3">
+          If a minor (individual below 18 years of age) uses the Platform, we require that they do so with the consent
+          and supervision of a parent or legal guardian. In accordance with the DPDP Act, 2023, any processing of a
+          child's personal data shall only be done with verifiable consent of the parent or lawful guardian.
+        </p>
+        <p class="mt-3">
+          If we become aware that we have collected personal data from a child without verifiable parental consent, we will
+          take steps to delete such data promptly. Please contact us at
+          <a href="mailto:soni+privacy@munimchacha.com" class="text-blue-600 underline">soni+privacy@munimchacha.com</a>
+          if you believe a child has provided us with personal data without appropriate consent.
+        </p>
+      </section>
+
+      <!-- 13. Grievance Officer -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">13. Grievance Officer</h2>
+        <p>
+          In accordance with Section 5(2) of the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021,
+          and the DPDP Act, 2023, the details of the Grievance Officer are as follows:
+        </p>
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 mt-3">
+          <p><strong>Name:</strong> Dharmendra Soni</p>
+          <p><strong>Designation:</strong> Grievance Officer</p>
+          <p><strong>Company:</strong> Elitale Softwares Private Limited</p>
+          <p><strong>Address:</strong> D2 121 A, Near Ballabh Garden, Bikaner, Rajasthan, India</p>
+          <p><strong>Email:</strong> <a href="mailto:soni+privacy@munimchacha.com" class="text-blue-600 underline">soni+privacy@munimchacha.com</a></p>
+        </div>
+        <p class="mt-3">
+          The Grievance Officer shall acknowledge your complaint within 24 hours and resolve it within 15 days from the
+          date of receipt of the complaint, in compliance with applicable laws.
+        </p>
+        <p class="mt-3">
+          If you are unsatisfied with the resolution, you may escalate your grievance to the
+          <strong>Data Protection Board of India</strong> as established under the DPDP Act, 2023.
+        </p>
+      </section>
+
+      <!-- 14. Changes to This Policy -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">14. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements,
+          or regulatory guidance. When we make material changes, we will:
+        </p>
+        <ul class="list-disc pl-6 space-y-1 mt-2">
+          <li>Update the "Last updated" date at the top of this page.</li>
+          <li>Notify you via push notification (mobile app) or email where a material change affects your rights.</li>
+          <li>Where required by law, obtain fresh consent before processing your data under the updated terms.</li>
+        </ul>
+        <p class="mt-3">
+          Your continued use of the Platform after the effective date of any changes constitutes your acceptance of
+          the updated Policy, to the extent permitted by law.
+        </p>
+      </section>
+
+      <!-- 15. Contact Us -->
+      <section>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">15. Contact Us</h2>
+        <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us:</p>
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 mt-3">
+          <p><strong>Elitale Softwares Private Limited</strong></p>
+          <p>D2 121 A, Near Ballabh Garden, Bikaner, Rajasthan, India</p>
+          <p>CIN: U62013RJ2023PTC089483</p>
+          <p>Email: <a href="mailto:soni+privacy@munimchacha.com" class="text-blue-600 underline">soni+privacy@munimchacha.com</a></p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-16 pt-8 border-t border-gray-200 text-center">
+      <a href="/" class="text-blue-600 hover:text-blue-800 text-sm font-medium">← Back to MunimChaCha.com</a>
+    </div>
+  </main>
+</BaseLayout>
