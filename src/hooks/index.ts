@@ -3,6 +3,7 @@
  */
 
 import { useEffect, useState } from "react";
+import { logFirebaseEvent } from "../lib/firebase";
 
 declare global {
   interface Window {
@@ -112,108 +113,111 @@ export const useGTMTracking = () => {
 
   // Track button clicks
   const trackButtonClick = (buttonName: string, section?: string) => {
-    if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", "button_click", {
-        button_name: buttonName,
-        section_name: section || "general",
-        timestamp: new Date().toISOString(),
-      });
-    }
-
-    trackMetaEvent("button_click", {
+    const payload = {
       button_name: buttonName,
       section_name: section || "general",
-    });
+      timestamp: new Date().toISOString(),
+    };
+
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "button_click", payload);
+    }
+
+    trackMetaEvent("button_click", payload);
+    logFirebaseEvent("button_click", payload);
   };
 
   // Track form submissions
   const trackFormSubmit = (formName: string, additionalData?: Record<string, any>) => {
+    const payload = {
+      form_name: formName,
+      ...additionalData,
+      timestamp: new Date().toISOString(),
+    };
+
     if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", "form_submit", {
-        form_name: formName,
-        ...additionalData,
-        timestamp: new Date().toISOString(),
-      });
+      window.gtag("event", "form_submit", payload);
     }
 
-    trackMetaEvent("form_submit", {
-      form_name: formName,
-      ...(additionalData || {}),
-    });
+    trackMetaEvent("form_submit", payload);
+    logFirebaseEvent("form_submit", payload);
   };
 
   // Track section views
   const trackSectionView = (sectionName: string) => {
+    const payload = {
+      section_name: sectionName,
+      timestamp: new Date().toISOString(),
+    };
+
     if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", "section_view", {
-        section_name: sectionName,
-        timestamp: new Date().toISOString(),
-      });
+      window.gtag("event", "section_view", payload);
     }
 
-    trackMetaEvent("section_view", {
-      section_name: sectionName,
-    });
+    trackMetaEvent("section_view", payload);
+    logFirebaseEvent("section_view", payload);
   };
 
   // Track video plays
   const trackVideoPlay = (videoId: string, videoTitle: string) => {
-    if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", "video_play", {
-        video_id: videoId,
-        video_title: videoTitle,
-        timestamp: new Date().toISOString(),
-      });
-    }
-
-    trackMetaEvent("video_play", {
+    const payload = {
       video_id: videoId,
       video_title: videoTitle,
-    });
+      timestamp: new Date().toISOString(),
+    };
+
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "video_play", payload);
+    }
+
+    trackMetaEvent("video_play", payload);
+    logFirebaseEvent("video_play", payload);
   };
 
   // Track modal opens
   const trackModalOpen = (modalName: string) => {
+    const payload = {
+      modal_name: modalName,
+      timestamp: new Date().toISOString(),
+    };
+
     if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", "modal_open", {
-        modal_name: modalName,
-        timestamp: new Date().toISOString(),
-      });
+      window.gtag("event", "modal_open", payload);
     }
 
-    trackMetaEvent("modal_open", {
-      modal_name: modalName,
-    });
+    trackMetaEvent("modal_open", payload);
+    logFirebaseEvent("modal_open", payload);
   };
 
   // Track modal closes
   const trackModalClose = (modalName: string) => {
+    const payload = {
+      modal_name: modalName,
+      timestamp: new Date().toISOString(),
+    };
+
     if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", "modal_close", {
-        modal_name: modalName,
-        timestamp: new Date().toISOString(),
-      });
+      window.gtag("event", "modal_close", payload);
     }
 
-    trackMetaEvent("modal_close", {
-      modal_name: modalName,
-    });
+    trackMetaEvent("modal_close", payload);
+    logFirebaseEvent("modal_close", payload);
   };
 
   // Track external link clicks
   const trackExternalLink = (url: string, linkText?: string) => {
-    if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", "external_link_click", {
-        link_url: url,
-        link_text: linkText || "unnamed",
-        timestamp: new Date().toISOString(),
-      });
-    }
-
-    trackMetaEvent("external_link_click", {
+    const payload = {
       link_url: url,
       link_text: linkText || "unnamed",
-    });
+      timestamp: new Date().toISOString(),
+    };
+
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "external_link_click", payload);
+    }
+
+    trackMetaEvent("external_link_click", payload);
+    logFirebaseEvent("external_link_click", payload);
   };
 
   return {

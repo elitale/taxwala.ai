@@ -21,6 +21,16 @@ export const API_CONFIG = {
   },
 } as const;
 
+export const FIREBASE_CONFIG = {
+  apiKey: "AIzaSyDaYeDtL6RupgJ2NgkgKefnmdKUmae2iK4",
+  authDomain: "munimchacha-1.firebaseapp.com",
+  projectId: "munimchacha-1",
+  storageBucket: "munimchacha-1.firebasestorage.app",
+  messagingSenderId: "505692823880",
+  appId: "1:505692823880:web:8ff3428fbf9eccf508d37d",
+  measurementId: "G-YZDBKM5ZG1",
+} as const;
+
 export const CONTENT = {
   COMPANY_NAME: "Elitale Softwares Private Limited",
   YEAR: "2026",

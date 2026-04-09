@@ -12,6 +12,7 @@ import PostHog from '../components/analytics/posthog.astro';
 import Facebook from '../components/analytics/facebook.astro';
 import Google from '../components/analytics/google.astro';
 import GooglePixel from '../components/analytics/google-pixel.astro';
+import Firebase from '../components/analytics/firebase.astro';
 import ZohoChatBot from '../components/bot/zoho.astro';
 ---
 
@@ -83,6 +84,7 @@ import ZohoChatBot from '../components/bot/zoho.astro';
   </head>
   <body class="bg-background text-foreground antialiased">
     <GooglePixel />
+    <Firebase />
     <slot />
     <slot name="scripts" />
   </body>
